@@ -1,0 +1,6 @@
+#base word list
+wget http://www.cs.uky.edu/~raphael/private/yiddish.utf8.dat
+#get line count
+cat yiddish.utf8.dat | sed '/^$/d' | wc -l > yi.dic
+#sort it
+LC_ALL=C sort yiddish.utf8.dat | sed '/^$/d' >> yi.dic

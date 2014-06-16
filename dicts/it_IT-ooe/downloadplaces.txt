@@ -1,0 +1,4 @@
+hunspell dicitonaries:  http://linguistico.sf/wiki/doku.php?id=dizionario_italiano
+thesaurus:              http://linguistico.sf/wiki/doku.php?id=thesaurus_italiano
+hyphenation:            http://wiki.services.openoffice.org/wiki/Dictionaries#Italian_.28Italy.29
+

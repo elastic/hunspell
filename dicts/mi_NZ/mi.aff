@@ -1,0 +1,162 @@
+NAME Te Papakupu Màori o Aotearoa
+HOME http://papakupu.maori.nz/
+VERSION 20080630
+
+SET ISO-8859-4
+
+TRY aitkruàhoeïnºpÀÏªwþògmÒÞNT-RWHPKMAUIOEG
+KEY aàw|weº|eºr|rt|tg|gh|hn|nm|huþ|uþiï|iïoò|oòp|iïk|oòk|-
+WORDCHARS -
+
+MAP 12
+MAP aàAÀ
+MAP eºEª
+MAP iïIÏ
+MAP kK
+MAP mM
+MAP ngNG
+MAP oòOÒ
+MAP pP
+MAP rR
+MAP tT
+MAP uþUÞ
+MAP whWH
+
+REP 5
+REP aa à
+REP ee º
+REP ii ï
+REP oo ò
+REP uu þ
+
+PFX " Y 13
+PFX " A a A
+PFX " E e E
+PFX " I i I
+PFX " O o O
+PFX " U u U
+PFX " H h H
+PFX " K k K
+PFX " M m M
+PFX " N n N
+PFX " P p P
+PFX " R r R
+PFX " T t T
+PFX " W w W
+
+PFX A Y 1
+PFX A 0 Maunga .
+
+PFX B Y 1
+PFX B 0 Whangà .
+
+PFX C Y 1
+PFX C 0 Whanga .
+
+PFX D Y 1
+PFX D 0 Moana .
+
+PFX E Y 1
+PFX E 0 Rangi .
+
+PFX F Y 1
+PFX F 0 whaka .
+
+PFX G Y 1
+PFX G 0 mata .
+
+PFX H Y 1
+PFX H 0 Motu .
+
+PFX I Y 1
+PFX I 0 Papa .
+
+PFX J Y 1
+PFX J 0 poro .
+
+PFX K Y 1
+PFX K 0 Puke .
+
+PFX L Y 1
+PFX L 0 Roto .
+
+PFX M Y 1
+PFX M 0 taki .
+
+PFX N Y 1
+PFX N 0 Tama .
+
+PFX O Y 1
+PFX O 0 toko .
+
+PFX P Y 1
+PFX P 0 Ara .
+
+PFX Q Y 1
+PFX Q 0 Awa .
+
+PFX R Y 1
+PFX R 0 whà .
+
+PFX S Y 1
+PFX S 0 kai .
+
+PFX T Y 1
+PFX T 0 nga .
+
+PFX U Y 1
+PFX U 0 tau .
+
+PFX V Y 1
+PFX V 0 tua .
+
+PFX W Y 1
+PFX W 0 uru .
+
+PFX X Y 1
+PFX X 0 Wai .
+
+PFX Y Y 1
+PFX Y 0 wai .
+
+PFX Z Y 1
+PFX Z 0 wha .
+
+SFX a Y 1
+SFX a 0 hanga .
+
+SFX b Y 1
+SFX b 0 ranga .
+
+SFX c Y 1
+SFX c 0 renga .
+
+SFX d Y 1
+SFX d 0 rangi .
+
+SFX e Y 1
+SFX e 0 tanga .
+
+SFX f Y 1
+SFX f 0 mana .
+
+SFX g Y 1
+SFX g 0 puke .
+
+SFX h Y 1
+SFX h 0 tahi .
+
+SFX i Y 1
+SFX i 0 rau .
+
+SFX j Y 1
+SFX j 0 rua .
+
+SFX k Y 1
+SFX k 0 nga .
+
+SFX l Y 1
+SFX l 0 nui .
+
+SFX m Y 1
+SFX m 0 wha .

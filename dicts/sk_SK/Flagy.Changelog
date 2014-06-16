@@ -1,0 +1,58 @@
+2009-12-05 Z. Podobný <zdenop at gmail.com> kontrola a doplnenie flagu c
+
+2009-10-11 Z. Podobný <zdenop at gmail.com> oprava "nehrýzú" na "nehryzú"
+
+2009-07-05 Z. Podobný <zdenop at gmail.com> pridaný flag c -> pre 
+	životné podstatné mená skloňujúce sa podľa vzoru chlap, ktoré 
+	majú v 1. páde mn.č. koncovku -ovia
+	- odstránené vzory z C, ktoré generovali -ovia
+	- pridané vzory do C, ktoré začínajú riešiť slová typu susedovci...
+
+2009-03-21 Z. Podobný <zdenop at gmail.com> oprava chyby oddelte 
+	(má byt oddeľte)
+
+2009-03-20 Z. Podobný <zdenop at gmail.com> drobné opravy v /A (šteňiec)
+
+2008-12-07 Zdenko Podobný <zdenop at gmail.com> oprava flagu /D (jeseň,
+	vášeň...)
+
+2008-10-07 Zdenko Podobný <zdenop at gmail.com> oprava flagu /J (napr.
+	fígeľ/J)
+	- nie je dokončené (napr peľ/J, kúpeľ je výnimka)
+
+2008-07-02 Zdenko Podobný <zdenop at gmail.com> oprava chyby vo vzore srdce
+	t->ť (napr. kotvište). Bugreport: J. Pastierik
+
+2008-06-22 Július Pastierik <pastierik at inet.sk>:
+	- odstránená chyba z čias ispellu SFX E: (-riť: -i/-ime/-te).
+	Pôvodne mala slúžiť na ohýbanie slova opatriť
+
+2008-05-12 Zdenko Podobný <zdenop at gmail.com> verzia 0.5.7-b1:
+	- odstránená chyba spôsobujúca pád FF2.0.0.x a TB2.0.0.x (všetky 
+	  znaky tabulátora boli nahradené znakmi medzery)
+2008-05-11 Zdenko Podobný <zdenop at gmail.com> verzia 0.5.7-b1:
+	- zmena kódovania na UTF-8
+	- nastavenie všetkých flagov, že je možné kombinovať suffix 
+	  a prefix flagy
+	- upravený flag O (+bubon)
+	- zrušenie vzoru gazdiná vo flagu K (riešené komplexnejšie 
+	  vo flagu Y)
+	- pridaný testovací flag b pre podstatné mená mužské rodu vzoru 
+	  dub, ktoré majú v jednotnom čísle koncovku -u v Genitíve a -e
+	  v Lokále (napr. prebal) 
+
+2008-05-10 Július Pastierik <pastierik at inet.sk>:
+	- pridaný testovací flag č pre násobky čísloviek
+	- upravený flag U (+iša -> íš)
+	- upravný flag Y (vzory otcov, matkin)
+
+2007-10-31 Zdenko Podobný <zdenop at gmail.com> verzia: 0.5.6:
+	- úprava flagov S a V, aby boli jasnejšie podmienky ohýbania
+	- opravy preklepov vo flagoch Y, E, T, R
+	- doplenie flagu Y o ohýbanie podstatných mien, ktoré sa ohýbajú 
+	  ako prídavné mená (chyžná, švagriná, skladné)
+	- drobné vylešenia flagu E
+	- odstránenie neaplikovateľných pravidiel z flagu R
+
+2005-09-11 Zdenko Podobný <zdenop at gmail.com> verzia: 0.5.5:
+	- úvodná verzia podľa ispellu

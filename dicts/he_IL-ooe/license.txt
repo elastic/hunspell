@@ -1,0 +1,31 @@
+
+Hebrew dictionary for OpenOffice.org spell checker.
+
+Copyright (C) 2008 Amit Dovev
+Copyright (C) 2010 Lior Kaplan <kaplanlior@gmail.com>
+
+This program is free software: you can redistribute it and/or modify it under 
+the terms of the GNU General Public License (GPL) version 2, as published by 
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT 
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+This Hebrew dictionary in Myspell format was generated automatically from
+data prepared by the Hspell project:
+
+	http://hspell.ivrix.org.il/
+
+Hspell version 1.1 was used.
+
+Hspell is copyright (C) 2000-2009, Nadav Har'El and Dan Kenigsberg.
+
+It is released to the public licensed under the GNU General Public License
+(GPL). See the COPYING file included in this distribution for the whole text
+of the GNU General Public License version 2.
+
+Note that not only the programs in the distribution, but also the
+dictionary files and the generated word lists, are licensed under the GPL.
+There is no warranty of any kind for the contents of this distribution.
+

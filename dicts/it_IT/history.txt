@@ -1,0 +1,12 @@
+2001 Gianluca Turconi inizia a creare il dizionario italiano per MySpell da usare all'iterno di OpenOffice.org. Gianluca realizza da solo tutte le versioni fino alla 1.6 compresa.
+
+2002 negli ultimi mesi dell'anno Davide Prina inizia a collaborare al progetto introducendo l'uso di un database (PostgreSQL) per la gestione del dizionario. La collaborazione parte dalle modifiche fatte alla versione 1.6 per realizzare la versione 1.7
+
+2004 a settembre Gianluca Turconi termina la collaborazione attiva al progetto
+
+10/07/2005 emissione della versione beta 2.2 (10/07/2005)
+Modifiche principali:
+* gestione verbi in -rre tramite gli affix
+* terminata pulizia dei finti verbi più evidenti (tipo bachiere/B)
+* eliminate circa 500 elisioni errate di maschili terminanti in -tore con l'articolo indeterminativofemminile (es: un'ammiratore)
+

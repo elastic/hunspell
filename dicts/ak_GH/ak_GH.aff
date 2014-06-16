@@ -1,0 +1,40 @@
+SET UTF-8 
+TRY eɛsianrtolcɔdugmphbyfvkwzEƐSIANRTOLCƆDUGMPHBYFVKWZ'
+LANG ak
+
+
+PFX B Y 2				
+PFX B 	0	m	[bfpm]		
+PFX B 	0	n	[^aeɛioɔu]	
+
+PFX C Y 2				
+PFX C 	me	wo	.	
+PFX C	wo	me	.	
+
+SFX D Y 2			
+SFX D	0	wa	[aeɛioɔu]	
+SFX D	0	ba	[aeɛioɔu]
+
+SFX E Y	1				
+SFX E	0	ni	[aeɛioɔu]	
+
+SFX F Y	1					
+SFX F	0	fo	[aeɛioɔu]	
+
+REP 16
+REP a e			
+REP e a			
+REP ts t		
+REP t ts
+REP yin n
+REP n yin
+REP s d
+REP d s
+REP ɛ ɛw
+REP ɛw ɛ
+REP m mu
+REP mu m
+REP dz d
+REP d dz
+REP dz s
+REP s ds

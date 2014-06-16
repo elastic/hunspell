@@ -1,0 +1,11 @@
+﻿Ĉi tio estas Esperanta vortaro por Mozilla Firefox. Ĝi estas bazita sur la Esperanta literumilo por OpenOffice.org. Jen la originala noto en tiu literumilo:
+---------------------------------------------------------------------------- 
+Priskribo
+
+Ĉi tio estas esperanta literumilo por OpenOffice.org en la MySpell-formato. Ĝi estas kreita surbaze de la literumilo por ISpell fare de Sergio Pokrovskij. En la MySpell-formaton tradukis Dmitri Gabinski.
+
+Disvastigo
+
+Ĉi tiu literumilo estas disvastigata laŭ la GNU-a ĝenerala publika permesilo (Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA). This spellchecker is available on the terms of GNU General Public License (Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA).
+----------------------------------------------------------------------------
+Do Ĉi tiu vortaro kompreneble estas ankaŭ disvastigata laŭ la GNU-a ĝenerala publika permesilo (GNU GPL).

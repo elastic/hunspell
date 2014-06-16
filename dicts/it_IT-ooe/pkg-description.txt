@@ -1,0 +1,21 @@
+Strumenti linguistici italiani:
+
+* dizionario italiano per il correttore ortografico
+  Copyright (C) 2001, 2002 Gianluca Turconi
+  Copyright (C) 2002, 2003, 2004 Gianluca Turconi and Davide Prina
+  Copyright (C) 2004, 2005, 2006, 2007 Davide Prina
+  Versione 2.4                       Licenza: GPL 3.0 o superiore
+  WEB: http://linguistico.sf/wiki/doku.php?id=dizionario_italiano
+
+* thesaurus italiano per i sinonimi
+  Copyright (C) 2004,2005,2006,2007,2008 Daniela Volta
+  Copyright (C) 2008 Giovanni Zuliani
+  Copyright (C) 2006,2007,2008 Davide Prina
+  Versione 2.0.9.l                 Licenza: AGPL 3.0 o superiore
+  WEB: http://linguistico.sf/wiki/doku.php?id=thesaurus_italiano
+
+* sillabatore italiano
+  Copyright (C) Claudio Beccari
+  Copyright (C) Giuseppe Bilotta
+  Versione ?                                                       Licenza: LGPL
+  WEB: http://wiki.services.openoffice.org/wiki/Dictionaries#Italian_.28Italy.29

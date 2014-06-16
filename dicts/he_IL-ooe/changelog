@@ -1,0 +1,41 @@
+dict-he (2010.11.05)
+
+  * Use Hunspell format instead of Myspell format for dictionaries.
+  * Add an icon.
+
+ -- Lior Kaplan <kaplan@debian.org>  Sun, 05 Nov 2010 14:38:36 +0200
+
+dict-he (2010.09.16)
+
+  * Use Hspell version 1.1 for dictionary.
+  * Sync identifier and version number with source extension (part of the 
+    Hebrew language pack) to enable future updates and upgrades.
+  * Update display name and add a link to Hspell homepage in 
+    description.xml (also for Hebrew interface).
+
+ -- Lior Kaplan <kaplan@debian.org>  Sun, 31 Oct 2010 00:11:46 +0200
+
+2008-Sep-14
+    Released version 0.2 [First public release]. 
+
+    Uploaded to OpenOffice.org extensions repository:
+        http://extensions.services.openoffice.org/project/dict-he
+
+    Included files:
+        META-INF [Directory]
+            manifest.xml
+        changelog
+        COPYING
+        description.xml
+        dictionaries.xcu
+        he_IL.aff
+        he_IL.dic
+        README.txt
+
+    The he_IL.aff and he_IL.dic files were generated automatically from 
+    data prepared by the Hspell project. Hspell version 1.0 was used.
+    Hspell version 1.0 and the files he_IL.aff and he_IL.dic are copyrighted
+    by Nadav Har'El and Dan Kenigsberg.
+
+    -- This OO.o extension was created by Amit Dovev.
+

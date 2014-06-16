@@ -1,0 +1,3 @@
+NZ Dictionary Changelog
+
+2008-12-03	Geoff Palmer	Converted old OOo2 NZ dictionary into OOo3 Extension format.

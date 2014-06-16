@@ -1,0 +1,10 @@
+4.2 from 15.04.2010
+===================
+  * Changed license from GPL to GPL/LGPL/MPL which will allow
+distribution by some programs that requires spell checking but
+does not like GPL such as OOo, Firefox, Chrome, etc.
+  * Added about 200 words.
+  * Started ChangeLog in English. All documents written before
+in Bulgarian will be replaced with English version. Old versions
+that are in Bulgarian will stay in repository, but will not be
+packaged. Only English version of docs will be distributed.

@@ -1,0 +1,17 @@
+version 0.0.20060327.3 (2 March 2011)
+
+  * add changelog (inside the .xpi)
+  * support Firefox 4
+
+version 0.0.20060327.2 (3 December 2007)
+
+  * add documentation (inside the .xpi)
+
+version 0.0.20060327.1 (21 December 2006)
+
+  * add description
+  * add icon (snatched from Arvid Axelsson's official theme for Thunderbird 2)
+
+version 0.0.20060327 (25 November 2006)
+
+  * initial release

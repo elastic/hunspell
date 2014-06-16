@@ -1,0 +1,19 @@
+Salam,
+
+To install:
+    1- Copy the files "th_ar.dat" and "th_ar.idx" to  /usr/share/myspell/dicts/
+     cp th_ar.dat th_ar.idx /usr/share/myspell/dicts/
+    2- Edit the file /etc/openoffice/dictionary.lst with you favorite editor to add in the last line: THES ar TN th_ar 
+     Example: gedit /etc/openoffice/dictionary.lst
+    3-Configure Openoffice.org:
+      From the menu Tools/Options:Language sittings:Writing aids, Choose Openoffice.org New Thesaurus; Then Edit: For the language Arabic (Tunis) you must have the "Openoffice.org New Thesaurus" actived.
+
+To use:
+    Lauch OpenOffice;org and write any word from the list:
+أغلق، إهلاك، تأْليف، تصفح، حيلة، ركض، شريف، شكر، صلى، غسل، فتح، فكر، قارئ، قرأَ، كتب، مؤلف، أسلوب، مغرب
+    Select any one and from the menu: Tools/Language choose -> Thesaurus
+
+    Thanks
+
+    Mohamed kebdani med.kebdani@gmail.com 
+

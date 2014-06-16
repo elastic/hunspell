@@ -1,0 +1,48 @@
+Upper Sorbian spelling dictionary
+=================================
+
+Upper Sorbian dictionary for use with the Mozilla spell checker.
+
+Słownik hornjoserbšćiny - prawopisna kontrola za Mozilla.
+
+Upstream author: Prof. Dr. Eduard Werner
+License: GNU General Public License (version 2 or later)
+
+
+Description
+===========
+
+This extension is a spelling dictionary for Firefox, Thunderbird, and
+Seamonkey. It can be downloaded from:
+
+  <https://addons.mozilla.org/browse/type:3>
+
+The upstream author is Prof. Dr. Eduard Werner (Edward Wornar).
+
+
+Copyright and licensing
+=======================
+
+* dictionaries/hsb.aff
+* dictionaries/hsb.dic
+
+    Downloaded from:
+
+      <http://sora05.philol.uni-leipzig.de/download/hsb_DE.zip>
+
+    Author: Eduard Werner
+    License: GPL
+
+* skin/spellcheck.png
+
+    Part of Thunderbird 2.0:
+
+      <mail/themes/qute/mail/compose/compose-toolbar.png>
+
+    Author: Arvid Axelsson
+    License: Mozilla MPL/GPL/LGPL tri-license
+
+Other files are in the public domain. Some of them were created with the
+help of Benjamin Smedbergs' dictionary packager:
+
+  <http://benjamin.smedbergs.us/dictionary-packager/>

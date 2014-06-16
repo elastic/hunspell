@@ -1,0 +1,244 @@
+SET iso8859-15
+TRY aesrnit-'lmoucèvdpzhbgàqjféí·òçxóïúükAyEMSCLBPwGITORVDFJN.UHZÈÒQÀ½öXKWÍãëñÇY
+
+MAP 6
+MAP eêëéè
+MAP oöòó
+MAP iïí
+MAP úü
+MAP aàã
+MAP cç
+
+PFX A Y 1
+PFX A   0          des        [íéóòèaàcbedgfihjmlonqpsrutv]             # 262969
+
+PFX B Y 3
+PFX B   0          vs'arrèr   [hcsg]                                    # 266
+PFX B   0          v'aveu     [sd]                                      # 110
+PFX B   0          v          [aàeièíoésrutò]                           # 239460
+
+PFX C Y 1
+PFX C   0          b'         [aàeièíoéóòuú]                            # 236243
+
+PFX D Y 1
+PFX D   0          v'         [aàeièíoéóòuú]                            # 236242
+
+PFX E Y 3
+PFX E   0          tortil     [hl]                                      # 365
+PFX E   0          talabar    [sd]                                      # 308
+PFX E   0          t'         [aàeièíoéóòuú]                            # 236244
+
+PFX F Y 3
+PFX F   0          vs'esbor   [rl]                                      # 164
+PFX F   0          vorrol     [h]                                       # 364
+PFX F   0          vs'        [aàeièíoéóòuú]                            # 236240
+
+PFX G Y 1
+PFX G   0          m'         [aàeièíoéóòuú]                            # 236242
+
+PFX H Y 3
+PFX H   0          n'ahre     [smdg]                                    # 1
+PFX H   0          qu'empoc   [h]                                       # 126
+PFX H   0          qu'        [aàeièíoéóòuú]                            # 236244
+
+PFX I Y 1
+PFX I   0          a          [cbdgfihjmlonqpsrutvxç]                   # 101571
+
+PFX J Y 1
+PFX J   0          d          [aàeièmoéóruò]                            # 49483
+
+PFX K Y 3
+PFX K   0          desfi      [sldn]                                    # 345
+PFX K   0          despul     [h]                                       # 363
+PFX K   0          d'         [aAeàièÀÍoIòuOÈyEúUüÒ]                    # 47886
+
+SFX L Y 1
+SFX L   0          n          [aàeéèímïióruo]            # 462886
+
+SFX M Y 2
+SFX M   0          'n         [aàeièíé]                  # 299930
+SFX M   0          egem-ve'n  [cbdihmlonpsrutv]          # 282
+
+SFX N Y 1
+SFX N   0          m          [aedgièkoòuhr]             # 250332
+
+SFX O Y 2
+SFX O   0          -n'i        [se]                       # 248472
+SFX O   0          uem-nse-n'i [qaeionsruï]                # 134
+
+SFX P Y 4
+SFX P   0          -me        [acbdgpihmçonésrutvzè]     # 245653
+SFX P   0          -te        [acbdgpihmçonésrutvzè]     # 245653
+SFX P   0          -ve        [acbdgpihmçonésrutvzè]     # 245653
+SFX P   0          -nse       [acbdgpihmçonésrutvzè]     # 245653
+
+SFX Q Y 3
+SFX Q   0          etz-las-te [cbdgihmlnpsrtv]           # 253
+SFX Q   0          -ne        [asuon]                   # 204349
+SFX Q   0          mèsse      [aeiosru]                  # 133
+
+SFX R Y 4
+SFX R   0          s-me       [aeiíoòu]                  # 102182
+SFX R   0          z-se       [t]                        # 9835
+SFX R   0          ssegèsse   [aueo]                     # 122
+SFX R   0          sa-las-nse [aeimlonpsrutò]            # 163
+
+SFX S Y 3
+SFX S   0          im-te      [cbdghmnpsrut]             # 125
+SFX S   0          s-ne       [auo]                     # 102174
+SFX S   0          lhe        [iaeuo]                   # 694
+
+SFX T Y 2
+SFX T   0          s-nse      [aeiíoòu]                 # 102182
+SFX T   0          eja'u-nse  [cbdihmlonpsrut]           # 279
+
+SFX U Y 4
+SFX U   0          s-te        [aeiíoòu]                  # 102182
+SFX U   0          quem-las-te [aeionsruï]                # 134
+SFX U   0          s-ve        [aeiíoòu]                  # 102182
+SFX U   0          catz-la-ne  [aeionsruï]                # 134
+
+SFX V Y 1
+SFX V   0          ram        [acbedièíoórut]            # 85588
+
+SFX W Y 2
+SFX W   0          s-i        [ao]                       # 82824
+SFX W   0          em-s'i     [cbedgfihmlonpsrutvxz]     # 1459
+
+SFX X Y 2
+SFX X   0          -i         [as]                       # 82825
+SFX X   0          gi         [aeièonrut]                # 1102
+
+SFX Y Y 2
+SFX Y   0          -li        [aécbdçpihvmngsrutèz]      # 80005
+SFX Y   0          -se        [aécbdçpihvmngsrutèz]      # 80005
+
+SFX a Y 2
+SFX a   0          s-se       [aeiíòu]                   # 19358
+SFX a   0          -las-ve    [aécbdgihvmçnpsrutèz]      # 41305
+
+SFX b Y 1
+SFX b   0          i          [òhacbedgfièmlonpsrutvxz]  # 57628
+
+SFX c Y 2
+SFX c   0          z-los-ve   [t]                       # 9835
+SFX c   0          -la-nse    [aécbdgihvmçnpsrutèz]      # 41305
+
+SFX d Y 4
+SFX d   0          m-se-n'i   [ièea]                     # 8609
+SFX d   0          lizavi     [ai]                       # 123
+SFX d   0          s-n'i      [o]                        # 41412
+SFX d   0          eja-te-n'i [cbdihmlonpsrut]           # 279
+
+SFX e Y 1
+SFX e   0          am         [cbegçfihmlonpsrutvxzd]   # 50229
+
+SFX f Y 1
+SFX f   0          em         [cbedgfihmlonpsrutvxz]     # 48748
+
+SFX g Y 1
+SFX g   0          èi         [cbedgfihjmlonpsrutvxz]    # 47925
+
+SFX h Y 3
+SFX h   0          escam      [cbdghmnpsrutv]            # 340
+SFX h   0          sim        [aeèímnsòu]                # 47024
+SFX h   0          ssaram     [iaueo]                   # 467
+
+SFX i Y 1
+SFX i   0          sem        [aeimlonpsrut]             # 47561
+
+SFX j Y 2
+SFX j   0          segèssem   [iesuo]                   # 134
+SFX j   0          ssem       [aeièíoóu]                 # 47367
+
+SFX k Y 2
+SFX k   0          ssim       [àeèíoóu                  # 46920
+SFX k   0          ejarem     [cbdihmlonpsrut]           # 367
+
+SFX l Y 2
+SFX l   0          àn         [r]                       # 45522
+SFX l   0          naràn      [aegimorut]                # 416
+
+SFX m Y 3
+SFX m   0          én         [r]                       # 45520
+SFX m   0          ven        [aeièloruò]                # 117
+SFX m   0          ularén     [acedgihmpst]              # 117
+
+SFX n Y 2
+SFX n   0          sejavi     [iesuo]                   # 134
+SFX n   0          -l'i       [aécbdgihvmçnpsrutèz]      # 41305
+
+SFX o Y 2
+SFX o   0          uin        [cdghjnt]                 # 177
+SFX o   0          sin        [aeièmlonpsòutr]           # 41141
+
+SFX p Y 1
+SFX p   0          -se'n      [aécbdgihvmçnpsrutèz]      # 41318
+
+SFX q Y 1
+SFX q   0          -te'n      [aécbdgihvmçnpsrutèz]      # 41306
+
+SFX r Y 37
+SFX r   0          -ve'n      [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -nse'n     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -me'n      [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -li'n      [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -la'n      [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -v'i       [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-n'i   [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -se-n'i    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -ve-n'i    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -s'i       [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -t'i       [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -las-i     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -m'i       [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -me-n'i    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -ns'i      [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-i     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -nse-n'i   [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -te-n'i    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo-te     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -las-te    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -las-nse   [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -las-ne    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-ne    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -la-te     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo-ne     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-me    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-nse   [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-te    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -los-ve    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -las-me    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo-me     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -la-me     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo-ve     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -la-ve     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo-nse    [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -la-ne     [aécbdgihvmçnpsrutèz]      # 41305
+SFX r   0          -lo        [aécbdgihvmçnpsrutèz]      # 41305
+
+SFX s Y 1
+SFX s   0          si         [aeièmlonpsòutr]           # 41145
+
+SFX t Y 1
+SFX t   0          se         [aeimlonpsòutr]            # 41138
+
+SFX u Y 1
+SFX u   0          sen        [aeièmlonpsòutr]           # 41128
+
+SFX v Y 1
+SFX v   0          ri         [acbedièorut]              # 41102
+
+SFX w Y 2
+SFX w   0          í'u-li     [cbdghmnpsrutv]            # 126
+SFX w   0          ssi        [aeièou]                   # 40947
+
+SFX x Y 2
+SFX x   0          dejar      [aeionru]                  # 125
+SFX x   0          sse        [aeièïuo]                  # 40945
+
+SFX y Y 2
+SFX y   0          dejarén    [aeionru]                  # 119
+SFX y   0          ssin       [aeièouv]                   # 40948
+
+

@@ -1,0 +1,1036 @@
+#----------------------------------
+#     written by Moheb S. Mekhaiel
+#     mohebm@gmx.de
+#     copt@moheb.de
+#     ver 0.2
+#     Dec. 2006
+#------------------------------------
+# 	used Flags
+#	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+#      ABCDEFG#####MN#P#RST#V####
+#	abcdefghijklmnopqrstuvwxyz
+#	abcdef###j##mnop#rstuvwxyz
+#---------------------------------------
+# Note: if you uncommnet any line in the PFX or SFX definitions
+# do not reduce the total number in its header. It seems to be a bug
+# in hunspell
+#
+
+SET UTF-8
+
+TRY ⲑⲱ̀ⲉⲣⲧⲯⲩⲓⲟⲡⲁⲥⲇⲫⲅⲏϫⲕⲗⲍⲝⲭϣⲃⲛⲙϣϯϥϩϧϭⲐⲰⲈⲢⲦⲮⲨⲒⲞⲠⲀⲤⲆⲪⲄⲎϪⲔⲖⲌⲜⲬϢⲂⲚⲘϢϮϤϨϦϬ
+WORDCHARS ⲑ̀ⲱⲉⲣⲧ̀ⲯⲩⲓⲟⲡⲁⲥⲇⲫⲅⲏϫⲕⲗⲍⲝⲭϣⲃⲛⲙϣϯϥϩϧϭⲐⲰⲈⲢⲦⲮⲨⲒⲞⲠⲀⲤⲆⲪⲄⲎϪⲔⲖⲌⲜⲬϢⲂⲚⲘϢϮϤϨϦϬ
+
+COMPLEXPREFIXES
+COMPOUNDMIN 2
+#PSEUDOROOT U
+
+REP 34
+REP ⲫ̀ⲓⲱⲧ Ⲫ̀ⲓⲱⲧ
+REP ⲁⲣⲓ ⲙⲁ
+REP ⲙⲁ ⲁⲣⲓ
+REP ⲛⲅ ⲅⲅ
+REP ⲅ ϫ
+REP ϫ ⲅ
+REP ⲙ ⲛ
+REP ⲛ ⲙ
+REP ⲡ ⲣ
+REP ⲣ ⲡ
+REP Ⲡ̀ Ⲡ
+REP Ⲡ Ⲡ̀
+REP ⲡ̀ ⲡ
+REP ⲡ ⲡ̀
+REP ⲥ̀ ⲥ
+REP ⲥ ⲥ̀
+REP ⲫ̀ ⲫ
+REP ⲫ ⲫ̀
+REP ⲉ̀ ⲉ
+REP ⲉ ⲉ̀
+REP ⲛ̀ ⲛ
+REP ⲛ ⲛ̀
+REP ⲟ̀ ⲟ
+REP ⲟ ⲟ̀
+REP ⲙ̀ ⲙ
+REP ⲙ ⲙ̀
+REP ⲏ̀ ⲏ
+REP ⲏ ⲏ̀
+REP ⲧ̀ ⲧ
+REP ⲧ ⲧ̀
+REP ϥ̀ ϥ
+REP ϥ ϥ̀
+REP ϯ ⲧⲓ
+REP ⲧⲓ ϯ
+
+################# higer level prefixes #########
+
+# PFX E : most higher level (can not get a prefix before)
+PFX E Y 6
+PFX E/s 0 ⲁ .
+PFX E 0 ⲉ̀ .
+PFX E 0 ⲛ̀ [^ⲃⲙⲡⲫⲯϥⲂⲘⲠⲪⲮϥ]
+PFX E 0 ⲛ̀ [̀^ⲃⲙⲡⲫⲯϥⲂⲘⲠⲪⲮϥ]
+PFX E 0 ⲙ̀ [ⲃⲙⲡⲫⲯϥⲂⲘⲠⲪⲮϥ]
+PFX E 0 ⲙ̀ [̀ⲃⲙⲡⲫⲯϥⲂⲘⲠⲪⲮϥ]
+
+#relative pronoun
+PFX V Y 4
+PFX V 0 ⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX V 0 ⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX V 0 ⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX V 0 ⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+
+#masculine relative pronoun
+PFX A Y 17
+PFX A 0 ⲡⲉⲧ .
+PFX A 0 ⲫⲏⲉ .
+PFX A 0 ⲫⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲫⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲫⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲫⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲫⲏⲉⲧ/E ⲟⲩ
+PFX A 0 ⲙ̀ⲫⲏⲉ .
+PFX A 0 ⲙ̀ⲫⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲙ̀ⲫⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲙ̀ⲫⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲙ̀ⲫⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲉ̀ⲫⲏⲉ .
+PFX A 0 ⲉ̀ⲫⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲉ̀ⲫⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲉ̀ⲫⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX A 0 ⲉ̀ⲫⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+
+#feminine relative pronoun
+PFX B Y 15
+PFX B 0 ⲑⲏⲉ .
+PFX B 0 ⲑⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲑⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲑⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲑⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲛ̀ⲑⲏⲉ .
+PFX B 0 ⲛ̀ⲑⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲛ̀ⲑⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲛ̀ⲑⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲛ̀ⲑⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲉ̀ⲑⲏⲉ .
+PFX B 0 ⲉ̀ⲑⲏⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲉ̀ⲑⲏⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲉ̀ⲑⲏⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX B 0 ⲉ̀ⲑⲏⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+
+#plural relative pronoun
+PFX C Y 15
+PFX C 0 ⲛⲏⲉ .
+PFX C 0 ⲛⲏⲉⲧ/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛⲏⲉⲧ/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛⲏⲉⲑ/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛⲏⲉⲑ/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛ̀ⲛⲏⲉ .
+PFX C 0 ⲛ̀ⲛⲏⲉⲧ/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛ̀ⲛⲏⲉⲧ/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛ̀ⲛⲏⲉⲑ/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲛ̀ⲛⲏⲉⲑ/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲉ̀ⲛⲏⲉ .
+PFX C 0 ⲉ̀ⲛⲏⲉⲧ/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲉ̀ⲛⲏⲉⲧ/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲉ̀ⲛⲏⲉⲑ/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX C 0 ⲉ̀ⲛⲏⲉⲑ/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+
+PFX T Y 5
+PFX T 0 ⲡⲉⲧ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] REL_PRONOUN
+PFX T 0 ⲡⲉⲧ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX T 0 ⲡⲉⲑ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] REL_PRONOUN
+PFX T 0 ⲡⲉⲑ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX T 0 ⲛⲉⲧ . REL_PRONOUN
+
+#####################adjectives  ################
+# adjectives + prefixes for the 4th verb form (qualitative)
+#   - can get the prefix of the 3rd present tense
+#   - can get the prefix of imperfect
+#   - can get the prefix of 1st present
+#   - can get the first present articles (126)
+# 
+PFX j Y 42
+PFX j 0 /V/A/B/C/E .
+PFX j 0 ⲡⲓ/E .
+PFX j 0 ⲛⲓ/E .
+PFX j 0 ⲟⲩ/E .
+PFX j 0 ϩⲁⲛ/E .
+PFX j 0 ⲥⲁ/E .
+PFX j 0 ⲁⲣⲉ .
+PFX j 0 ⲉⲧ .
+PFX j 0 ⲁⲕ .
+PFX j 0 ⲁⲥ .
+PFX j 0 ⲁϥ .
+PFX j 0 ⲁⲩ .
+PFX j 0 ⲡⲉⲧ/E . REL_PRONOUN
+PFX j 0 ⲡⲉⲑ/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] REL_PRONOUN
+PFX j 0 ⲡⲉⲑ/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] REL_PRONOUN
+PFX j 0 ⲉⲓ . PRESENT3_1PSG
+PFX j 0 ⲉⲕ . PRESENT3_2PSGM
+PFX j 0 ⲉⲣⲉ . PRESENT3_2PSGF
+PFX j 0 ⲉϥ . PRESENT3_3PSGM
+PFX j 0 ⲉⲥ . PRESENT3_3PSGF
+PFX j 0 ⲉⲛ . PRESENT3_1PPL
+PFX j 0 ⲉⲣⲉⲧⲉⲛ . PRESENT3_2PPL
+PFX j 0 ⲉⲩ . PRESENT3_3PPL
+PFX j 0 ⲛⲁⲓ/A/V/E . IMPERFECT_1PSG
+PFX j 0 ⲛⲁⲕ/A/V/E . IMPERFECT_2PSGM
+PFX j 0 ⲛⲁⲣⲉ/B/V/E . IMPERFECT_2PSGF
+PFX j 0 ⲛⲁϥ/A/V/E . IMPERFECT_3PSGM
+PFX j 0 ⲛⲁⲥ/B/V/E . IMPERFECT_3PSGF
+PFX j 0 ⲛⲁⲛ/C/V/E . IMPERFECT_1PPL
+PFX j 0 ⲛⲁⲣⲉⲧⲉⲛ/C/V/E . IMPERFECT_2PPL
+PFX j 0 ⲛⲁⲩ/C/V/E . IMPERFECT_3PPL
+PFX j 0 ϯ/A/V/E . PRESENT1_1PSG
+PFX j 0 ⲕ̀/A/V/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX j 0 ⲕ̀/A/V/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX j 0 ⲭ̀/A/V/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX j 0 ⲭ̀/A/V/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX j 0 ⲧⲉ/B/V/E . PRESENT1_2PSGF_p126
+PFX j 0 ϥ̀/A/V/E . PRESENT1_3PSGM_p126
+PFX j 0 ⲥ̀/B/V/E . PRESENT1_3PSGF_p126
+PFX j 0 ⲧⲉⲛ/C/V/E . PRESENT1_1PPL_p126
+PFX j 0 ⲧⲉⲧⲉⲛ/C/V/E . PRESENT1_2PPL_p126
+PFX j 0 ⲥⲉ/C/V/E . PRESENT1_3PPL_p126
+
+######################## nouns ################
+# gender independant noun prefixes (Mask. + Fem.+Pl.)
+PFX N Y 7
+PFX N 0 /E/V .
+PFX N 0 ⲥⲁ/E .
+PFX N 0 ⲛⲁ/E .
+PFX N 0 ⲉⲧⲉ .
+PFX N 0 ⲟⲩ/E .
+PFX N 0 ⲉⲩ/E . [ⲉ̀+ⲟⲩ]
+PFX N 0 ⲕⲉ/E .
+
+# possessive adjectives (only after ⲡ̀-, ⲧ̀- ⲛ̀-)
+SFX D Y 8
+SFX D 0 ⲁ .
+SFX D 0 ⲉⲕ .
+SFX D 0 ⲉ .
+SFX D 0 ⲉϥ .
+SFX D 0 ⲉⲥ .
+SFX D 0 ⲉⲛ .
+SFX D 0 ⲉⲧⲉⲛ .
+SFX D 0 ⲟⲩ .
+
+########
+# Fem.
+########
+PFX F Y 32
+PFX F 0 /V/B/E . 
+PFX F 0 ⲥⲁ/E .
+PFX F 0 ⲛⲁ/E .
+PFX F 0 ⲛⲁⲧ̀/E .
+PFX F 0 ⲛⲁⲑ̀/E .
+PFX F 0 ⲛⲁⲕⲉ/E .
+PFX F 0 ⲉⲧⲉ .
+PFX F 0 ⲟⲩ/E .
+PFX F 0 ⲉⲩ/E . [ⲉ̀+ⲟⲩ]
+PFX F 0 ⲕⲉ/E .
+PFX F 0 ϯⲕⲉ/E .
+PFX F 0 ϯ/E .
+PFX F 0 ⲧ̀ⲕⲉ/E .
+PFX F 0 ⲧ̀/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX F 0 ⲧ̀/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX F 0 ⲑ̀/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX F 0 ⲑ̀/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX F 0 ⲧⲁⲓ/E . 
+PFX F 0 ⲧⲁⲓⲕⲉ/E . 
+PFX F 0 ⲑⲏⲉⲧⲟⲩ .
+PFX F 0 ⲧⲁ/E . POSSESSIVE_1PSG
+PFX F 0 ⲧⲁⲕⲉ/E . 
+PFX F 0 ⲧⲉⲕ/E . POSSESSIVE_2PSGM
+PFX F 0 ⲧⲉⲕⲕⲉ/E . 
+PFX F 0 ⲧⲉ/E . POSSESSIVE_2PSGF
+PFX F 0 ⲧⲉϥ/E . POSSESSIVE_3PSGM
+PFX F 0 ⲧⲉϥⲕⲉ/E . 
+PFX F 0 ⲧⲉⲥ/E . POSSESSIVE_3PSGF
+PFX F 0 ⲧⲉⲛ/E . POSSESSIVE_1PPL
+PFX F 0 ⲧⲉⲛⲕⲉ/E . 
+PFX F 0 ⲧⲉⲧⲉⲛ/E . POSSESSIVE_2PPL
+PFX F 0 ⲧⲟⲩ/E . POSSESSIVE_3PPL
+
+########
+# Mask.
+########
+PFX M Y 33
+PFX M 0 /V/A/E .
+PFX M 0 ⲥⲁ/E .
+PFX M 0 ⲛⲁ/E .
+PFX M 0 ⲉⲧⲉ .
+PFX M 0 ⲟⲩ/E .
+PFX M 0 ⲉⲩ/E . [ⲉ̀+ⲟⲩ]
+PFX M 0 ⲕⲉ/E .
+PFX M 0 ⲡ̀ⲕⲉ/E .
+PFX M 0 ⲡⲓ/E .
+PFX M 0 ⲡⲓⲕⲉ/E .
+PFX M 0 ⲡⲁⲓⲕⲉ/E .
+PFX M 0 ⲉⲣ .
+PFX M 0 ⲡ̀/E ⲟⲩ [exception]
+PFX M 0 ⲡ̀/E ⲓⲁϩ [exception]
+PFX M 0 ⲡ̀/E [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX M 0 ⲡ̀/E [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX M 0 ⲫ̀/E [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX M 0 ⲫ̀/E [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ]
+PFX M 0 ⲡⲁⲓ/E .
+PFX M 0 ϣⲏⲉⲑ/E ⲟⲩ
+PFX M 0 ⲡⲉⲑ/E ⲟⲩ
+PFX M 0 ⲡⲁ/E . POSSESSIVE_1PSG
+PFX M 0 ⲡⲁⲕⲉ/E . 
+PFX M 0 ⲡⲉⲕ/E . POSSESSIVE_2PSGM
+PFX M 0 ⲡⲉⲕⲕⲉ/E . 
+PFX M 0 ⲡⲉ/E . POSSESSIVE_2PSGF
+PFX M 0 ⲡⲉϥ/E . POSSESSIVE_3PSGM
+PFX M 0 ⲡⲉϥⲕⲉ/E .
+PFX M 0 ⲡⲉⲥ/E . POSSESSIVE_3PSGF
+PFX M 0 ⲡⲉⲛ/E . POSSESSIVE_1PPL
+PFX M 0 ⲡⲉⲛⲕⲉ/E . 
+PFX M 0 ⲡⲉⲧⲉⲛ/E . POSSESSIVE_2PPL
+PFX M 0 ⲡⲟⲩ/E . POSSESSIVE_3PPL
+
+########
+# PL.
+########
+PFX P Y 22
+PFX P 0 /V/C/E .
+PFX P 0 ⲥⲁ/E .
+PFX P 0 ϩⲁⲛ/E .
+PFX P 0 ϩⲁⲛⲕⲉ/E .
+PFX P 0 ⲛⲓ/E .
+PFX P 0 ⲫⲁⲛⲓ . 
+PFX P 0 ⲛⲓⲕⲉ/E .
+PFX P 0 ⲛⲉⲛ/E .
+PFX P 0 ⲛⲉⲛⲕⲉ/E .
+PFX P 0 ⲛⲁⲓ/E .
+PFX P 0 ⲛⲁⲓⲕⲉ/E .
+PFX P 0 ⲛⲁ/E . POSSESSIVE_1PSG
+PFX P 0 ⲛⲉⲕ/E . POSSESSIVE_2PSGM
+PFX P 0 ⲛⲉ/E . POSSESSIVE_2PSGF
+PFX P 0 ⲛⲉϥ/E . POSSESSIVE_3PSGM
+PFX P 0 ⲛⲉϥⲕⲉ/E .
+PFX P 0 ⲛⲉⲥ/E . POSSESSIVE_3PSGF
+PFX P 0 ⲛⲉⲛ/E . POSSESSIVE_1PPL
+PFX P 0 ⲛⲉⲧⲉⲛ/E . POSSESSIVE_2PPL
+PFX P 0 ⲛⲉⲧⲉⲛⲕⲉ/E . 
+PFX P 0 ⲛⲟⲩ/E . POSSESSIVE_3PPL
+PFX P 0 ⲛⲟⲩⲕⲉ/E .
+
+# all possible SUFFIXES for nouns:
+# - possessive pronouns
+#
+SFX S Y 8
+SFX S 0 ⲧ [^ⲟⲱⲧ] ACC_1PSG
+SFX S 0 ⲓ .
+SFX S 0 ⲕ .
+SFX S 0 ϥ .
+SFX S 0 ⲥ .
+SFX S 0 ⲛ .
+SFX S 0 ⲧⲉⲛ .
+SFX S 0 ⲟⲩ .
+
+# Greek suffixes (to be done..)
+#SFX G Y 1
+# SFX G 0 ⲟⲥ .
+
+######################## verbs ################
+
+#------------------------------------------
+# this list contains all possible PREFIXES for verbs 
+# (all tenses!)
+#------------------------------------------
+
+PFX p Y 383
+PFX p 0 /V/A/B/C/E . 
+PFX p 0 ⲫⲏⲉⲑⲛⲁ/E . REL_PRONOUN_M
+PFX p 0 ⲑⲏⲉⲑⲛⲁ/E . REL_PRONOUN_F
+PFX p 0 ⲛⲏⲉⲑⲛⲁ/E . REL_PRONOUN_P
+PFX p 0 ⲑ̀ⲣⲓ/E . 
+PFX p 0 ⲫⲏⲉⲧⲁϥⲑ̀ⲣⲓ/E . 
+PFX p 0 ⲡⲉⲧⲁϥⲑ̀ⲣⲓ/E . 
+PFX p 0 ⲉⲑⲣⲓ/E . 
+PFX p 0 ⲉⲧ . 
+PFX p 0 ⲉⲧⲉ/E .
+PFX p 0 ⲑ̀ⲣⲉⲕ/E .
+PFX p 0 ⲉⲑⲣⲉⲕ/E .
+PFX p 0 ⲑ̀ⲣⲉ/E .
+PFX p 0 ⲑ̀ⲣⲉϥ/E .
+PFX p 0 ⲉⲑⲣⲉϥ/E .
+PFX p 0 ⲑ̀ⲣⲉⲥ/E .
+PFX p 0 ⲉⲑⲣⲉⲥ/E .
+PFX p 0 ⲑ̀ⲣⲉⲛ/E .
+PFX p 0 ⲉⲑⲣⲉⲛ/E .
+PFX p 0 ⲁⲩⲑ̀ⲣⲉⲛ/E .
+PFX p 0 ⲑ̀ⲣⲉⲧⲉⲛ/E .
+PFX p 0 ⲉⲑⲣⲉⲧⲉⲛ/E .
+PFX p 0 ⲑ̀ⲣⲟⲩ/E .
+PFX p 0 ⲉⲑⲣⲟⲩ/E .
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉⲕ . [TILL_NOT_1PSG]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉ .  [TILL_NOT_2PSG]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉϥ .  [TILL_NOT_3PSGM]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉⲥ .  [TILL_NOT_3PSGF]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉⲛ .  [TILL_NOT_1PPL]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉⲧⲉⲛ .  [TILL_NOT_1PPL]
+PFX p 0 ⲙ̀ⲡⲉⲛⲑ̀ⲣⲟⲩ .  [TILL_NOT_2PPL]
+PFX p 0 ⲙ̀ⲡⲉⲛⲉ̀ⲑⲣⲟⲩ .  [TILL_NOT_3PPL]
+PFX p 0 ⲡⲉⲧ/E . REL_PRONOUN_M
+PFX p 0 ⲡⲉⲧⲉ/E .
+PFX p 0 ⲡⲉ/E [ϯ]
+PFX p 0 ⲛⲉⲧ . REL_PRONOUN_P
+PFX p 0 ⲁ . IMPERATIVE
+PFX p 0 ⲙ̀ⲡⲉⲣ . NEG_IMPERATIVE
+PFX p 0 ϯ/E . PRESENT1_1PSG
+PFX p 0 ⲡⲉϯ/E . PRESENT1_1PSG
+PFX p 0 ⲕ̀ [ⲓⲟⲙ] (ex:ⲙⲉⲩⲓ,ⲙⲟⲧⲉⲛ,ⲓⲣⲓ,ⲓⲛⲓ,ⲟϩⲓ)
+PFX p 0 ⲕ̀ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX p 0 ⲕ̀ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX p 0 ⲭ̀ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX p 0 ⲭ̀ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] PRESENT1_2PSGM
+PFX p 0 ⲧⲉ . PRESENT1_2PSGF
+PFX p 0 ϥ̀ . PRESENT1_3PSGM
+PFX p 0 ⲥ̀ . PRESENT1_3PSGF
+PFX p 0 ⲧⲉⲛ . PRESENT1_1PPL
+PFX p 0 ⲧⲉⲧⲉⲛ . PRESENT1_2PPL
+PFX p 0 ⲥⲉ/E . PRESENT1_3PPL
+PFX p 0 ⲡⲉⲧⲥⲉ/E . 
+PFX p 0 ⲛ̀ϯ . NEG_PRESENT1_1PSG
+PFX p 0 ⲛ̀ⲕ̀ [^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] NEG_PRESENT1_2PSGM
+PFX p 0 ⲛ̀ⲕ̀ [̀^ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] NEG_PRESENT1_2PSGM
+PFX p 0 ⲛ̀ⲭ̀ [ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] NEG_PRESENT1_2PSGM
+PFX p 0 ⲛ̀ⲭ̀ [̀ⲃⲓⲣⲛⲗⲟⲙⲂⲒⲢⲚⲖⲞⲘ] NEG_PRESENT1_2PSGM
+PFX p 0 ⲛ̀ⲧⲉ . NEG_PRESENT1_2PSGF
+PFX p 0 ⲛ̀ϥ̀ . NEG_PRESENT1_3PSGM
+PFX p 0 ⲫⲏⲉⲧⲛ̀ϥ̀ . 
+PFX p 0 ⲛ̀ⲥ̀ . NEG_PRESENT1_3PSGF
+PFX p 0 ⲛ̀ⲧⲉⲛ . NEG_PRESENT1_1PPL
+PFX p 0 ⲛ̀ⲧⲉⲧⲉⲛ . NEG_PRESENT1_2PPL
+PFX p 0 ⲛ̀ⲥⲉ . NEG_PRESENT1_3PPL
+PFX p 0 ⲁⲓ/E . PRESENT2_1PSG
+PFX p 0 ⲡⲉⲧⲁⲓ/E .
+PFX p 0 ⲁⲕ/E . PRESENT2_2PSGM
+PFX p 0 ⲁⲭ/E . 
+PFX p 0 ⲡⲉⲧⲁⲕ .
+PFX p 0 ⲁⲣⲉ/E . PRESENT2_2PSGF
+PFX p 0 ⲁϥ/E . PRESENT2_3PSGM
+PFX p 0 ⲛⲏⲉⲧⲁϥ .
+PFX p 0 ⲡⲉⲧⲁϥ/E .
+PFX p 0 ⲁⲥ/E . PRESENT2_3PSGF
+PFX p 0 ⲡⲉⲧⲁⲥ/E . 
+PFX p 0 ⲁⲛ/E . PRESENT2_1PPL
+PFX p 0 ⲁⲣⲉⲧⲉⲛ/E . PRESENT2_2PPL
+PFX p 0 ⲁⲩ/E . PRESENT2_3PPL
+PFX p 0 ⲡⲉⲧⲁⲩ/E .
+PFX p 0 ⲛ̀ⲁⲓ . NEG_PRESENT2_1PSG
+PFX p 0 ⲛ̀ⲁⲕ . NEG_PRESENT2_2PSGM
+PFX p 0 ⲛ̀ⲁⲣⲉ . NEG_PRESENT2_2PSGF
+PFX p 0 ⲛ̀ⲁϥ . NEG_PRESENT2_3PSGM
+PFX p 0 ⲛ̀ⲁⲥ . NEG_PRESENT2_3PSGF
+PFX p 0 ⲛ̀ⲁⲛ . NEG_PRESENT2_1PPL
+PFX p 0 ⲛ̀ⲁⲣⲉⲧⲉⲛ . NEG_PRESENT2_2PPL
+PFX p 0 ⲛ̀ⲁⲩ . NEG_PRESENT2_3PPL
+PFX p 0 ⲉⲓ/E . PRESENT3_1PSG
+PFX p 0 ⲉⲕ/E . PRESENT3_2PSGM
+PFX p 0 ⲉⲣⲉ . PRESENT3_2PSGF
+PFX p 0 ⲉϥ/E . PRESENT3_3PSGM
+PFX p 0 ⲉⲥ/E . PRESENT3_3PSGF
+PFX p 0 ⲉⲛ/E . PRESENT3_1PPL
+PFX p 0 ⲉⲣⲉⲧⲉⲛ/E . PRESENT3_2PPL
+PFX p 0 ⲉⲩ/E . PRESENT3_3PPL
+PFX p 0 ⲉϯ/E . ET_PRESENT3_1PSG
+PFX p 0 ⲉⲧⲉⲕ/E . ET_PRESENT3_2PSGM
+PFX p 0 ⲡⲉⲧⲉⲕ/E . 
+PFX p 0 ⲉⲧⲉ/E . ET_PRESENT3_2PSGF
+PFX p 0 ⲉⲧⲉϥ/E . ET_PRESENT3_3PSGM
+PFX p 0 ⲡⲉⲧⲉϥ/E .
+PFX p 0 ⲉⲧⲉⲥ/E . ET_PRESENT3_3PSGF
+PFX p 0 ⲡⲉⲧⲉⲥ/E .
+PFX p 0 ⲉⲧⲉⲛ/E . ET_PRESENT3_1PPL
+PFX p 0 ⲉⲧⲉⲧⲉⲛ/E . ET_PRESENT3_2PPL
+PFX p 0 ⲡⲉⲧⲉⲧⲉⲛ/E .
+PFX p 0 ⲉⲧⲟⲩ/E . ET_PRESENT3_3PPL
+PFX p 0 ⲡⲉⲧⲟⲩ/E . 
+PFX p 0 ⲫⲏⲉϯ/E . VYET_PRESENT3_1PSG
+PFX p 0 ⲫⲏⲉⲧⲉⲕ/E . VYET_PRESENT3_2PSGM
+PFX p 0 ⲫⲏⲉⲧⲉ/E . VYET_PRESENT3_2PSGF
+PFX p 0 ⲫⲏⲉⲧⲉϥ/E . VYET_PRESENT3_3PSGM
+PFX p 0 ⲫⲏⲉⲧⲉⲥ/E . VYET_PRESENT3_3PSGF
+PFX p 0 ⲫⲏⲉⲧⲉⲛ/E . VYET_PRESENT3_1PPL
+PFX p 0 ⲫⲏⲉⲧⲉⲧⲉⲛ/E . VYET_PRESENT3_2PPL
+PFX p 0 ⲫⲏⲉⲧⲟⲩ/E . VYET_PRESENT3_3PPL
+PFX p 0 ⲑⲏⲉϯ/E . TYET_PRESENT3_1PSG
+PFX p 0 ⲑⲏⲉⲧⲉⲕ/E . THYET_PRESENT3_2PSGM
+PFX p 0 ⲑⲏⲉⲧⲉ/E . THYET_PRESENT3_2PSGF
+PFX p 0 ⲑⲏⲉⲧⲉϥ/E . THYET_PRESENT3_3PSGM
+PFX p 0 ⲑⲏⲉⲧⲉⲥ/E . THYET_PRESENT3_3PSGF
+PFX p 0 ⲑⲏⲉⲧⲉⲛ/E . THYET_PRESENT3_1PPL
+PFX p 0 ⲑⲏⲉⲧⲉⲧⲉⲛ/E . THYET_PRESENT3_2PPL
+PFX p 0 ⲑⲏⲧⲟⲩ/E . THYET_PRESENT3_3PPL
+PFX p 0 ⲛⲏⲉϯ/E . NYET_PRESENT3_1PSG
+PFX p 0 ⲛⲏⲉⲧⲉⲕ/E . NYET_PRESENT3_2PSGM
+PFX p 0 ⲛⲏⲉⲧⲉ/E . NYET_PRESENT3_2PSGF
+PFX p 0 ⲛⲏⲉⲧⲉϥ/E . NYET_PRESENT3_3PSGM
+PFX p 0 ⲛⲏⲉⲧⲉⲥ/E . NYET_PRESENT3_3PSGF
+PFX p 0 ⲛⲏⲉⲧⲉⲛ/E . NYET_PRESENT3_1PPL
+PFX p 0 ⲛⲏⲉⲧⲉⲧⲉⲛ/E . NYET_PRESENT3_2PPL
+PFX p 0 ⲛⲏⲉⲧⲟⲩ/E . NYET_PRESENT3_3PPL
+PFX p 0 ⲛⲁ .  FUTUR1_NOUN
+PFX p 0 ⲉⲑⲛⲁ/E .  ET_FUTUR1_NOUN
+PFX p 0 ⲫⲏⲉⲑⲛⲁ/E .  
+PFX p 0 ⲡⲉⲑⲛⲁ/E .  PET_FUTUR1_NOUN
+PFX p 0 ϯⲛⲁ/E . FUTUR1_1PSG
+PFX p 0 ⲫⲏⲉϯⲛⲁ/E . 
+PFX p 0 ⲑⲏⲉϯⲛⲁ/E . 
+PFX p 0 ⲭ̀ⲛⲁ . FUTUR1_2PSG
+PFX p 0 ⲧⲉⲛⲁ . FUTUR1_2PSGF
+PFX p 0 ⲧⲉⲣⲁ .
+PFX p 0 ϥ̀ⲛⲁ . FUTUR1_3PSGM
+PFX p 0 ⲥ̀ⲛⲁ . FUTUR1_3PSGF
+PFX p 0 ⲧⲉⲛⲛⲁ . FUTUR1_1PPL
+PFX p 0 ⲡⲉⲧⲉⲛⲛⲁ . 
+PFX p 0 ⲧⲉⲧⲉⲛⲛⲁ . FUTUR1_2PPL
+PFX p 0 ⲡⲉⲧⲉⲧⲉⲛⲛⲁ . 
+PFX p 0 ⲥⲉⲛⲁ . FUTUR1_3PPL
+PFX p 0 ⲛ̀ϯⲛⲁ . NEG_FUTUR1_1PSG
+PFX p 0 ⲛ̀ⲭ̀ⲛⲁ . NEG_FUTUR1_2PSG
+PFX p 0 ⲛ̀ⲧⲉⲛⲁ . NEG_FUTUR1_2PSGF
+PFX p 0 ⲛ̀ϥ̀ⲛⲁ . NEG_FUTUR1_3PSGM
+PFX p 0 ⲛ̀ⲥ̀ⲛⲁ . NEG_FUTUR1_3PSGF
+PFX p 0 ⲉⲧⲛ̀ⲥ̀ⲛⲁ . 
+PFX p 0 ⲛ̀ⲧⲉⲛⲛⲁ . NEG_FUTUR1_1PPL
+PFX p 0 ⲛ̀ⲧⲉⲧⲉⲛⲛⲁ . NEG_FUTUR1_2PPL
+PFX p 0 ⲛ̀ⲥⲉⲛⲁ . NEG_FUTUR1_3PPL
+PFX p 0 ⲁⲓⲛⲁ . FUTUR2_1PSG
+PFX p 0 ⲁⲭⲛⲁ . FUTUR2_2PSGM
+PFX p 0 ⲁⲕⲛⲁ . ex:ⲁⲕⲛⲁϣⲉ
+PFX p 0 ⲁⲣⲉⲛⲁ . FUTUR2_2PSGF
+PFX p 0 ⲁϥⲛⲁ . FUTUR2_3PSGM
+PFX p 0 ⲉⲧⲁϥⲛⲁ . 
+PFX p 0 ⲛⲏⲉⲧⲁϥⲛⲁ . 
+PFX p 0 ⲁⲥⲛⲁ . FUTUR2_3PSGF
+PFX p 0 ⲁⲛⲛⲁ . FUTUR2_1PPL
+PFX p 0 ⲁⲣⲉⲧⲉⲛⲛⲁ . FUTUR2_2PPL
+PFX p 0 ⲁⲩⲛⲁ . FUTUR2_3PPL
+PFX p 0 ⲛ̀ⲁⲓⲛⲁ . NEG_FUTUR2_1PSG
+PFX p 0 ⲛ̀ⲁⲭⲛⲁ . NEG_FUTUR2_2PSGM
+PFX p 0 ⲛ̀ⲁⲣⲉⲛⲁ . NEG_FUTUR2_2PSGF
+PFX p 0 ⲛ̀ⲁϥⲛⲁ . NEG_FUTUR2_3PSGM
+PFX p 0 ⲛ̀ⲁⲥⲛⲁ . NEG_FUTUR2_3PSGF
+PFX p 0 ⲛ̀ⲁⲣⲉⲧⲉⲛⲛⲁ . NEG_FUTUR2_2PPL
+PFX p 0 ⲛ̀ⲁⲩⲛⲁ . NEG_FUTUR2_3PPL
+PFX p 0 ⲉⲓⲛⲁ . FUTUR3_1PSG
+PFX p 0 ⲉⲭⲛⲁ . FUTUR3_2PSGM
+PFX p 0 ⲉⲕⲛⲁ . FUTUR3_2PSGM
+PFX p 0 ⲉⲣⲉⲛⲁ . FUTUR3_2PSGF
+PFX p 0 ⲉϥⲛⲁ . FUTUR3_3PSGM
+PFX p 0 ⲉⲥⲛⲁ . FUTUR3_3PSGF
+PFX p 0 ⲉⲛⲛⲁ . FUTUR3_1PPL
+PFX p 0 ⲉⲣⲉⲧⲉⲛⲛⲁ . FUTUR3_2PPL
+PFX p 0 ⲉⲩⲛⲁ . FUTUR3_3PPL
+PFX p 0 ⲉϯⲛⲁ . ET_FUTUR3_1PSG
+PFX p 0 ⲡⲉϯⲛⲁ . 
+PFX p 0 ⲉⲧⲉⲕⲛⲁ . ET_FUTUR3_2PSGM
+PFX p 0 ⲡⲉⲧⲉⲕⲛⲁ . 
+PFX p 0 ⲫⲏⲉⲧⲉⲕⲛⲁ .
+PFX p 0 ⲛⲏⲉⲧⲉⲕⲛⲁ/E .
+PFX p 0 ⲉⲧⲉⲛⲁ . ET_FUTUR3_2PSGF
+PFX p 0 ⲉⲧⲉϥⲛⲁ . ET_FUTUR3_3PSGM
+PFX p 0 ⲫⲏⲉⲧⲉϥⲛⲁ . 
+PFX p 0 ⲛⲏⲉⲧⲉϥⲛⲁ . 
+PFX p 0 ⲡⲉⲧⲉϥⲛⲁ . 
+PFX p 0 ⲉⲧⲉⲥⲛⲁ . ET_FUTUR3_3PSGF
+PFX p 0 ⲉⲧⲉⲛⲛⲁ . ET_FUTUR3_1PPL
+PFX p 0 ⲫⲏⲉⲧⲉⲛⲛⲁ/E .
+PFX p 0 ⲡⲉⲧⲉⲛⲛⲁ/E .
+PFX p 0 ⲉⲧⲉⲧⲉⲛⲛⲁ . ET_FUTUR3_2PPL
+PFX p 0 ⲛⲏⲉⲧⲉⲧⲉⲛⲛⲁ .
+PFX p 0 ⲫⲏⲉⲧⲉⲧⲉⲛⲛⲁ/E .
+PFX p 0 ⲉⲧⲟⲩⲛⲁ . ET_FUTUR3_3PPL
+PFX p 0 ⲛⲏⲉⲧⲟⲩⲛⲁ/E . ET_FUTUR3_3PPL
+PFX p 0 ⲡⲉⲧⲟⲩⲛⲁ . PET_FUTUR3_3PPL
+PFX p 0 ⲫⲏⲉⲧⲟⲩⲛⲁ/E .
+PFX p 0 ⲁⲧⲉⲧⲉⲛ/E . PERFECT_AFFIRM_2PPL
+PFX p 0 ⲙ̀ⲡⲓ . NEG_PERFECT_1PSG 
+PFX p 0 ⲙ̀ⲡⲉⲕ . NEG_PERFECT_2PSGM
+PFX p 0 ⲙ̀ⲡⲉ . NEG_PERFECT_2PSGF
+PFX p 0 ⲙ̀ⲡⲉϥ . NEG_PERFECT_3PSGM   
+PFX p 0 ⲙ̀ⲡⲉⲥ . NEG_PERFECT_3PSGF
+PFX p 0 ⲙ̀ⲡⲉⲛ . NEG_PERFECT_1PPL
+PFX p 0 ⲙ̀ⲡⲉⲧⲉⲛ . NEG_PERFECT_2PPL
+PFX p 0 ⲙ̀ⲡⲟⲩ . NEG_PERFECT_3PPL
+PFX p 0 ⲉⲧⲉⲙ̀ⲡⲟⲩ . 
+PFX p 0 ⲉⲧⲁⲓ/E . PRE-PERFECT_1PSG
+PFX p 0 ⲉⲧⲁⲕ/E . PRE-PERFECT_2PSG
+PFX p 0 ⲉⲧⲁⲣⲉ/E . PRE-PERFECT_2PSGF
+PFX p 0 ⲉⲧⲁϥ/E . PRE-PERFECT_3PSGM
+PFX p 0 ⲉⲧⲁⲥ/E . PRE-PERFECT_3PSGF
+PFX p 0 ⲉⲧⲁⲛ/E . PRE-PERFECT_1PPL
+PFX p 0 ⲉⲧⲁⲣⲉⲧⲉⲛ/E . PRE-PERFECT_2PPL
+PFX p 0 ⲡⲉⲧⲁⲣⲉⲧⲉⲛ/E .
+PFX p 0 ⲉⲧⲁⲩ/E . PRE-PERFECT_3PPL
+PFX p 0 ⲫⲏⲉⲧⲁⲓ/E . VY_PRE-PERFECT_1PSG
+PFX p 0 ⲫⲏⲉⲧⲁⲕ/E . VY_PRE-PERFECT_2PSG
+PFX p 0 ⲫⲏⲉⲧⲁⲣⲉ/E . VY_PRE-PERFECT_2PSGF
+PFX p 0 ⲫⲏⲉⲧⲁϥ/E . VY_PRE-PERFECT_3PSGM
+PFX p 0 ⲫⲏⲉⲧⲁⲥ/E . VY_PRE-PERFECT_3PSGF
+PFX p 0 ⲫⲏⲉⲧⲁⲛ/E . VY_PRE-PERFECT_1PPL
+PFX p 0 ⲫⲏⲉⲧⲁⲣⲉⲧⲉⲛ/E . VY_PRE-PERFECT_2PPL
+PFX p 0 ⲫⲏⲉⲧⲁⲩ/E . VY_PRE-PERFECT_3PPL
+PFX p 0 ⲑⲏⲉⲧⲁⲓ/E . THY_PRE-PERFECT_1PSG
+PFX p 0 ⲑⲏⲉⲧⲁⲕ/E . THY_PRE-PERFECT_2PSG
+PFX p 0 ⲑⲏⲉⲧⲁⲣⲉ/E . THY_PRE-PERFECT_2PSGF
+PFX p 0 ⲑⲏⲉⲧⲁϥ/E . THY_PRE-PERFECT_3PSGM
+PFX p 0 ⲑⲏⲉⲧⲁⲥ/E . THY_PRE-PERFECT_3PSGF
+PFX p 0 ⲑⲏⲉⲧⲁⲛ/E . THY_PRE-PERFECT_1PPL
+PFX p 0 ⲑⲏⲉⲧⲁⲣⲉⲧⲉⲛ/E . THY_PRE-PERFECT_2PPL
+PFX p 0 ⲑⲏⲉⲧⲁⲩ/E . THY_PRE-PERFECT_3PPL
+PFX p 0 ⲛⲏⲉⲧⲁⲓ/E . NY_PRE-PERFECT_1PSG
+PFX p 0 ⲛⲏⲉⲧⲁⲕ/E . NY_PRE-PERFECT_2PSG
+PFX p 0 ⲛⲏⲉⲧⲁⲣⲉ/E . NY_PRE-PERFECT_2PSGF
+PFX p 0 ⲛⲏⲉⲧⲁϥ/E . NY_PRE-PERFECT_3PSGM
+PFX p 0 ⲛⲏⲉⲧⲁⲥ/E . NY_PRE-PERFECT_3PSGF
+PFX p 0 ⲛⲏⲉⲧⲁⲛ/E . NY_PRE-PERFECT_1PPL
+PFX p 0 ⲛⲏⲉⲧⲁⲣⲉⲧⲉⲛ/E . NY_PRE-PERFECT_2PPL
+PFX p 0 ⲛⲏⲉⲧⲁⲩ/E . NY_PRE-PERFECT_3PPL
+PFX p 0 ⲛ̀ⲉⲧⲁⲓ . NEG_PRE-PERFECT_1PSG
+PFX p 0 ⲛ̀ⲉⲧⲁⲕ . NEG_PRE-PERFECT_2PSG
+PFX p 0 ⲛ̀ⲉⲧⲁⲣⲉ . NEG_PRE-PERFECT_2PSGF
+PFX p 0 ⲛ̀ⲉⲧⲁϥ . NEG_PRE-PERFECT_3PSGM
+PFX p 0 ⲛ̀ⲉⲧⲁⲥ . NEG_PRE-PERFECT_3PSGF
+PFX p 0 ⲛ̀ⲉⲧⲁⲛ . NEG_PRE-PERFECT_1PPL
+PFX p 0 ⲛ̀ⲉⲧⲁⲣⲉⲧⲉⲛ . NEG_PRE-PERFECT_2PPL
+PFX p 0 ⲛ̀ⲉⲧⲁⲩ . NEG_PRE-PERFECT_3PPL
+PFX p 0 ⲛ̀ⲧⲁ . SUBJUNC_THAT_1PSG
+PFX p 0 ⲛ̀ⲧⲉⲕ . SUBJUNC_THAT_2PSGM
+PFX p 0 ⲛ̀ⲧⲉ . SUBJUNC_THAT_2PSGF
+PFX p 0 ⲛ̀ⲧⲉϥ . SUBJUNC_THAT_3PSGM
+PFX p 0 ⲛ̀ⲧⲉⲥ . SUBJUNC_THAT_3PSGF
+PFX p 0 ⲛ̀ⲧⲉⲛ . SUBJUNC_THAT_1PPL
+PFX p 0 ⲛ̀ⲧⲉⲧⲉⲛ . SUBJUNC_THAT_2PPL
+PFX p 0 ⲛ̀ⲧⲟⲩ . SUBJUNC_THAT_3PPL
+PFX p 0 ϣ̀ⲧⲉⲙ/E .
+PFX p 0 ⲛ̀ⲥⲉϣ̀ⲧⲉⲙ . 
+PFX p 0 ⲛ̀ⲧⲁϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_1PSG
+PFX p 0 ⲛ̀ⲧⲉⲕϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_2PSGM
+PFX p 0 ⲛ̀ⲧⲉϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_2PSGF
+PFX p 0 ⲛ̀ⲧⲉϥϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_3PSGM
+PFX p 0 ⲛ̀ⲧⲉⲥϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_3PSGF
+PFX p 0 ⲛ̀ⲧⲉⲛϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_1PPL
+PFX p 0 ⲛ̀ⲧⲉⲧⲉⲛϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_2PPL
+PFX p 0 ⲛ̀ⲧⲟⲩϣ̀ⲧⲉⲙ . SUBJUNC_MAY_NOT_3PPL
+PFX p 0 ϣⲁⲛϯ . SUBJUNC_UNTIL_1PSG
+PFX p 0 ϣⲁⲛⲧⲉⲕ . SUBJUNC_UNTIL_2PSGM
+PFX p 0 ϣⲁⲛⲧⲣⲉ . SUBJUNC_UNTIL_2PSGF
+PFX p 0 ϣⲁⲛⲧⲉϥ . SUBJUNC_UNTIL_3PSGM
+PFX p 0 ϣⲁⲛⲧⲉⲥ . SUBJUNC_UNTIL_3PSGF
+PFX p 0 ϣⲁⲛⲧⲉⲛ . SUBJUNC_UNTIL_1PPL
+PFX p 0 ϣⲁⲛⲧⲉⲧⲉⲛ . SUBJUNC_UNTIL_2PPL
+PFX p 0 ϣⲁⲛⲧⲟⲩ . SUBJUNC_UNTIL_3PPL
+PFX p 0 ϣⲁϯ . SUBJUNC_UNTIL_1PSG
+PFX p 0 ϣⲁⲧⲉⲕ . SUBJUNC_UNTIL_2PSGM
+PFX p 0 ϣⲁⲧⲣⲉ . SUBJUNC_UNTIL_2PSGF
+PFX p 0 ϣⲁⲧⲉϥ . SUBJUNC_UNTIL_3PSGM
+PFX p 0 ϣⲁⲧⲉⲥ . SUBJUNC_UNTIL_3PSGF
+PFX p 0 ϣⲁⲧⲉⲛ . SUBJUNC_UNTIL_1PPL
+PFX p 0 ϣⲁⲧⲉⲧⲉⲛ . SUBJUNC_UNTIL_2PPL
+PFX p 0 ϣⲁⲧⲟⲩ . SUBJUNC_UNTIL_3PPL
+PFX p 0 ϣⲁⲓ/E . HAB_PRES_AFFIRM_1PSG
+PFX p 0 ϣⲁⲕ/E . HAB_PRES_AFFIRM_2PSGM
+PFX p 0 ϣⲁⲣⲉ/E . HAB_PRES_AFFIRM_2PSGF
+PFX p 0 ϣⲁϥ/E . HAB_PRES_AFFIRM_3PSGM
+PFX p 0 ϣⲁⲥ/E . HAB_PRES_AFFIRM_3PSGF
+PFX p 0 ϣⲁⲛ/E . HAB_PRES_AFFIRM_1PPL
+PFX p 0 ϣⲁⲣⲉⲧⲉⲛ/E . HAB_PRES_AFFIRM_2PPL
+PFX p 0 ϣⲁⲩ/E . HAB_PRES_AFFIRM_3PPL
+PFX p 0 ⲙ̀ⲡⲁⲓ . HAB_PRES_NEG_1PSG
+PFX p 0 ⲙ̀ⲡⲁⲕ . HAB_PRES_NEG_2PSGM
+PFX p 0 ⲙ̀ⲡⲁⲣⲉ . HAB_PRES_NEG_2PSGF
+PFX p 0 ⲙ̀ⲡⲁϥ . HAB_PRES_NEG_3PSGM
+PFX p 0 ⲙ̀ⲡⲁⲥ . HAB_PRES_NEG_3PSGF
+PFX p 0 ⲙ̀ⲡⲁⲛ . HAB_PRES_NEG_1PPL
+PFX p 0 ⲙ̀ⲡⲁⲣⲉⲧⲉⲛ . HAB_PRES_NEG_2PPL
+PFX p 0 ⲙ̀ⲡⲁⲩ . HAB_PRES_NEG_3PPL
+PFX p 0 ⲛⲁⲓ/E . IMPERFECT_1PSG
+PFX p 0 ⲛⲁⲕ/E . IMPERFECT_2PSGM
+PFX p 0 ⲛⲁⲣⲉ/E . IMPERFECT_2PSGF
+PFX p 0 ⲛⲁϥ/A/E . IMPERFECT_3PSGM
+PFX p 0 ⲛⲁⲥ/C/E . IMPERFECT_3PSGF
+PFX p 0 ⲑⲏⲉⲛⲁⲥ . 
+PFX p 0 ⲛⲁⲛ/E . IMPERFECT_1PPL
+PFX p 0 ⲛⲁⲣⲉⲧⲉⲛ/E . IMPERFECT_2PPL
+PFX p 0 ⲛⲁⲩ/E . IMPERFECT_3PPL
+PFX p 0 ⲉⲓⲉ . EMPH_FUT_AFFIRM_1PSG
+PFX p 0 ⲉⲕⲉ/T . EMPH_FUT_AFFIRM_2PSGM
+PFX p 0 ⲡⲉⲧⲉⲕⲉ .
+PFX p 0 ⲉⲣⲉ . EMPH_FUT_AFFIRM_2PSGF
+PFX p 0 ⲉϥⲉ . EMPH_FUT_AFFIRM_3PSGM
+PFX p 0 ⲉⲥⲉ . EMPH_FUT_AFFIRM_3PSGF
+PFX p 0 ⲉⲛⲉ . EMPH_FUT_AFFIRM_1PPL
+PFX p 0 ⲉⲣⲉⲧⲉⲛⲉ . EMPH_FUT_AFFIRM_2PPL
+PFX p 0 ⲉⲩⲉ . EMPH_FUT_AFFIRM_3PPL
+PFX p 0 ⲛ̀ⲛⲁ . NEG_EMPH_FUT_1PSG
+PFX p 0 ⲛ̀ⲛⲉⲕ . NEG_EMPH_FUT_2PSGM
+PFX p 0 ⲛ̀ⲛⲉ . NEG_EMPH_FUT_2PSGF
+PFX p 0 ⲛ̀ⲛⲉϥ . NEG_EMPH_FUT_3PSGM
+PFX p 0 ⲛ̀ⲛⲉⲥ . NEG_EMPH_FUT_3PSGF
+PFX p 0 ⲛ̀ⲛⲉⲛ . NEG_EMPH_FUT_1PPL
+PFX p 0 ⲛ̀ⲛⲉⲧⲉⲛ . NEG_EMPH_FUT_2PPL
+PFX p 0 ⲛ̀ⲛⲟⲩ . NEG_EMPH_FUT_3PPL
+PFX p 0 ⲛⲁⲓⲛⲁ/E . FUT_IMPERFECT_1PSG
+PFX p 0 ⲛⲁⲭⲛⲁ/E . FUT_IMPERFECT_2PSGM
+PFX p 0 ⲛⲁⲣⲉⲛⲁ/E . FUT_IMPERFECT_2PSGF
+PFX p 0 ⲛⲁϥⲛⲁ/E . FUT_IMPERFECT_3PSGM
+PFX p 0 ⲫⲏⲉⲛⲁϥⲛⲁ/E . 
+PFX p 0 ⲛⲁⲥⲛⲁ/E . FUT_IMPERFECT_3PSGF
+PFX p 0 ⲛⲁⲛⲛⲁ/E . FUT_IMPERFECT_1PPL
+PFX p 0 ⲛⲁⲣⲉⲧⲉⲛⲛⲁ/E . FUT_IMPERFECT_2PPL
+PFX p 0 ⲛⲁⲩⲛⲁ/E . FUT_IMPERFECT_3PPL
+PFX p 0 ⲙ̀ⲡⲁϯ . BEFORE_1PSG
+PFX p 0 ⲙ̀ⲡⲁⲧⲉⲕ . BEFORE_2PSGM
+PFX p 0 ⲙ̀ⲡⲁⲧⲉ . BEFORE_2PSGF
+PFX p 0 ⲙ̀ⲡⲁⲧⲉϥ . BEFORE_3PSGM
+PFX p 0 ⲙ̀ⲡⲁⲧⲉⲥ . BEFORE_3PSGF
+PFX p 0 ⲙ̀ⲡⲁⲧⲉⲛ . BEFORE_1PPL
+PFX p 0 ⲙ̀ⲡⲁⲧⲉⲧⲉⲛ . BEFORE_2PPL
+PFX p 0 ⲙ̀ⲡⲁⲧⲟⲩ . BEFORE_3PPL
+PFX p 0 ⲁⲧⲉⲧⲉⲛ . PLU_PERFECT_AFFIRM_2PPL
+PFX p 0 ⲙⲁⲣⲓ . OPTATIVE_1PSG
+PFX p 0 ⲙⲁⲣⲉⲕ . OPTATIVE_2PSGM
+PFX p 0 ⲙⲁⲣⲉ . OPTATIVE_2PSGF
+PFX p 0 ⲙⲁⲣⲉϥ . OPTATIVE_3PSGM
+PFX p 0 ⲙⲁⲣⲉⲥ . OPTATIVE_3PSGF
+PFX p 0 ⲙⲁⲣⲉⲛ . OPTATIVE_1PPL
+PFX p 0 ⲙⲁⲣⲉⲧⲉⲛ . OPTATIVE_2PPL
+PFX p 0 ⲙⲁⲣⲟⲩ . OPTATIVE_3PPL
+PFX p 0 ⲁⲓϣⲁⲛ . COND_1PSG
+PFX p 0 ⲁⲕϣⲁⲛ . COND_2PSGM
+PFX p 0 ⲁⲣⲉϣⲁⲛ . COND_2PSGF
+PFX p 0 ⲁϥϣⲁⲛ . COND_3PSGM
+PFX p 0 ⲫⲏⲉⲧⲁϥϣⲁⲛ . 
+PFX p 0 ⲛⲏⲉⲧⲁϥϣⲁⲛ .
+PFX p 0 ⲁⲥϣⲁⲛ . COND_3PSGF
+PFX p 0 ⲁⲛϣⲁⲛ . COND_1PPL
+PFX p 0 ⲁⲧⲉⲧⲉⲛϣⲁⲛ . COND_2PPL
+PFX p 0 ⲁⲣⲉⲧⲉⲛϣⲁⲛ . 
+PFX p 0 ⲁⲩϣⲁⲛ . COND_3PPL
+PFX p 0 ⲛⲏⲉⲧⲁⲩϣⲁⲛ .
+PFX p 0 ⲑⲏⲉⲧⲁⲩϣⲁⲛ .
+PFX p 0 ⲁⲓϣ̀ⲧⲉⲙ . NEG_COND_1PSG
+PFX p 0 ⲁⲕϣ̀ⲧⲉⲙ . NEG_COND_2PSGM
+PFX p 0 ⲁⲣⲉϣ̀ⲧⲉⲙ . NEG_COND_2PSGF
+PFX p 0 ⲁϥϣ̀ⲧⲉⲙ . NEG_COND_3PSGM
+PFX p 0 ϣ̀ⲧⲉⲙⲑ̀ⲣⲉϥ/E .
+PFX p 0 ⲁⲥϣ̀ⲧⲉⲙ . NEG_COND_3PSGF
+PFX p 0 ⲁⲛϣ̀ⲧⲉⲙ . NEG_COND_1PPL
+PFX p 0 ⲁ ϣ̀ⲧⲉⲙ . NEG_COND_2PPL
+PFX p 0 ⲁⲣⲉⲧⲉⲛϣ̀ⲧⲉⲙ . NEG_COND_2PPL
+PFX p 0 ⲁⲩϣ̀ⲧⲉⲙ . NEG_COND_3PPL
+
+#------------------------------------------
+# Pronomial SUFIXES  
+#
+#------------------------------------------
+# accusative pronouns, simplified!
+̀# I have observed that "ⲑⲏⲛⲟⲩ" has a special treatement:
+# since it (also?) follows status constructus/nominalis (-), it should
+# be written separatley and not joined
+ 
+SFX s Y 32
+SFX s 0 ⲓ [ⲟⲱ] ACC_1PSG
+SFX s 0 ⲏⲓ [ⲛ]
+SFX s ⲧⲉ ϯ ⲧⲉ
+SFX s 0 ⲟⲓ [ⲣ] ACC_1PSG
+SFX s 0 ⲧ [^ⲟⲱ] ACC_1PSG
+SFX s 0 ⲉⲧ [ⲃⲙ] ACC_1PSG
+SFX s 0 ⲏⲧ ϧⲟⲑⲃ
+SFX s 0 ⲛ [ⲁⲉⲓⲏⲟⲱ] ACC_1PPL
+SFX s 0 ⲧⲉⲛ . ACC_1PPL
+SFX s 0 ⲉⲛ [^ⲁⲉⲓⲏⲟⲱ] ACC_1PPL
+SFX s 0 ⲕ/E . ACC_2PSGM
+SFX s 0 ⲁⲕ [ⲛ]
+SFX s 0 ⲉⲕ [ⲃⲙ]
+SFX s 0 ⲥ . ACC_2PSGF
+SFX s 0 ⲉⲥ [ⲃⲙ] ACC_2PSGF
+SFX s 0 ⲉ .
+SFX s 0 ⲓ [^ⲟⲱ] ACC_2PSGF
+SFX s 0 ϯ [^ⲟⲱⲧ] ACC_2PSGF
+SFX s ⲧ ϯ [ⲧ] ACC_2PSGF
+SFX s ⲟ ⲱⲧⲉⲛ [ⲟ] ACC_2PPL
+SFX s 0 ⲧⲉⲛ . ACC_2PPL
+̀SFX s 0 ⲑⲏⲛⲟⲩ . ACC_2PPL
+SFX s 0 ⲉⲛⲑⲏⲛⲟⲩ [ⲧ] 
+SFX s 0 ϥ/E . ACC_3PSGM
+SFX s ⲉ ⲁϥ/E [ⲉ] ACC_3PSGM
+SFX s 0 ⲉϥ/E [ⲃⲙ] ACC_3PSGM
+SFX s 0 ⲥ . ACC_3PSGF
+SFX s 0 ⲩ ⲁ ACC_3PPL
+SFX s 0 ⲧⲟⲩ [ⲓ1ⲟⲛ] ACC_3PPL
+SFX s ⲟ ⲱⲟⲩ [ⲟ] ACC_3PPL
+SFX s 0 ⲱⲟⲩ [ⲃⲛ] ACC_3PPL
+SFX s 0 ⲟⲩ [^ⲓⲟ] ACC_3PPL
+
+########## pronomial verbs, special cases  ###########
+
+#dec. for ⲁⲓ⸗ (make) (88)
+SFX m Y 8
+SFX m 0 ⲧ . 1PSG
+SFX m 0 ⲕ . 2PSGM
+SFX m 0 ϯ . 2PSGF
+SFX m 0 ϥ . 3PSGM
+SFX m 0 ⲥ . 3PSGF
+SFX m 0 ⲧⲉⲛ . 1PPL
+SFX m 0 ⲧⲉⲛⲑⲏⲛⲟⲩ . 2PPL
+SFX m 0 ⲧⲟⲩ . 3PPL
+
+# ⲧⲱⲛ⸗ (raise carry, (166)
+̀# sometimes: ⲧⲱⲟⲩⲛ⸗ (irregular)
+SFX n Y 9
+SFX n 0 ⲧ . 1PSG
+SFX n 0 ⲕ . 2PSGM
+SFX n 0 ϯ . 2PSGF
+SFX n ⲛ ⲟⲩⲛ . 2PSGF
+SFX n 0 ϥ . 3PSGM
+SFX n 0 ⲥ . 3PSGF
+SFX n 0 ⲧⲉⲛ . 1PPL
+SFX n ⲱⲛ ⲉⲛⲑⲏⲛⲟⲩ . 2PPL
+SFX n ⲛ ⲟⲩⲛⲟⲩ . 3PPL
+
+# ⲟⲩⲟⲛⲧ⸗ لدى
+# ⲙ̀ⲙⲟⲛⲧ⸗
+SFX o Y 15
+SFX o 0 ⲏⲓ . 1PSG
+SFX o ⲧ ϯ ⲧ 
+SFX o 0 ⲁⲕ . 2PSGM
+SFX o 0 ⲉⲕ . 
+SFX o 0 ⲉ . 2PSGF
+SFX o 0 ⲁϥ . 3PSGM
+SFX o 0 ⲉϥ . 
+SFX o 0 ⲁⲥ . 3PSGF
+SFX o 0 ⲉⲥ . 
+SFX o 0 ⲁⲛ . 1PPL
+SFX o 0 ⲉⲛ . 
+SFX o 0 ⲱⲧⲉⲛ . 2PPL
+SFX o 0 ⲉⲧⲉⲛ . 
+SFX o 0 ⲟⲩ . 3PPL
+SFX o 0 ⲱⲟⲩ . 
+
+#  ...ⲙⲉⲩⲓ
+PFX f Y 9
+PFX f 0 ⲉⲣⲡ̀ .
+PFX f 0 ⲉⲣⲡⲁ .
+PFX f 0 ⲉⲣⲡⲉⲕ .
+PFX f 0 ⲉⲣⲡⲉϥ .
+PFX f 0 ⲉⲣⲡⲉⲥ .
+PFX f 0 ⲉⲣⲡⲟⲩ .
+PFX f 0 ⲉⲣⲡⲉ .
+PFX f 0 ⲉⲣⲡⲉⲛ .
+PFX f 0 ⲉⲣⲡⲉⲧⲉⲛ .
+
+
+# special case : ⲉϩⲛⲁ⸗ a (will, desire)(462)
+# maybe ⲡⲉϫ⸗ ? (noticed: ⲡⲉϫⲁϥ, ⲡⲉϫⲁⲥ,  ⲡⲉϫⲉ so far)
+SFX k Y 8
+SFX k 0 ⲏⲓ . 1PSG
+SFX k 0 ⲁⲕ . 2PSGM
+SFX k 0 ⲉ . 2PSGF
+SFX k 0 ⲁϥ . 3PSGM
+SFX k 0 ⲁⲥ . 3PSGF
+SFX k 0 ⲁⲛ . 1PPL
+SFX k 0 ⲱⲧⲉⲛ . 2PPL
+SFX k 0 ⲱⲟⲩ . 3PPL
+
+
+############### pronouns / prepositions ################
+
+#dec. for ⲧⲏⲣ⸗ (all) (93)
+SFX a Y 7
+SFX a 0 ⲧ . 1PSG
+SFX a 0 ⲕ . 2PSGM
+SFX a 0 ⲓ . 2PSGF
+SFX a 0 ϥ . 3PSGM
+SFX a 0 ⲥ . 3PSGF
+SFX a 0 ⲉⲛ . 1PPL
+SFX a 0 ⲟⲩ . 2PPL/3PPL
+
+# ⲉⲑⲣ⸗ (so that, that, for) (95)
+SFX b Y 8
+SFX b 0 ⲓ . 1PSG
+SFX b 0 ⲉⲕ . 2PSGM
+SFX b 0 ⲉ . 2PSGF
+SFX b 0 ⲉϥ . 3PSGM
+SFX b 0 ⲉⲥ . 3PSGF
+SFX b 0 ⲉⲛ . 1PPL
+SFX b 0 ⲉⲧⲉⲛ . 2PPL
+SFX b 0 ⲟⲩ . 3PPL
+
+# ϩⲱⲕ (also) (327)
+SFX c Y 7
+SFX c 0 ⲕ . 2PSGM
+SFX c 0 ⲓ . 2PSGF
+SFX c 0 ϥ . 3PSGM
+SFX c 0 ⲥ . 3PSGF
+SFX c 0 ⲛ . 1PPL
+SFX c 0 ⲧⲉⲛ . 2PPL
+SFX c 0 ⲟⲩ . 3PPL
+
+# ⲛ̀ⲥⲱ⸗ (after, behind) (250)
+#  ⲙⲉⲛⲉⲛⲥⲱ⸗ (after this) (306)
+SFX d Y 8
+SFX d 0 ⲓ . 1PSG
+SFX d 0 ⲕ . 2PSGM
+SFX d ⲧ ϯ . 2PSGF
+SFX d 0 ϥ . 3PSGM
+SFX d 0 ⲥ . 3PSGF
+SFX d 0 ⲛ . 1PPL
+SFX d 0 ⲧⲉⲛ . 2PPL
+SFX d 0 ⲟⲩ . 3PPL
+
+# possesive pronoun (mine, yours..) (209):
+# ϥⲁ, ϥⲱ⸗ (masc.)
+# ⲑⲁ, ⲑⲱ⸗ (masc.)
+# ⲛⲁ, ⲛⲟⲩ⸗ (pl.)
+# ⲫⲱ ?
+SFX e Y 8
+SFX e 0 ⲓ . 1PSG
+SFX e 0 ⲕ . 2PSGM
+SFX e 0 ϥ . 3PSGM
+SFX e 0 ⲥ . 3PSGF
+SFX e 0 ⲛ . 1PPL
+SFX e 0 ⲧⲉⲛ . 2PPL
+SFX e 0 ⲧⲉⲧⲉⲛ . (only ⲫⲱ?)
+SFX e 0 ⲟⲩ . 3PPL
+
+#for ⲙ̀ⲙ⸗ⲟⲓ, ϩⲁⲣ⸗ⲟⲓ, ⲉⲣ⸗ⲟⲓ, ⲉϩⲟⲧⲉⲣ⸗
+SFX h Y 8
+SFX h 0 ⲟⲓ . 1PSG
+SFX h 0 ⲟⲕ . 2PSGM
+SFX h 0 ⲟ . 2PSGF
+SFX h 0 ⲟϥ . 3PSGM 
+SFX h 0 ⲟⲥ . 3PSGF
+SFX h 0 ⲟⲛ . 1PPL
+SFX h 0 ⲱⲧⲉⲛ . 2PPL
+SFX h 0 ⲱⲟⲩ . 3PPL
+
+#  ⲟⲩⲃⲏ⸗ (opposite, toward, agianst) (452)
+SFX u Y 7
+SFX u 0 ⲓ . 1PSG
+SFX u 0 ⲕ . 2PSGM
+SFX u 0 ϥ . 3PSGM
+SFX u 0 ⲥ . 3PSGF
+SFX u 0 ⲛ . 1PPL
+SFX u 0 ⲑⲏⲛⲟⲩ . 2PPL
+SFX u 0 ⲟⲩ . 3PPL
+
+#  ⲛⲁⲛ⸗ (great) (399)
+SFX v Y 8
+SFX v 0 ⲏⲓ . 1PSG
+SFX v 0 ⲉⲕ . 2PSGM
+SFX v 0 ⲉ . 2PSGF
+SFX v 0 ⲉϥ . 3PSGM
+SFX v 0 ⲉⲥ . 3PSGF
+SFX v 0 ⲉⲛ . 1PPL
+SFX v 0 ⲉⲧⲉⲛ . 2PPL
+SFX v 0 ⲉⲩ . 3PPL
+
+# pronouns: ⲛⲉⲙ (with), ⲛⲁ (=to)
+SFX x Y 8
+SFX x 0 ⲏⲓ . 1PSG
+SFX x 0 ⲁⲕ . 2PSGM
+SFX x 0 ⲉ . 2PSGF
+SFX x 0 ⲁϥ . 3PSGM
+SFX x 0 ⲁⲥ . 3PSGF
+SFX x 0 ⲁⲛ . 1PPL
+SFX x 0 ⲱⲧⲉⲛ . 2PPL
+SFX x 0 ⲱⲟⲩ . 3PPL
+
+# pronoun ϧⲉⲛ --> ⲛ̀ϧⲏⲧ⸗ (in, by) (54)
+# but 2PPL is not valid for ⲛ̀ϧⲏⲧ⸗
+# also ⲙ̀ⲙⲁⲩⲁⲧ⸗ (342), ⲁⲣⲓⲧ⸗ (do, make)(88)
+SFX y Y 7
+SFX y 0 ⲕ . 2PSGM
+SFX y ⲧ ϯ . 2PSGF
+SFX y 0 ϥ . 3PSGM
+SFX y 0 ⲥ . 3PSGF
+SFX y 0 ⲉⲛ . 1PPL
+SFX y 0 ⲉⲛⲑⲏⲛⲟⲩ [^ⲏ]ⲧ 2PPL
+SFX y 0 ⲟⲩ . 3PPL
+
+# pronouns 	ϩ̀ⲣⲁ⸗ (=to)(23),
+#  		ⲉ̀ϩ̀ⲣⲁ⸗ (towards),
+#		ⲛⲁϩⲣ⸗ (in front) (202)
+SFX z Y 10
+SFX z 0 ⲏⲓ . 1PSG
+SFX z 0 ⲁⲓ . 1PSG
+SFX z 0 ⲁⲕ . 2PSGM
+SFX z 0 ⲉ . 2PSGF
+SFX z 0 ⲁϥ . 3PSGM
+SFX z 0 ⲁⲥ . 3PSGF
+SFX z 0 ⲁⲛ . 1PPL
+SFX z 0 ⲉⲛⲑⲏⲛⲟⲩ . 2PPL
+SFX z 0 ⲉⲛ . 
+SFX z 0 ⲁⲩ . 3PPL
+
+# for ϩⲓϫ-ⲉⲛ (onto)(24) 
+# ϫⲱ⸗
+SFX w Y 10
+SFX w 0 ⲉⲛ . 
+SFX w 0 ⲱⲓ . 1PSG
+SFX w 0 ⲱⲕ . 2PSGM
+SFX w 0 ⲱⲉ . 2PSGF
+SFX w 0 ⲱϥ . 3PSGM
+SFX w 0 ⲱⲥ . 3PSGF
+SFX w 0 ⲱⲛ . 1PPL
+SFX w 0 ⲉⲛⲑⲏⲛⲟⲩ . 2PPL
+SFX w 0 ⲱⲧⲉⲛ . 2PPL
+SFX w 0 ⲱⲟⲩ . 3PPL
+
+# ϩⲓⲧ-ⲉⲛ (by, with)
+SFX t Y 9
+SFX t 0 ⲉⲛ . 
+SFX t 0 ⲟⲧ . 1PSG
+SFX t 0 ⲟⲧⲕ . 2PSGM
+SFX t 0 ⲟϯ . 2PSGF
+SFX t 0 ⲟⲧϥ . 3PSGM
+SFX t 0 ⲟⲧⲥ . 3PSGF
+SFX t 0 ⲟⲧⲉⲛ . 1PPL
+SFX t 0 ⲉⲛⲑⲏⲛⲟⲩ . 2PPL
+SFX t 0 ⲟⲧⲟⲩ . 3PPL
+
+# ⲉⲧ-ⲉⲣⲉ
+SFX r Y 8
+SFX r 0 ⲓ . 1PSG
+SFX r 0 ⲕ . 2PSGM
+SFX r 0 ⲣⲉ . 2PSGF
+SFX r 0 ϥ . 3PSGM
+SFX r 0 ⲥ . 3PSGF
+SFX r 0 ⲛ . 1PPL
+SFX r 0 ⲉⲩ . 2PPL
+SFX r 0 ⲣⲉⲧⲉⲛ . 3PPL
+
+# special case: ⲣⲁⲧ= (foot) (201)
+# also ⲓⲁⲧ⸗ (sight) (602)
+# - possessive pronouns
+#
+SFX R Y 8
+SFX R 0 ⲕ/E . 2PSGM
+SFX R 0 ϯ/E . 2PSGF
+SFX R 0 ϥ/E . 3PSGM
+SFX R 0 ⲥ/E . 3PSGF
+SFX R 0 ⲉⲛ/E . 1PPL
+SFX R 0 ⲉⲛⲑⲏⲛⲟⲩ/E . 2PPL 
+SFX R 0 ⲑⲏⲛⲟⲩ/E . 2PPL 
+SFX R 0 ⲟⲩ/E . 3PPL
+
+# special case: ϣⲉ⸗ (go)
+SFX q Y 8
+SFX q 0 ⲛⲏⲓ . 1PSG
+SFX q 0 ⲛⲁⲕ . 2PSGM
+SFX q 0 ⲛⲉ . 2PSGF
+SFX q 0 ⲛⲁϥ . 3PSGM
+SFX q 0 ⲛⲁⲥ . 3PSGF
+SFX q 0 ⲛⲁⲛ . 1PPL
+SFX q 0 ⲛⲱⲧⲉⲛ . 2PPL
+SFX q 0 ⲛⲱⲟⲩ . 3PPL
+
+
+

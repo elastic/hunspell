@@ -1,0 +1,114 @@
+﻿SET UTF-8
+FLAG  UTF-8
+LANG HY_AM
+IGNORE ՞՛։․՜
+WORDCHARS ՞
+
+TRY էթփձջւևրչճժքոեռտըւիօպխծասդֆգհյկլշզղցվբնմԷԹՓՁՋՒևՐՉՃԺՔՈԵՌՏԸՒԻՕՊԽԾԱՍԴՖԳՀՅԿԼՇԶՂՑՎԲՆՄ՞
+KEY էթփձջւևրչճժ|քոեռտըւիօպ|ասդֆգհյկլշ|շզղցվբնմ|քաո|սաք|ոսե|դսղ|սը|եդռ|ֆդց|դղ|ռֆտ|գֆվ|ֆց|տգը|զաղ|հգբ|գվ|ըհւ|յհն|հբ|ւյի|կյմ|յն|յմ|իկօ|լկմ|յի|զղ
+
+REP 20
+REP ր ռ
+REP ռ ր
+REP օ ո
+REP ո օ
+REP ե է
+REP է ե
+REP դ տ
+REP տ դ
+REP տ թ
+REP թ տ
+REP ն մ
+REP մ ն
+REP և եվ
+REP եվ և
+REP և եւ
+REP եւ և
+REP բ պ
+REP պ բ
+REP պ փ
+REP փ պ
+
+SFX A Y 1
+SFX A 0 ը .
+
+SFX H Y 1
+SFX H 0 ից/NO .
+
+PFX L Y 1
+PFX L 0 չ .
+
+SFX B Y 1
+SFX B 0 ն .
+
+SFX C Y 1
+SFX C 0 ներ/HDEFGNOAB .
+
+SFX D Y 1
+SFX D 0 ի/NO .
+
+SFX E Y 1
+SFX E 0 ում/NO .
+
+SFX F Y 1
+SFX F 0 ով .
+
+SFX G Y 1
+SFX G 0 ին/AB .
+
+SFX I Y 1
+SFX I 0 ուց .
+
+SFX J Y 1
+SFX J 0 ու .
+
+PFX K Y 1
+PFX K 0 կ .
+
+PFX M Y 1
+PFX M 0 ան .
+
+SFX N Y 1
+SFX N 0 դ .
+
+SFX O Y 1
+SFX O 0 ս .
+
+SFX V Y 28
+SFX V ել ում ել
+SFX V ալ ում ալ
+SFX V ել վում ել
+SFX V ալ ցվում ալ
+SFX V ել եմ/K ել
+SFX V ալ ամ/K ալ
+SFX V ել ես/K ել
+SFX V ալ աս/K ալ
+SFX V ել ի/K ել
+SFX V ալ ա/K ալ
+SFX V ել ենք/K ել
+SFX V ալ անք/K ալ
+SFX V ել եք/K ել
+SFX V ալ աք/K ալ
+SFX V ել են/K ել
+SFX V ալ ան/K ալ
+SFX V ել եցի ել
+SFX V ալ ացի ալ
+SFX V ել եցիր ել
+SFX V ալ ացիր ալ
+SFX V ել եց ել
+SFX V ալ աց ալ
+SFX V ել եցինք ել
+SFX V ալ ացինք ալ
+SFX V ել եցիք ել
+SFX V ալ ացիք ալ
+SFX V ել եցին ել
+SFX V ալ ացին ալ
+
+SFX P Y 7
+SFX P 0 ու .
+SFX P 0 իս .
+SFX P 0 ուց .
+SFX P 0 ուն .
+SFX P 0 իք/ABCNO .
+SFX P 0 /AB .
+SFX P 0 ով .

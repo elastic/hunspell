@@ -1,0 +1,748 @@
+urls:
+    oo:     http://archive.services.openoffice.org/pub/mirror/OpenOffice.org/contrib/dictionaries/{id}
+    ooe:    http://extensions.openoffice.org/en/project/{id}
+    moz:    https://addons.mozilla.org/thunderbird/downloads/latest/{id}/addon-{id}-latest.xpi
+
+skip:
+    oo:      []
+    ooe:     ["**.xml", "**.xcu", "**.dat"]
+    moz:     ["**install.*"]
+paths:
+    dicts_dir:      dicts
+    zips_dir:       zips
+
+langs:
+    af_ZA:
+        name:           Afrikaans (South Africa)
+        license:        LGPL
+        source:         moz:5127
+    ak_GH:
+        name:           Akan (Ghana)
+        license:        GPL
+        source:         oo:ak_GH
+    am_ET:
+        name:           Amharic (Ethiopia)
+        license:        Public domain
+        source:         moz:222211
+        skip:           ["**Readme_RescueLanguage.txt"]
+    an_ES:
+        name:           Aragonese (Spain)
+        license:        MPL1.1/GPLv3+/LGPLv3+ Tri-licence
+        source:         moz:337264
+    ar-moz:
+        name:           Arabic
+        license:        GPLv2
+        source:         moz:3677
+    ar-ooe:
+        name:           Arabic
+        license:        None
+        source:         ooe:arabic-ayaspell-spell-checker
+        skip:           ["**th_**"]
+    ar-ooe-2:
+        name:           Arabic
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+        source:         ooe:arabic-spellchecker-dictionary-30
+        skip:           ["**install**","**png","**idx"]
+    az_AZ-latin:
+        name:           Azerbaijan (Azerbaijan) - Latin
+        license:        GPL
+        source:         moz:222212
+    be:
+        name:           Belarusian (Belarus)
+        license:        GPL
+        source:         moz:4852
+        skip:           ["**chrome.manifest"]
+    be_classic:
+        name:           Belarusian (Belarus) - Classic
+        license:        GPL
+        source:         moz:4853
+    bg_BG:
+        name:           Bulgarian (Bulgaria)
+        license:        GPL 2.0/LGPL 2.1/MPL1.1
+        source:         moz:3623
+    bn_BD:
+        name:           Bengali (Bangladesh)
+        license:        GPL 2
+        source:         moz:13660
+    br_FR:
+        name:           Breton (France)
+        license:        GPL 2.0/LGPL 2.1/MPL1.1
+        source:         moz:482428
+    ca_ES:
+        name:           Catalan (Spain)
+        license:        GPL 2
+        source:         moz:3369
+    ca_ES_valencia:
+        name:           Valencian (Spain)
+        license:        GPL 2
+        source:         moz:9192
+    cop_EG:
+        name:           Coptic (Egypt)
+        license:        GPL
+        source:         oo:cop_EG
+    cs-moz:
+        name:           Czech (Czech Republic)
+        license:        None
+        source:         moz:3394
+        skip:           ["*png"]
+    cs_CZ:
+        name:           Czech (Czech Republic)
+        license:        GPL 2
+        source:         oo:cs_CZ
+    csb_PL:
+        name:           Kashubian (Poland)
+        license:        GPL 2
+        source:         moz:222511
+    cy_GB:
+        name:           Welsh
+        license:        GPL
+        source:         moz:231175
+    da_DK:
+        name:           Danish (Denmark)
+        license:        GPL 2.0/LGPL 2.1/MPL1.1
+        source:         moz:3596
+        skip:           ["**png"]
+
+
+    de_AT:
+        name:           German, Austria
+        license:        None
+        source:         moz:3079
+    de_AT_frami-ooe:
+        name:           German (Austria) - Frami
+        license:        GPL 2.0, 3.0 / LGPL 2.1/3.0
+        source:         ooe:german-de-frami-dictionaries
+        skip:           [ "**th_**", "**hyph_**"]
+    de_AT_frami:
+        name:           German (Austria) neu 08/2006 (frami)
+        license:        GPL 2.0
+        source:         oo:de_AT_frami
+
+    de_CH-moz:
+        name:           German, Switzerland
+        license:        None
+        source:         moz:3049
+    de_CH_frami-ooe:
+        name:           German (Switzerland) - Frami
+        license:        GPL 2.0, 3.0 / LGPL 2.1/3.0
+        source:         ooe:german-de-ch-frami-dictionaries
+        skip:           [ "**th_**", "**hyph_**"]
+    de_CH:
+        name:           German (Switzerland)
+        license:        GPL 2.0
+        source:         oo:de_CH
+    de_CH_frami:
+        name:           German (Switzerland) neu 08/2006 (frami)
+        license:        GPL 2.0
+        source:         oo:de_CH_frami
+
+    de_DE-moz:
+        name:           German, Germany
+        license:        None
+        source:         moz:3077
+    de_DE-1901:
+        name:           German classical, Germany
+        license:        GPL 2.0, 3.0 / LGPL 2.1/3.0
+        source:         moz:360545
+    de_DE-1901-ooe:
+        name:           German classical, Germany
+        license:        GPL 2.0, 3.0 / LGPL 2.1/3.0
+        source:         ooe:german-de-de-1901-old-spelling-dictionaries
+        skip:           ["**th_**","**hyph**"]
+    de_DE:
+        name:           German (Germany)
+        license:        GPL 2.0
+        source:         oo:de_DE
+    de_DE_frami-ooe:
+        name:           German (Germany) - Frami
+        license:        GPL 2.0, 3.0 / LGPL 2.1/3.0
+        source:         ooe:german-de-de-frami-dictionaries
+        skip:           [ "**th_**", "**hyph_**"]
+
+    dsb:
+        name:           Lower Sorbian (Germany)
+        license:        GPL 2.0
+        source:         moz:13201
+    el_GR:
+        name:           Greek (Greece)
+        license:        GPL 2.0/LGPL 2.1/MPL1.1
+        source:         moz:3439
+    el_GR-ooe:
+        name:           Greek (Greece)
+        license:        GPL
+        source:         ooe:greekcapsenglishus
+        skip:           ["**hyph**","**th_**","**ico"]
+    en_AU-moz:
+        name:           English, Australia
+        license:        GPL 2.0
+        source:         moz:3099
+        skip:           [changelog.txt]
+    en_AU:
+        name:           English (Australia)
+        license:        GPL 2.0/LGPL 2.1/MPL1.1
+        source:         ooe:english-dictionaries-apache-openoffice
+        skip:           ["**hyph**","**CA**","**GB**","**US**","**ZA**"]
+    en_CA:
+        name:           English, Canada
+        license:        Public domain
+        source:         ooe:canadian-english-spell-checking-hyphenation-and-thesaurus
+        skip:           ["**hyph**","**th_**"]
+    en_GB:
+        name:           English, United Kingdom
+        license:        LGPL
+        source:         moz:461570
+        skip:           ["**png"]
+    en_NZ:
+        name:           English (New Zealand)
+        license:        LGPL 2.1
+        source:         ooe:english-new-zealand-dictionary
+        skip:           ["**hyph**","**th_**","**US**","**GB**"]
+    en_US:
+        name:           English (USA)
+        license:        LGPL
+        source:         ooe:us-english-spell-checking-dictionary
+    en_ZA:
+        name:           English (South Africa)
+        license:        LGPL
+        source:         ooe:english-dictionaries-apache-openoffice
+        skip:           ["**hyph**","**CA**","**GB**","**US**","**AU**","**png"]
+
+    eo_EO:
+        name:           Esperanto
+        license:        GPL
+        source:         moz:3684
+
+    es_AR-moz:
+        name:           Spanish, Argentina
+        license:        None
+        source:         moz:3059
+    es_AR:
+        name:           Spanish (Argentina)
+        license:        LGPL
+        source:         oo:es_AR
+    es_BO:
+        name:           Spanish (Bolivia)
+        license:        LGPL
+        source:         oo:es_BO
+    es_CL:
+        name:           Spanish (Chile)
+        license:        LGPL
+        source:         oo:es_CL
+    es_CO:
+        name:           Spanish (Colombia)
+        license:        LGPL
+        source:         oo:es_CO
+    es_CR:
+        name:           Spanish (Costa Rica)
+        license:        LGPL
+        source:         oo:es_CR
+    es_CU:
+        name:           Spanish (Cuba)
+        license:        LGPL
+        source:         oo:es_CU
+    es_DO:
+        name:           Spanish (Dominican Republic)
+        license:        LGPL
+        source:         oo:es_DO
+    es_EC:
+        name:           Spanish (Ecuador)
+        license:        LGPL
+        source:         oo:es_EC
+    es_ES:
+        name:           Spanish (Spain)
+        license:        LGPL
+        source:         oo:es_ES
+    es_ES-moz:
+        name:           Spanish, Spain
+        license:        GPL 3.0/LGPL 3.0/MPL 1.1
+        source:         moz:3554
+    es_GT:
+        name:           Spanish (Guatemala)
+        license:        LGPL
+        source:         oo:es_GT
+    es_HN:
+        name:           Spanish (Honduras)
+        license:        LGPL
+        source:         oo:es_HN
+    es_MX:
+        name:           Spanish (Mexico)
+        license:        LGPL
+        source:         oo:es_MX
+    es_MX-moz:
+        name:           Spanish, Mexico
+        license:        None
+        source:         moz:7020
+    es_NI:
+        name:           Spanish (Nicaragua)
+        license:        LGPL
+        source:         oo:es_NI
+    es_PA:
+        name:           Spanish (Panama)
+        license:        LGPL
+        source:         oo:es_PA
+    es_PE:
+        name:           Spanish (Peru)
+        license:        LGPL
+        source:         oo:es_PE
+    es_PR:
+        name:           Spanish (Puerto Rico)
+        license:        LGPL
+        source:         oo:es_PR
+    es_PY:
+        name:           Spanish (Paraguay)
+        license:        LGPL
+        source:         oo:es_PY
+    es_SV:
+        name:           Spanish (El Salvador)
+        license:        LGPL
+        source:         oo:es_SV
+    es_UY:
+        name:           Spanish (Uruguay)
+        license:        LGPL
+        source:         oo:es_UY
+    es_VE:
+        name:           Spanish (Venezuela)
+        license:        LGPL
+        source:         oo:es_VE
+    es_VE-moz:
+        name:           Spanish, Venezuela
+        license:        GPL 3.0
+        source:         moz:11356
+
+    et_EE:
+        name:           Estonian (Estonia)
+        license:        LGPL
+        source:         ooe:estonian-spellchecking-and-hyphenation
+        skip:           ["**hyph**"]
+    eu_ES:
+        name:           Basque / Euskadi
+        license:        None
+        source:         moz:4020
+    fo_FO:
+        name:           Faroese (Faroe Islands)
+        license:        GPL 2.0
+        source:         moz:222500
+
+    fr-ooe:
+        name:           French dictionaries
+        license:        MPL 2.0
+        source:         ooe:french-dictionaries
+        skip:           ["**hyph**", "**thes**", "**png","**tex","**bmp","**idx","**py"]
+
+    fr_classic-moz:
+        name:           French Classic
+        license:        MPL 2.0
+        source:         moz:354872
+        skip:           ["**reform*", "**modern*"]
+    fr_classic-reform-moz:
+        name:           French Classic Reform
+        license:        MPL 2.0
+        source:         moz:354872
+        skip:           ["**classic.*", "**fr-reform.*", "**modern*"]
+    fr_reform-moz:
+        name:           French Reform
+        license:        MPL 2.0
+        source:         moz:354872
+        skip:           ["**classic*", "**modern*"]
+    fr_modern-moz:
+        name:           French Modern
+        license:        MPL 2.0
+        source:         moz:354872
+        skip:           ["**classic*", "**reform*"]
+
+    fr_classic:
+        name:           French Classic
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1
+        source:         oo:fr_FR-classique_1-3-2
+    fr_classic-reform:
+        name:           French Classic Reform
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1
+        source:         oo:fr_FR_1-3-2
+    fr_reform:
+        name:           French Reform
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1
+        source:         oo:fr_FR-1990_1-3-2
+
+    fur_IT:
+        name:           Friulian (Italy)
+        license:        None
+        source:         moz:4742
+    fy_NL:
+        name:           Frisian (Netherlands)
+        license:        None
+        source:         moz:5679
+    ga_IE:
+        name:           Irish (Ireland)
+        license:        GPL2
+        source:         moz:3090
+    gd_GB:
+        name:           Scots Gaelic (Scotland)
+        license:        GPL3
+        source:         moz:260204
+    gl_ES:
+        name:           Galician (Spain)
+        license:        GPL2
+        readme:         README_gl_ES.txt
+        source:         oo:gl_ES
+    gsc_FR:
+        name:           Gascon (France)
+        license:        CC BY-NC-ND 2.0
+        source:         oo:gsc_FR
+    gu_IN:
+        name:           Gujarati (India)
+        license:        GPL
+        source:         oo:gu_IN
+    ha_GH:
+        name:           Hausa (Ghana)
+        license:        None
+        source:         moz:85790
+    he_IL:
+        name:           Hebrew (Israel)
+        license:        GPL
+        source:         oo:he_IL
+    he_IL-moz:
+        name:           Hebrew (Israel)
+        license:        AGPL 3.0
+        source:         moz:3646
+    he_IL-ooe:
+        name:           Hebrew (Israel)
+        license:        GPL2
+        source:         ooe:hebrew-he-spell-check-dictionary
+    hil_PH:
+        name:           Hiligaynon (Philippines)
+        license:        GPL2
+        source:         oo:hil_PH
+    hi_IN:
+        name:           Hindi
+        license:        GPL2
+        source:         moz:221506
+    hr_HR:
+        name:           Croatian (Croatia)
+        license:        LGPL/SISSL 2003
+        source:         oo:hr_HR
+    hsb:
+        name:           Upper Sorbian (Germany)
+        license:        GPL2
+        source:         moz:3956
+        skip:           ["**png", "**manifest"]
+    ht_HT:
+        name:           Haitian Creole (Haiti)
+        license:        GPL3
+        source:         moz:48577
+    hu_HU:
+        name:           Hungarian (Hungary)
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+        source:         oo:hu_HU
+    hu_HU-comb:
+        name:           Hungarian (Hungary) collected compounds
+        license:        None
+        source:         oo:hu_HU_comb
+    hy_AM:
+        name:           Armenian (Armenia)
+        license:        GPL 2.0
+        source:         moz:5051
+    ia_ANY:
+        name:           Interlingua (ANY locale)
+        license:        GPL2
+        source:         oo:ia
+        readme:         README_ia.txt
+        skip:           ["**zip","**hyph.txt","**spell.txt","**thes.txt"]
+    id_ID:
+        name:           Indonesian (Indonesia)
+        license:        GPL2
+        source:         moz:6818
+        skip:           ["**README_permissions.txt", "**mozilla_words.diff"]
+    it_IT:
+        name:           Italian (Italy)
+        license:        GPL2
+        source:         oo:it_IT
+        skip:           ["**sxc"]
+    it_IT-ooe:
+        name:           Italian (Italy)
+        license:        GPL3
+        source:         ooe:italian-dictionaries-spell-checker-thesaurus-and-hyphenation
+        skip:           ["**th_**","**ods", "**hyph**"]
+    it_IT-moz:
+        name:           Italian (Italy)
+        license:        GPL3
+        source:         moz:3053
+    kn_ID:
+        name:           Kannada (India)
+        license:        GPL2
+        source:         moz:402994
+    ko_KR:
+        name:           Korean
+        license:        MPL 1.1/GPL 2.0/LGPL 2.1
+        source:         moz:11487
+    ku_TR:
+        name:           Kurdish (Turkey)
+        license:        GPL2
+        source:         oo:ku_TR
+    la-ooe:
+        name:           Latin
+        source:         ooe:dict-la
+        license:        GPL2
+        skip:           ["**hyph**"]
+    ln_CD:
+        name:           Lingala (Chad)
+        license:        GPL2
+        source:         moz:204312
+    lo_LA:
+        name:           Lao (Lao)
+        license:        None
+        source:         moz:476993
+    lt_LT:
+        name:           Lithuanian (Lithuania)
+        license:        BSD
+        source:         oo:lt_LT
+    lt_LT-moz:
+        name:           Lithuanian (Lithuania)
+        license:        None
+        source:         moz:3716
+    lv_LV:
+        name:           Latvian (Latvia)
+        license:        GPL2.1
+        source:         oo:lv_LV
+    lv_LV-moz:
+        name:           Latvian
+        license:        None
+        source:         moz:3786
+    mg_MG:
+        name:           Malagasy
+        license:        GPL2
+        source:         moz:217294
+    mi_NZ:
+        name:           Maori (New Zealand)
+        license:        GPL3
+        source:         moz:7130
+        skip:           ["**manifest", "**png"]
+    mk_MK:
+        name:           Macedonian (Macedonia)
+        license:        GPL
+        source:         oo:mk_MK
+    mk_MK-moz:
+        name:           Macedonian (Cyrillic and Latin)
+        license:        GPL3
+        source:         moz:283744
+    mr_IN:
+        name:           Marathi (India)
+        license:        GPL 2.1
+        source:         oo:mr_IN
+    mr_IN-moz:
+        name:           Marathi
+        license:        None
+        source:         moz:12797
+    ms_MY:
+        name:           Malay (Malaysia)
+        license:        Gnu FDL
+        source:         oo:ms_MY
+    my_MW:
+        name:           Chichewa
+        license:        None
+        source:         moz:222213
+    nb_NO:
+        name:           Norwegian Bokmaal (Norway)
+        license:        GPL
+        source:         moz:6868
+    ne_NP:
+        name:           Nepali (Nepal)
+        license:        LGPL
+        source:         oo:ne_NP
+    ne_NP-moz:
+        name:           Nepali
+        license:        LGPL 2.1
+        source:         moz:9971
+    nl_NL:
+        name:           Dutch (Netherlands)
+        license:        BSD, CC Attr
+        source:         moz:3291
+    nn_NO:
+        name:           Norwegian (Nynorsk)
+        license:        GPL
+        source:         moz:6869
+    nr_ZA:
+        name:           Ndebele, South Africa
+        license:        LGPL
+        source:         moz:46609
+    ns_ZA:
+        name:           Northern Sotho (South Africa)
+        license:        LGPL
+        source:         moz:46519
+    oc_FR:
+        name:           Occitan (Languedoc)
+        license:        GPL2
+        source:         oo:oc_FR
+    or_IN:
+        name:           Oriya (India)
+        license:        LGPL
+        source:         moz:232704
+    pa_IN:
+        name:           Punjabi (India)
+        license:        GPL2
+        source:         moz:232706
+    pap_AW:
+        name:           Papiamento (Aruba)
+        license:        None
+        source:         moz:408638
+    pap_CW:
+        name:           Papiamento (Curaçao)
+        license:        Creative Commons Attribution-NonCommercial-ShareAlike 3.0
+        source:         moz:353517
+    pl_PL:
+        name:           Polish (Poland)
+        license:        GPL, LGPL, MPL, CC ShareAlike
+        source:         oo:pl_PL
+    pl_PL-moz:
+        name:           Polish
+        license:        None
+        source:         moz:3052
+    pt_BR:
+        name:           Portuguese, Brazil
+        license:        LGPL 3.0
+        source:         moz:6081
+        skip:           ["**hyph**"]
+    pt_PT:
+        name:           Portugues, Portugal
+        license:        GPL2
+        source:         moz:3155
+    ro_RO:
+        name:           Romanian (Romania)
+        source:         ooe:romanian-dictionary-pack-spell-checker-hyphenation-thesaurus
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+        skip:           ["**hyph**"]
+    ro_RO-classic:
+        name:           Romanian (Romania) Classic
+        source:         ooe:classic-romanian-dictionary-pack-spell-checker-hyphenation-thesaurus
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+        skip:           ["**hyph**"]
+    ru-ooe:
+        name:           Russian (Russia)
+        license:        Custom
+        skip:           ["**hyph**"]
+        source:         ooe:russian-dictionary
+    ru_RU-moz:
+        name:           Russian (Russia)
+        license:        None
+        source:         moz:347439
+    ru_RU:
+        name:           Russian (Russia)
+        license:        Custom
+        source:         oo:ru_RU
+    ru_RU_ye:
+        name:           Russian_ye (Russia)
+        license:        None
+        source:         oo:ru_RU_ye
+    ru_RU_yo:
+        name:           Russian_yo (Russia)
+        license:        Custom
+        source:         oo:ru_RU_yo
+    ru_RU_yo-ooe:
+        name:           Russian_yo (Russia)
+        license:        Custom
+        source:         ooe:russian-dictionary-yo
+    sa_IN:
+        name:           Sanskrit (India)
+        license:        LGPL 2.1
+        source:         moz:337161
+    sk_SK:
+        name:           Slovak (Slovakia)
+        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
+        source:         moz:4663
+        skip:           ["**manifest", "**png"]
+    sl_SI-ooe:
+        name:           Slovenian (Slovenia)
+        license:        LGPL 2.1
+        source:         ooe:slovenian-dictionary-package-slovenski-paket-slovarjev
+        skip:           ["**hyph**","**th_**"]
+    son_ML:
+        name:           Songhai
+        license:        GPL 3.0
+        source:         moz:11940
+    sq_AL:
+        name:           Albanian (Albania)
+        license:        None
+        source:         oo:sq_AL
+    sq_AL-moz:
+        name:           Albanian (Albania)
+        license:        None
+        source:         moz:5485
+    sr_RS:
+        name:           Serbian (Serbia) Cyrillic & Latin
+        license:        GPL2
+        source:         moz:10894
+    ss_ZA:
+        name:           Swati (South Africa)
+        license:        LGPL
+        source:         moz:46614
+    st_ZA:
+        name:           Southern Sotho
+        license:        LGPL
+        source:         moz:46610
+    sv_SE:
+        name:           Swedish (Sweden)
+        license:        LGPL 3.0
+        source:         moz:474623
+    sw:
+        name:           Swahili (Africa)
+        license:        LGPL 2.1
+        source:         ooe:swahili-dictionary
+    ta_TA:
+        name:           Tamil
+        license:        None
+        source:         moz:337368
+        skip:           ["**manifest", "**jar"]
+    te_IN:
+        name:           Telegu
+        license:        GPL2
+        source:         moz:269588
+        skip:           ["**png"]
+    tk_TM:
+        name:           Turkmen
+        license:        None
+        source:         moz:204314
+    tn_ZA:
+        name:           Tswana
+        license:        GPL
+        source:         moz:46617
+    tr:
+        name:           Turkish
+        license:        None
+        source:         moz:277036
+    ts_ZA:
+        name:           Tsonga (South Africa)
+        license:        LGPL
+        source:         moz:46611
+    uk_UA:
+        name:           Ukranian
+        license:        LGPL 2.1
+        source:         moz:4782
+        skip:           ["**png"]
+    ur_IN:
+        name:           Urdu (India)
+        license:        None
+        source:         moz:7981
+    uz:
+        name:           Uzbek
+        license:        None
+        source:         moz:306383
+    ve_ZA:
+        name:           Venda (South Africa)
+        license:        LGPL
+        source:         moz:46601
+    vi_VN:
+        name:           Vietnamese (Viet-Nam)
+        license:        GPL3
+        source:         moz:7479
+    xh_ZA:
+        name:           Xhosa (South Africa)
+        license:        LGPL
+        source:         moz:46599
+    yi:
+        name:           Yiddish
+        license:        LGPLv2+ or MPLv1.1 or GPLv2+
+        source:         ooe:yiddish-spell-checker
+    zu_ZA:
+        name:           Zulu (South Africa)
+        license:        LGPL
+        source:         moz:46490
+

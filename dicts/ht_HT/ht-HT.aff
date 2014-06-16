@@ -1,0 +1,6 @@
+# Hunspell affix file for Haitian Creole
+# Copyright 2009 Jean Came Poulard and Kevin Scannell
+# This file is distributed under the same license as hunspell-ht
+SET UTF-8
+TRY naeoitspyklumèrdwvbfgòjzhcSLMPAKBNEYDTJI'GFORVCW-ZÈHÒàéUx
+WORDCHARS '‘’-

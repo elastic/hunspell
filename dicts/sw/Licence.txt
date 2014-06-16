@@ -1,0 +1,9 @@
+The dictionaries contained in this extension are copyright and were taken from the hunspell website.
+
+hunspell dictionaries:  http://www.it46.se/downloads/openoffice/dictionary/dictionary_myspell_sw_TZ_1.1.tar.gz
+http://ftp.services.openoffice.org/pub/OpenOffice.org/contrib/dictionaries/sw_KE.zip
+
+
+Please see the readme files that accompany the dictionary files for full details of copyright ownership, licence details and acknowledgements.
+GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999 for MySpell Kiswahili Spellchecker
+The Jambo Spellchecker is released as free software (LGPL) (the Tanzanain Spellchecker)

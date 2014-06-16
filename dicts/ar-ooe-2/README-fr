@@ -1,0 +1,11 @@
+10-01-2007:
+ السلام عليكم،
+  Vous trouverez dans ce paquetage, les deux fichiers du dictionnaire de correction orthographique de la langue arabe hunspell-ar du projet Ayaspell dans sa version finale (les deux fichiers sont ar.dic et ar.aff) qui font appel au programme Hunspell (version >= 1.1.2) de la suite bureautique OpenOffice.org
+  L'auteur du dictionnaire n'assume aucune responsabilité si des fichiers sont corropus ou si des malfonctionnement apparaissent dans votre système à la suite de son installation ou utilisation.
+  Ce dictionnaire est sous triple licence: GPL/LGPL/MPL
+  Pour suivre le developement du dictionnaire: http://ayaspell.sourceforge.net/
+  Liste de diffusion: http://ayaspell.blogspot.com
+  Blog: http://ayaspell.sourceforge.net 
+==========================================================================
+
+

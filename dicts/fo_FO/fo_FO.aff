@@ -1,0 +1,6 @@
+SET ISO8859-1
+TRY arinsltuegkmðdvfobphájóøyíúæý
+
+COMPOUNDFLAG m
+COMPOUNDMIN 4
+

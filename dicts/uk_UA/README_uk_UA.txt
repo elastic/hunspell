@@ -1,0 +1,34 @@
+This is Ukrainian spelling dictionary for Firefox >=3, Thunderbird >= 3 and Seamonkey 
+that use hunspell as spelling engine and it is based on 
+dictionary of spell-uk project http://ispell-uk.sourceforge.net/
+
+xpi package authors:
+  Yaroslav Krytsun <slavko7@gmail.com>, 2006
+  Andriy Rysin <arysin@yahoo.com>, 2007 — 2013
+This is Ukrainian spelling dictionary for myspell & hunspell version 1.7.0
+
+This dictionary based on spell-uk project http://ispell-uk.sourceforge.net/
+
+
+Copyright (C) 1999
+    Vladimir Yakovchuk
+    Oleg Podgurniy
+    
+Copyright (C) 2001 
+    Dmytro Kovalyov
+    Maksym Polyakov
+    Andriy Rysin
+
+Copyright (C) 2002
+    Valentyn Solomko
+    Volodymyr M. Lisivka
+    
+Copyright (C) 2005
+    Andriy Rysin
+    Eugeniy Meshcheryakov
+    Dmytro Kovalyov
+
+Copyright (C) 2006-2013
+    Andriy Rysin
+
+This dictionary is licensed under GPL 2.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
