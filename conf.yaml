@@ -593,11 +593,10 @@ langs:
     pl_PL:
         name:           Polish (Poland)
         license:        GPL, LGPL, MPL, CC ShareAlike
-        source:         oo:pl_PL
-    pl_PL-moz:
-        name:           Polish
-        license:        None
-        source:         moz:3052
+        source:         http://sjp.pl/slownik/ort/sjp-myspell-pl.zip
+        custom:
+          - [unzip, pl_PL.zip]
+          - [rm, pl_PL.zip, spell.txt]
     pt_BR:
         name:           Portuguese, Brazil
         license:        LGPL 3.0
