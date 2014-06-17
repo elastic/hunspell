@@ -97,6 +97,26 @@ sub download {
     if ( my $tidy = $Handlers{tidy}{$type} ) {
         $tidy->( $lang, $dir, $conf );
     }
+
+    write_settings( $dir, $conf );
+}
+
+#===================================
+sub write_settings {
+#===================================
+    my ( $dir, $conf ) = @_;
+    my $ignore_case = $conf->{ignore_case} || 'true';
+    my $strict      = $conf->{strict}      || 'true';
+    my $content     = <<END;
+---
+ignore_case: $ignore_case
+strict_affix_parsing: $strict
+
+END
+
+    my $file = $dir->file('settings.yml');
+    $file->spew($content);
+
 }
 
 #===================================

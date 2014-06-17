@@ -7,7 +7,7 @@ urls:
 # also check
 # libre extensions: http://extensions.libreoffice.org/extension-center?getCategories=Dictionary&getCompatibility=any&sort_on=positive_ratings&path=%2FLibreOffice-Extensions-and-Templates%2Fextension-center&portal_type=PSCProject&SearchableText=
 # and libre source: http://cgit.freedesktop.org/libreoffice/dictionaries/tree/
-
+# mozilla list https://wiki.mozilla.org/L10n:Dictionaries
 skip:
     loe:     ["**xml","**xcu","**xml","**dat","**idx"]
     oo:      []
