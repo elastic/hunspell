@@ -1,9 +1,11 @@
 urls:
+    loe:    http://extensions.libreoffice.org/extension-center/{id}
     oo:     http://archive.services.openoffice.org/pub/mirror/OpenOffice.org/contrib/dictionaries/{id}
     ooe:    http://extensions.openoffice.org/en/project/{id}
     moz:    https://addons.mozilla.org/thunderbird/downloads/latest/{id}/addon-{id}-latest.xpi
 
 skip:
+    loe:     ["**xml","**xcu","**xml","**dat","**idx"]
     oo:      []
     ooe:     ["**.xml", "**.xcu", "**.dat"]
     moz:     ["**install.*"]

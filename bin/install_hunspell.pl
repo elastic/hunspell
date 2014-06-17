@@ -14,16 +14,27 @@ our $http     = HTTP::Tiny->new;
 our %Handlers = (
     download => {
         ooe => \&download_ooe,
-        oo  => \&mirror_url,
-        moz => \&mirror_url,
+        loe => \&download_loe
     },
-    tidy => { oo => \&tidy_oo, }
+    tidy => {
+        oo   => \&tidy_oo,
+        http => \&tidy_http
+    }
 );
 
 our $OOE_Link_re = qr{
     <a [^>]* href="([^"]+)" [^>]* >
     (?:(?!</a>).)+
     Download \s extension
+}xi;
+
+our $LOE_Release_re = qr{
+    <a [^>]* href="([^"]+)"
+    \s+ title="Current.release.for.the.project"
+}xi;
+
+our $LOE_Link_re = qr{
+    <a [^>]* href="([^"]+.oxt)"
 }xi;
 
 our $SF_Link_re = qr{
@@ -75,7 +86,8 @@ sub download {
     }
 
     my $last_mod = -e $file ? $file->stat->mtime : 0;
-    $Handlers{download}{$type}->( $url, $file );
+    my $handler = $Handlers{download}{$type} || \&mirror_url;
+    $handler->( $url, $file );
     return logmsg " - Not updated"
         if -e $file && $last_mod eq $file->stat->mtime;
 
@@ -85,6 +97,19 @@ sub download {
     if ( my $tidy = $Handlers{tidy}{$type} ) {
         $tidy->( $lang, $dir, $conf );
     }
+}
+
+#===================================
+sub download_loe {
+#===================================
+    my ( $url, $file ) = @_;
+    my $release_page = get_url($url);
+    my ($release_url) = ( $release_page =~ m/$LOE_Release_re/ )
+        or throw("Couldn't extract release page link from ($url)");
+    my $download_page = get_url($release_url);
+    my ($download_url) = ( $release_page =~ m/$LOE_Link_re/ )
+        or throw("Couldn't extract download link from ($release_url)");
+    return mirror_url( $download_url, $file );
 }
 
 #===================================
@@ -130,6 +155,19 @@ sub tidy_oo {
     mirror_url( $url, $file );
 }
 
+#===================================
+sub tidy_http {
+#===================================
+    my ( $lang, $dir, $conf ) = @_;
+    my $cwd = Cwd::cwd();
+    chdir $dir;
+    my $custom = $conf->{custom} or return;
+    for my $cmd (@$custom) {
+        system(@$cmd) == 0
+            or throw "Couldn't execute system command (@_): $?";
+    }
+    chdir $cwd;
+}
 #===================================
 sub unpack_zip {
 #===================================
