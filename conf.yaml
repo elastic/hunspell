@@ -454,6 +454,10 @@ langs:
         license:        GPL2
         source:         moz:6818
         skip:           ["**README_permissions.txt", "**mozilla_words.diff"]
+    is:
+        name:           Icelandic (Iceland)
+        license:        CC-BY-SA-3.0 Unported
+        source:         loe:hunspell-is-the-icelandic-spelling-dictionary-project
     it_IT:
         name:           Italian (Italy)
         license:        GPL2
