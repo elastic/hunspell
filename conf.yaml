@@ -4,6 +4,10 @@ urls:
     ooe:    http://extensions.openoffice.org/en/project/{id}
     moz:    https://addons.mozilla.org/thunderbird/downloads/latest/{id}/addon-{id}-latest.xpi
 
+# also check
+# libre extensions: http://extensions.libreoffice.org/extension-center?getCategories=Dictionary&getCompatibility=any&sort_on=positive_ratings&path=%2FLibreOffice-Extensions-and-Templates%2Fextension-center&portal_type=PSCProject&SearchableText=
+# and libre source: http://cgit.freedesktop.org/libreoffice/dictionaries/tree/
+
 skip:
     loe:     ["**xml","**xcu","**xml","**dat","**idx"]
     oo:      []
@@ -665,12 +669,9 @@ langs:
         source:         moz:11940
     sq_AL:
         name:           Albanian (Albania)
-        license:        None
-        source:         oo:sq_AL
-    sq_AL-moz:
-        name:           Albanian (Albania)
-        license:        None
-        source:         moz:5485
+        license:        GPL
+        source:         http://www.shkenca.org/shkarkime/myspell-sq_AL-1.6.4.zip
+        # see http://www.shkenca.org/k6i/albanian_dictionary_for_myspell_en.html
     sr_RS:
         name:           Serbian (Serbia) Cyrillic & Latin
         license:        GPL2

@@ -159,9 +159,9 @@ sub tidy_oo {
 sub tidy_http {
 #===================================
     my ( $lang, $dir, $conf ) = @_;
+    my $custom = $conf->{custom} or return;
     my $cwd = Cwd::cwd();
     chdir $dir;
-    my $custom = $conf->{custom} or return;
     for my $cmd (@$custom) {
         system(@$cmd) == 0
             or throw "Couldn't execute system command (@_): $?";

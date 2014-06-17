@@ -1,8 +1,8 @@
-# Copyright 2002, 2007 Luan Kelmendi
+# Copyright 2002, 2009 Luan Kelmendi
 #
 # E-Mail: l.k@apolonix.com
 #
-# Version 1.1 (20.08.2006) 
+# Version 1.2 (20.08.2009) 
 #
 # This file is distributed under GPL license
 #
@@ -19,7 +19,9 @@
 # GNU General Public License for more details.
 # GPL license can be found here:
 # http://www.fsf.org/licenses/licenses.html
+
 SET ISO8859-1
+
 TRY eiaërstohukmçpdvgbfycEIAËRSTOHUKMÇPDVGBFYC
 
 SFX T Y 9
@@ -241,13 +243,56 @@ PFX E   0    për          .
 PFX A Y 1
 PFX A   0    pa           .
 
-REP 9
+REP 52
+REP a ë
+REP ë a
 REP ë e
 REP e ë
+REP u y
+REP y u
+REP i y
+REP y i
+REP u ua
+REP u ue
+REP y ye
+REP c ç
+REP ç c
 REP ç q
 REP q ç
+REP i j
+REP j i
+REP i ij
+REP ij i
 REP d t
 REP t d
+REP g gj
+REP j nj
 REP gj xh
 REP xh gj
-REP uar ua
+REP s z
+REP z s
+REP sh ç
+REP ç sh
+REP z zh
+REP zh z
+REP ç sh
+REP sh ç
+REP ç zh
+REP zh ç
+REP d dt
+REP l ll
+REP ll l
+REP r rr
+REP rr r
+REP eshte është
+REP asht është
+REP kan kanë
+REP jan janë
+REP kete këtë
+REP ket këtë
+REP kte këtë
+REP ktë këtë
+REP kt këtë
+REP keti këtij
+REP kti këtij
+REP kto këto
