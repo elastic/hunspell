@@ -1,0 +1,408 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for Czech cs_CZ dictionary
+# 
+# data must be UTF-8
+# blank lines and lines starting with '#' are ignored.
+# lines of dic= and aff= must be first (these are sometimes oddly named!)
+# otherwise, word <TAB> stem1,stem2,...
+# any whitespace can be used instead of tab.
+
+dic=cs_CZ.dic
+aff=cs_CZ.aff
+
+# ported from lucene czech stemmer tests
+# we just test that its consistent with hunspell -m
+
+# n. masc. animate ending with a hard consonant
+pán		pán
+páni	páni
+pánové	pánové
+pána	pána
+pánů	pánů
+pánovi	pánovi,pánův
+pánům	pánům
+pány	pány
+páne	páne
+pánech	pánech
+pánem	pánem
+
+# n. masc. inanimate ending with hard consonant
+hrad	hrad
+hradu	hrad
+hrade	hrad
+hradem	hrad
+hrady	hrad
+hradech	hrad
+hradům	hrad
+hradů	hrad
+
+# n. masc. animate ending with a soft consonant
+muž		muž
+muži	muž
+muže	muž
+mužů	muž
+mužům	muž
+mužích	muž
+mužem	muž
+
+# n. masc. inanimate ending with a soft consonant
+# BUG!!!! stroj		stroj,strojit
+# BUG!!!! stroje	strojit,stroj
+strojů		stroj
+stroji		stroj
+strojům		stroj
+strojích	stroj
+strojem		stroj
+
+# n. masc. ending with a
+předseda	předseda
+předsedové	předseda
+předsedy	předseda
+předsedů	předseda
+předsedovi	předseda,předsedův
+předsedům	předseda
+předsedu	předseda
+předsedo	předseda
+předsedech	předseda
+předsedou	předseda
+
+# n. masc. ending with e
+soudce		soudce
+soudci		soudce
+soudců		soudce
+soudcům		soudce
+soudcích	soudce,soudek
+soudcem		soudce
+
+# n. fem. ending with hard consonant
+kost	kost
+kosti	kost
+kostí	kost
+kostem	kost
+kostech	kost
+kostmi	kost
+
+# n. fem. ending with a soft consonant
+píseň		píseň
+písně		píseň
+písni		píseň
+písněmi		píseň
+písních		píseň
+písním		píseň
+
+# n. fem. ending with e
+růže	růže,růž
+růží	růže,růž
+růžím	růže,růž
+růžích	růže,růž
+růžemi	růže,růž
+růži	růže,růž
+
+# n. fem. ending with a
+žena	žena
+ženy	žena
+žen		žena
+ženě	žena,ženit
+ženám	žena
+ženu	ženu,žena
+ženo	žena
+ženách	žena
+ženou	žena,ženu
+ženami	žena
+
+# n. neu ending with o
+město		město
+města		město
+měst		město
+městu		město
+městům		město
+městě		město
+městech		město
+městem		město
+městy		město
+
+# n. neu ending with e
+moře		moře,mořit
+moří		mořit,moře
+mořím		mořit,moře
+moři		moře
+mořích		moře
+mořem		moře
+
+# n. neu ending with ě
+kuře		kuře
+kuřata		kuře
+kuřete		kuře
+kuřat		kuře
+kuřeti		kuře
+kuřatům		kuře
+kuřatech	kuře
+kuřetem		kuře
+kuřaty		kuře
+
+# n. neu ending with í
+stavení		stavení,stavený
+stavením	stavení
+staveních	stavení
+staveními	stavení
+
+# adj. ending with ý/á/é
+mladý		mladý
+mladí		mladý
+mladého		mladý
+mladých		mladý
+mladému		mladý
+mladým		mladý
+mladé		mladý
+mladém		mladý
+mladými		mladý
+mladá		mladý
+mladou		mladý
+
+# adj. ending with í
+jarní		jarní
+jarního		jarní
+jarních		jarní
+jarnímu		jarní
+jarním		jarní
+jarními		jarní
+
+# exceptions
+český		český
+čeští		český
+anglický	anglický
+angličtí	anglický
+kniha		kniha
+knize		kniha
+mazat		mazat	
+mažu		mazat
+kluk		kluk
+kluci		kluk
+klucích		kluk
+hezký		hezký
+hezčí		hezčí
+hůl			hůl
+hole		hole,holit,holý
+deska		deska
+desek		deska
+
+# some high frequency czech tokens from corpora
+a		a
+se		se
+na		na
+v		v
+to		to,ten
+je		je
+že		že
+jsem	jsem
+ale		ale
+s		s
+si		si
+tak		tak
+z		z
+do		do
+o		o
+i		i
+za		za
+# BUG!!!!! už		už
+co		co
+by		by
+pro		pro
+k		k
+ve		ve
+po		po
+jako	jako
+mi		mi
+jak		jak
+když	když
+d		d
+jen		jen
+od		od
+mě		mě
+jsou	jsou
+bude	bude,budu
+nebo	nebo
+já		já
+jsme	jsme
+u		u
+ještě	ještě
+má		má,můj
+byl		byl
+které	který
+asi		asi
+tam		tam
+který	který
+až		až
+není	není
+pak		pak
+ze		ze
+bylo	byl
+než		než
+podle	podle,podlý
+ani		ani
+bych	bych
+aby		aby
+mám		mám,máma
+ten		ten
+byla	byl
+jeho	jeho
+moc		moc
+ty		ty,ten
+toho	toho,ten
+ho		ho
+taky	taky
+před	před
+být		být
+také	také
+ne		ne
+tu		tu,ten
+při		při,přít,pře
+tom		ten
+tím		tím,ten
+něco	něco
+kde		kde
+která	který
+teď		teď
+protože	protože
+no		no
+nic		nic
+pokud	pokud
+další	další
+dnes	dnes
+první	první
+takže	takže
+bez		bez
+tomu	tomu,ten
+měl		měl
+nás		nás
+kdy		kdy
+jejich	jejich
+mu		mu
+třeba	třeba
+mezi	mezi,mez
+své		své,svůj
+však	však
+tedy	tedy
+ji		ji
+zase	zase
+může	moci
+ta		ten
+den		den,dno,dna
+právě	právě
+proč	proč
+snad	snad
+kdo		kdo
+ti		ti,ten
+díky	díky,dík
+mít		mít
+nám		nám
+mají	mají
+či		či
+let		let
+jestli	jestli
+proto	proto
+jo		jo
+velmi	velmi
+řekl	řekl
+přes	přes
+více	více
+někdo	někdo
+budou	budu
+vůbec	vůbec
+kteří	který
+již		již
+ke		ke
+jeden	jeden,jíst
+stejně	stejně,stejný
+pod		pod
+dobře	dobrý
+vám		vám
+opravdu	opravdu
+budu	budu
+roku	rok
+jinak	jinak
+# BUG!!!! fakt	fakt,faktum
+lidí	lidí
+měla	měl
+všechny	všechny
+dva		dva
+víc		víc
+# BUG!!!! jí		jí,jíst
+roce	rok
+dneska	dneska
+jde		jdu
+tady	tady
+trochu	trochu,trocha
+hodně	hodně,hodný
+sem		sem
+zatím	zatím
+nad		nad
+jste	jste
+možná	možná,možný
+poslední	poslední
+prostě	prostě,prostý
+místo	místo
+pár		pár
+jim		jim
+vás		vás
+musí	musí
+proti	proti
+což		což
+všechno	všechno
+něj		něj
+totiž	totiž
+ní		ní
+práce	práce
+dost	dost
+kvůli	kvůli
+člověk	člověk
+její	její
+tři		tři,třít
+byly	byl
+nikdy	nikdy
+stále	stálý
+navíc	navíc
+nakonec	nakonec
+pouze	pouze,pouhý
+korun	koruna
+hned	hned
+každý	každý
+hlavně	hlavně,hlavní,hlaveň
+sice	sice
+nich	nich
+všichni	všichni
+jsi		jsi
+kolem	kolem,kolo
+například	například
+nějak	nějak
+rok		rok
+kterou	který
+nevím	vědět
+tento	tento
+měli	měl
+lidé	lidé
+prý		prý
+dvě		dvě
+
+#
+# some bugs from the past reported
+# http://stackoverflow.com/questions/12009883/apache-solr-3-5-4-0-hunspellstemfilter-returns-another-values-than-hunspell-in
+
+praha	praha
