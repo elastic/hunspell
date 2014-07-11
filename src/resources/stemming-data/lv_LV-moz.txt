@@ -25,192 +25,192 @@ aff=lv_LV.aff
 # we just test that its consistent with hunspell -m
 
 # n. decl. I
-tēvs	tēvs # nom. sing.
-tēvi	tēvs # nom. pl.
-tēva	tēvs # gen. sing.
-tēvu	tēvs # gen. pl.
-tēvam	tēvs # dat. sing.
-tēviem	tēvs # dat. pl.
-tēvu	tēvs # acc. sing.
-tēvus	tēvs # acc. pl.
-tēvā	tēvs # loc. sing.
-tēvos	tēvs # loc. pl.
-tēvs	tēvs # voc. sing.
-tēvi	tēvs # voc. pl.
+tēvs    tēvs # nom. sing.
+tēvi    tēvs # nom. pl.
+tēva    tēvs # gen. sing.
+tēvu    tēvs # gen. pl.
+tēvam   tēvs # dat. sing.
+tēviem  tēvs # dat. pl.
+tēvu    tēvs # acc. sing.
+tēvus   tēvs # acc. pl.
+tēvā    tēvs # loc. sing.
+tēvos   tēvs # loc. pl.
+tēvs    tēvs # voc. sing.
+tēvi    tēvs # voc. pl.
 
 # n. decl. II
-kurmis		kurmis # nom. sing.
-kurmji		kurmis # nom. pl.
-kurmja		kurmis # gen. sing.
-kurmju		kurmis # gen. pl.
-kurmim		kurmis # dat. sing.
-kurmjiem	kurmis # dat. pl.
-kurmi		kurmis # acc. sing.
-kurmjus		kurmis # acc. pl.
-kurmī		kurmis # loc. sing.
-kurmjos		kurmis # loc. pl.
-kurmi		kurmis # voc. sing.
-kurmji		kurmis # voc. pl.
+kurmis      kurmis # nom. sing.
+kurmji      kurmis # nom. pl.
+kurmja      kurmis # gen. sing.
+kurmju      kurmis # gen. pl.
+kurmim      kurmis # dat. sing.
+kurmjiem    kurmis # dat. pl.
+kurmi       kurmis # acc. sing.
+kurmjus     kurmis # acc. pl.
+kurmī       kurmis # loc. sing.
+kurmjos     kurmis # loc. pl.
+kurmi       kurmis # voc. sing.
+kurmji      kurmis # voc. pl.
 
 # n. decl. II (c -> č palatalization)
-lācis	lācis       # nom. sing.
-lāči	lācis       # nom. pl.
-lāča	lācis       # gen. sing.
-lāču	lācis       # gen. pl.
-lācim	lācis       # dat. sing.
-lāčiem	lācis       # dat. pl.
-lāci	lācis       # acc. sing.
-lāčus	lācis       # acc. pl.
-lācī	lācis       # loc. sing.
-lāčos	lācis,lāčot # loc. pl.
-lāci	lācis       # voc. sing.
-lāči	lācis       # voc. pl.
+lācis   lācis       # nom. sing.
+lāči    lācis       # nom. pl.
+lāča    lācis       # gen. sing.
+lāču    lācis       # gen. pl.
+lācim   lācis       # dat. sing.
+lāčiem  lācis       # dat. pl.
+lāci    lācis       # acc. sing.
+lāčus   lācis       # acc. pl.
+lācī    lācis       # loc. sing.
+lāčos   lācis,lāčot # loc. pl.
+lāci    lācis       # voc. sing.
+lāči    lācis       # voc. pl.
 
 # n. decl. II (n -> ņ palatalization)
-akmens		akmens # nom. sing.
-akmeņi		akmens # nom. pl.
-akmens		akmens # gen. sing.
-akmeņu		akmens # gen. pl.
-akmenim		akmens # dat. sing.
-akmeņiem	akmens # dat. pl.
-akmeni		akmens # acc. sing.
-akmeņus		akmens # acc. pl.
-akmenī		akmens # loc. sing.
-akmeņos		akmens # loc. pl.
-akmens		akmens # voc. sing.
-akmeņi		akmens # voc. pl.
+akmens      akmens # nom. sing.
+akmeņi      akmens # nom. pl.
+akmens      akmens # gen. sing.
+akmeņu      akmens # gen. pl.
+akmenim     akmens # dat. sing.
+akmeņiem    akmens # dat. pl.
+akmeni      akmens # acc. sing.
+akmeņus     akmens # acc. pl.
+akmenī      akmens # loc. sing.
+akmeņos     akmens # loc. pl.
+akmens      akmens # voc. sing.
+akmeņi      akmens # voc. pl.
 
 # n. decl. III
-lietus	lietus,liet        # nom. sing.
-lieti	lietus,liet        # nom. pl.
-lietus	lietus,liet        # gen. sing.
-lietu	lietus,liet,lieta  # gen. pl.
-lietum	lietus             # dat. sing.
-lietiem	lietus,liet        # dat. pl.
-lietu	lietus,liet,lieta  # acc. sing.
-lietus	lietus,liet        # acc. pl.
+lietus  lietus,liet        # nom. sing.
+lieti   lietus,liet        # nom. pl.
+lietus  lietus,liet        # gen. sing.
+lietu   lietus,liet,lieta  # gen. pl.
+lietum  lietus             # dat. sing.
+lietiem lietus,liet        # dat. pl.
+lietu   lietus,liet,lieta  # acc. sing.
+lietus  lietus,liet        # acc. pl.
 lietū	lietus             # loc. sing.
-lietos	lietus,liet,lietot # loc. pl.
-lietus	lietus,liet        # voc. sing.
-lieti	lietus,liet        # voc. pl.
+lietos  lietus,liet,lietot # loc. pl.
+lietus  lietus,liet        # voc. sing.
+lieti   lietus,liet        # voc. pl.
 
 # n. decl IV
-lapa	lapa # nom. sing.
-lapas	lapa # nom. pl.
-lapas	lapa # gen. sing.
-lapu	lapa # gen. pl.
-lapai	lapa # dat. sing.
-lapām	lapa # dat. pl.
-lapu	lapa # acc. sing.
-lapas	lapa # acc. pl.
-lapā	lapa # loc. sing.
-lapās	lapa # loc. pl.
-lapa	lapa # voc. sing.
-lapas	lapa # voc. pl.
+lapa    lapa # nom. sing.
+lapas   lapa # nom. pl.
+lapas   lapa # gen. sing.
+lapu    lapa # gen. pl.
+lapai   lapa # dat. sing.
+lapām   lapa # dat. pl.
+lapu    lapa # acc. sing.
+lapas   lapa # acc. pl.
+lapā    lapa # loc. sing.
+lapās   lapa # loc. pl.
+lapa    lapa # voc. sing.
+lapas   lapa # voc. pl.
     
-puika	puika  # nom. sing.
-puikas	puikas # nom. pl.
-puikas	puikas # gen. sing.
-puiku	puiku  # gen. pl.
-puikam	puikam # dat. sing.
-puikām	puikām # dat. pl.
-puiku	puiku  # acc. sing.
-puikas	puikas # acc. pl.
-puikā	puikā  # loc. sing.
-puikās	puikās # loc. pl.
-puika	puika  # voc. sing.
-puikas	puikas # voc. pl.
+puika   puika  # nom. sing.
+puikas  puikas # nom. pl.
+puikas  puikas # gen. sing.
+puiku   puiku  # gen. pl.
+puikam  puikam # dat. sing.
+puikām  puikām # dat. pl.
+puiku   puiku  # acc. sing.
+puikas  puikas # acc. pl.
+puikā   puikā  # loc. sing.
+puikās  puikās # loc. pl.
+puika   puika  # voc. sing.
+puikas  puikas # voc. pl.
 
 # n. decl V (l -> ļ palatalization)
-egle	egle # nom. sing.
-egles	egle # nom. pl.
-egles	egle # gen. sing.
-egļu	egle # gen. pl.
-eglei	egle # dat. sing.
-eglēm	egle # dat. pl.
-egli	egle # acc. sing.
-egles	egle # acc. pl.
-eglē	egle # loc. sing.
-eglēs	egle # loc. pl.
-egle	egle # voc. sing.
-egles	egle # voc. pl.
+egle    egle # nom. sing.
+egles   egle # nom. pl.
+egles   egle # gen. sing.
+egļu    egle # gen. pl.
+eglei   egle # dat. sing.
+eglēm   egle # dat. pl.
+egli    egle # acc. sing.
+egles   egle # acc. pl.
+eglē    egle # loc. sing.
+eglēs   egle # loc. pl.
+egle    egle # voc. sing.
+egles   egle # voc. pl.
 
 # n. decl VI
-govs	govs # nom. sing.
-govis	govs # nom. pl.
-govs	govs # gen. sing.
-govju	govs # gen. pl.
-govij	govs # dat. sing.
-govīm	govs # dat. pl.
-govi	govs # acc. sing.
-govis	govs # acc. pl.
-govi	govs # inst. sing.
-govīm	govs # inst. pl.
-govī	govs # loc. sing.
-govīs	govs # loc. pl.
-govs	govs # voc. sing.
-govis	govs # voc. pl.
+govs    govs # nom. sing.
+govis   govs # nom. pl.
+govs    govs # gen. sing.
+govju   govs # gen. pl.
+govij   govs # dat. sing.
+govīm   govs # dat. pl.
+govi    govs # acc. sing.
+govis   govs # acc. pl.
+govi    govs # inst. sing.
+govīm   govs # inst. pl.
+govī    govs # loc. sing.
+govīs   govs # loc. pl.
+govs    govs # voc. sing.
+govis   govs # voc. pl.
 
 # adj
-zils		zils # indef. nom. masc. sing.
-zilais		zils # def. nom. masc. sing.
-zili		zils # indef. nom. masc. pl.
-zilie		zils # def. nom. masc. pl.
-zila		zils # indef. nom. fem. sing.
-zilā		zils # def. nom. fem. sing.
-zilas		zils # indef. nom. fem. pl.
-zilās		zils # def. nom. fem. pl.
-zila		zils # indef. gen. masc. sing.
-zilā		zils # def. gen. masc. sing.
-zilu		zils # indef. gen. masc. pl.
-zilo		zils # def. gen. masc. pl.
-zilas		zils # indef. gen. fem. sing.
-zilās		zils # def. gen. fem. sing.
-zilu		zils # indef. gen. fem. pl.
-zilo		zils # def. gen. fem. pl.
-zilam		zils # indef. dat. masc. sing.
-zilajam		zils # def. dat. masc. sing.
-ziliem		zils # indef. dat. masc. pl.
-zilajiem	zils # def. dat. masc. pl.
-zilai		zils # indef. dat. fem. sing.
-zilajai		zils # def. dat. fem. sing.
-zilām		zils # indef. dat. fem. pl.
-zilajām		zils # def. dat. fem. pl.
-zilu		zils # indef. acc. masc. sing.
-zilo		zils # def. acc. masc. sing.
-zilus		zils # indef. acc. masc. pl.
-zilos		zils # def. acc. masc. pl.
-zilu		zils # indef. acc. fem. sing.
-zilo		zils # def. acc. fem. sing.
-zilās		zils # indef. acc. fem. pl.
-zilās		zils # def. acc. fem. pl.
-zilā		zils # indef. loc. masc. sing.
-zilajā		zils # def. loc. masc. sing.
-zilos		zils # indef. loc. masc. pl.
-zilajos		zils # def. loc. masc. pl.
-zilā		zils # indef. loc. fem. sing.
-zilajā		zils # def. loc. fem. sing.
-zilās		zils # indef. loc. fem. pl.
-zilajās		zils # def. loc. fem. pl.
-zilais		zils # voc. masc. sing.
-zilie		zils # voc. masc. pl.
-zilā		zils # voc. fem. sing.
-zilās		zils # voc. fem. pl.
+zils        zils # indef. nom. masc. sing.
+zilais      zils # def. nom. masc. sing.
+zili        zils # indef. nom. masc. pl.
+zilie       zils # def. nom. masc. pl.
+zila        zils # indef. nom. fem. sing.
+zilā        zils # def. nom. fem. sing.
+zilas       zils # indef. nom. fem. pl.
+zilās       zils # def. nom. fem. pl.
+zila        zils # indef. gen. masc. sing.
+zilā        zils # def. gen. masc. sing.
+zilu        zils # indef. gen. masc. pl.
+zilo        zils # def. gen. masc. pl.
+zilas       zils # indef. gen. fem. sing.
+zilās       zils # def. gen. fem. sing.
+zilu        zils # indef. gen. fem. pl.
+zilo        zils # def. gen. fem. pl.
+zilam       zils # indef. dat. masc. sing.
+zilajam     zils # def. dat. masc. sing.
+ziliem      zils # indef. dat. masc. pl.
+zilajiem    zils # def. dat. masc. pl.
+zilai       zils # indef. dat. fem. sing.
+zilajai     zils # def. dat. fem. sing.
+zilām       zils # indef. dat. fem. pl.
+zilajām     zils # def. dat. fem. pl.
+zilu        zils # indef. acc. masc. sing.
+zilo        zils # def. acc. masc. sing.
+zilus       zils # indef. acc. masc. pl.
+zilos       zils # def. acc. masc. pl.
+zilu        zils # indef. acc. fem. sing.
+zilo        zils # def. acc. fem. sing.
+zilās       zils # indef. acc. fem. pl.
+zilās       zils # def. acc. fem. pl.
+zilā        zils # indef. loc. masc. sing.
+zilajā      zils # def. loc. masc. sing.
+zilos       zils # indef. loc. masc. pl.
+zilajos     zils # def. loc. masc. pl.
+zilā        zils # indef. loc. fem. sing.
+zilajā      zils # def. loc. fem. sing.
+zilās       zils # indef. loc. fem. pl.
+zilajās     zils # def. loc. fem. pl.
+zilais      zils # voc. masc. sing.
+zilie       zils # voc. masc. pl.
+zilā        zils # voc. fem. sing.
+zilās       zils # voc. fem. pl.
 
 # palatalization
-krāsns		krāsns        # nom. sing.
-krāšņu		krāsns,krāšņs # gen. pl.
-zvaigzne	zvaigzne      # nom. sing.
-zvaigžņu	zvaigzne      # gen. pl.
-kāpslis		kāpslis       # nom. sing.
-kāpšļu		kāpslis       # gen. pl.
-zizlis		zizlis        # nom. sing.
-zižļu		zizlis        # gen. pl.
-vilnis		vilnis        # nom. sing.
-viļņu		vilnis        # gen. pl.
-lelle		lelle         # nom. sing.
-leļļu		lelle,lellis  # gen. pl.
-pinne		pinne         # nom. sing.
-piņņu		piņņu         # gen. pl.
-rīkste		rīkste        # nom. sing.
-rīkšu		rīkste        # gen. pl.
+krāsns      krāsns        # nom. sing.
+krāšņu      krāsns,krāšņs # gen. pl.
+zvaigzne    zvaigzne      # nom. sing.
+zvaigžņu    zvaigzne      # gen. pl.
+kāpslis     kāpslis       # nom. sing.
+kāpšļu      kāpslis       # gen. pl.
+zizlis      zizlis        # nom. sing.
+zižļu       zizlis        # gen. pl.
+vilnis      vilnis        # nom. sing.
+viļņu       vilnis        # gen. pl.
+lelle       lelle         # nom. sing.
+leļļu       lelle,lellis  # gen. pl.
+pinne       pinne         # nom. sing.
+piņņu       piņņu         # gen. pl.
+rīkste      rīkste        # nom. sing.
+rīkšu       rīkste        # gen. pl.
