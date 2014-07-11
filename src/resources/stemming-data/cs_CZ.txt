@@ -64,7 +64,7 @@ mužem	muž
 
 # n. masc. inanimate ending with a soft consonant
 # BUG!!!! stroj		stroj,strojit
-# BUG!!!! stroje	strojit,stroj
+stroje		strojit,stroj
 strojů		stroj
 stroji		stroj
 strojům		stroj
