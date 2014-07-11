@@ -1,0 +1,183 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for Ukrainian uk_UA dictionary
+
+dic=uk-UA.dic
+aff=uk-UA.aff
+
+# High frequency terms from corpora
+
+і           і
+на          на
+в           в
+не          не
+у           у
+з           з
+що          що
+до          до
+та          та
+а           а
+за          за
+я           я
+це          це
+# BUG!! duplicate tokens... як          як
+про         про
+для         для
+але         але
+від         від
+так         так
+є           є
+й           й
+він         він
+його        його
+ще          ще
+вже         вже
+ми          ми
+то          то
+чи          чи
+які         який
+було        бути
+по          по
+все         все
+україни     україни
+мене        мене
+коли        коли,колоти
+із          із
+ж           ж
+тому        тому,том
+буде        бути
+вони        вони
+якщо        якщо
+щоб         щоб
+під         під
+року        рок,рік
+її          її
+можна       можна
+час         час
+їх          їх
+ти          ти
+також       також
+дуже        дуже,дужий
+сьогодні    сьогодні
+тільки      тільки
+або         або
+може        може
+мені        мені
+того        того
+цього       цього
+вона        вона
+те          те
+який        який
+був         бути
+б           б
+після       після
+хто         хто
+там         там
+лише        лише
+всі         всі
+бо          бо
+треба       треба
+ви          ви
+нас         нас
+де          де
+навіть      навіть
+бути        бути
+через       через
+має         мати,маяти
+більше      більше,більший
+яка         як,який
+просто      просто,простий
+день        день
+при         при,перти
+тут         тут
+без         без
+були        бути
+була        булий,бути
+зараз       зараз,зараза
+життя       життя
+років       рік
+ну          ну
+себе        себе
+саме        саме,самий
+ні          ні
+людей       люди
+багато      багато,багатий
+зі          зі
+них         них
+цей         цей
+тепер       тепер
+україні     україні
+люди        люди
+один        один
+цьому       цьому
+тим         тим
+щодо        щодо
+тоді        тоді
+щось        щось
+собі        собі
+області     область
+питання     питання
+би          би
+ці          ці
+той         той
+чому        чому
+тебе        тебе
+всіх        всіх
+нього       нього
+роботи      роботи,робот,робота
+немає       немає
+свою        свою
+таке        такий
+такі        такий
+сказав      сказати
+потім       потім
+яких        який
+теж         теж
+от          от
+о           о
+грн         грн
+ради        рада
+перед       перед
+шо          шо
+завжди      завжди
+вас         вас
+між         між
+інших       інший
+хочу        хочу
+хоча        хоча
+ніж         ніж
+нічого      нічого
+добре       добре,добрий
+нам         нам
+йому        йому
+чого        чого
+році        рок,рік
+мають       мати,маяти
+будуть      бути
+рішення     рішення
+свої        свої
+такий       такий
+знову       знову
+можуть      можуть
+словами     слово
+рік         рік,ріка
+своїх       своїх
+проти       проти
+завтра      завтра
+потрібно    потрібний
