@@ -45,11 +45,11 @@ kurmja		kurmis # gen. sing.
 kurmju		kurmis # gen. pl.
 kurmim		kurmis # dat. sing.
 kurmjiem	kurmis # dat. pl.
-# BUG!!!! kurmi		kurmis # acc. sing.
+kurmi		kurmis # acc. sing.
 kurmjus		kurmis # acc. pl.
 kurmī		kurmis # loc. sing.
 kurmjos		kurmis # loc. pl.
-# BUG!!!! kurmi		kurmis # voc. sing.
+kurmi		kurmis # voc. sing.
 kurmji		kurmis # voc. pl.
 
 # n. decl. II (c -> č palatalization)
@@ -59,11 +59,11 @@ lāča	lācis       # gen. sing.
 lāču	lācis       # gen. pl.
 lācim	lācis       # dat. sing.
 lāčiem	lācis       # dat. pl.
-lāci	lāci        # acc. sing.
+lāci	lācis       # acc. sing.
 lāčus	lācis       # acc. pl.
 lācī	lācis       # loc. sing.
 lāčos	lācis,lāčot # loc. pl.
-lāci	lāci        # voc. sing.
+lāci	lācis       # voc. sing.
 lāči	lācis       # voc. pl.
 
 # n. decl. II (n -> ņ palatalization)
@@ -84,10 +84,10 @@ akmeņi		akmens # voc. pl.
 lietus	lietus,liet        # nom. sing.
 lieti	lietus,liet        # nom. pl.
 lietus	lietus,liet        # gen. sing.
-# BUG!!!! lietu	lietus,liet,lieta  # gen. pl.
+lietu	lietus,liet,lieta  # gen. pl.
 lietum	lietus             # dat. sing.
 lietiem	lietus,liet        # dat. pl.
-# BUG!!!! lietu	lietus,liet,lieta  # acc. sing.
+lietu	lietus,liet,lieta  # acc. sing.
 lietus	lietus,liet        # acc. pl.
 lietū	lietus             # loc. sing.
 lietos	lietus,liet,lietot # loc. pl.

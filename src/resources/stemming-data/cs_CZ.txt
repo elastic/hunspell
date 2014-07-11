@@ -63,7 +63,7 @@ mužích	muž
 mužem	muž
 
 # n. masc. inanimate ending with a soft consonant
-# BUG!!!! stroj		stroj,strojit
+stroj		stroj,strojit
 stroje		strojit,stroj
 strojů		stroj
 stroji		stroj
@@ -221,7 +221,7 @@ do		do
 o		o
 i		i
 za		za
-# BUG!!!!! už		už
+už		už
 co		co
 by		by
 pro		pro
@@ -338,13 +338,13 @@ opravdu	opravdu
 budu	budu
 roku	rok
 jinak	jinak
-# BUG!!!! fakt	fakt,faktum
+fakt	fakt,faktum
 lidí	lidí
 měla	měl
 všechny	všechny
 dva		dva
 víc		víc
-# BUG!!!! jí		jí,jíst
+jí		jí,jíst
 roce	rok
 dneska	dneska
 jde		jdu
