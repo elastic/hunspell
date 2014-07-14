@@ -1,0 +1,324 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for pl_PL dictionary
+
+dic=pl_PL.dic
+aff=pl_PL.aff
+
+# m. o-stem hard n.
+nos       nos          # nom. sg.
+nosy      nos          # nom. pl.
+nos       nos          # acc. sg.
+nosy      nos          # acc. pl.
+nosa      nos          # gen. sg.
+nosów     nos          # gen. pl.
+nosie     nos          # loc. sg.
+nosach    nos          # loc. pl.
+nosowi    nos,nosowy   # dat. sg.
+nosom     nos          # dat. pl.
+nosem     nos,nosema   # ins. sg.
+nosami    nos          # ins. pl.
+nosie     nos          # voc. sg.
+nosy      nos          # voc. pl.
+
+# m. o-stem soft n.
+miesiąc       miesiąc  # nom. sg.
+miesiące      miesiąc  # nom. pl.
+miesiąc       miesiąc  # acc. sg.
+miesiące      miesiąc  # acc. pl.
+miesiąca      miesiąc  # gen. sg.
+miesięcy      miesiąc  # gen. pl.
+miesiącu      miesiąc  # loc. sg.
+miesiącach    miesiąc  # loc. pl.
+miesiącowi    miesiąc  # dat. sg.
+miesiącom     miesiąc  # dat. pl.
+miesiącem     miesiąc  # ins. sg.
+miesiącami    miesiąc  # ins. pl.
+miesiącu      miesiąc  # voc. sg.
+miesiące      miesiąc  # voc. pl.
+
+# f. a-stem hard n.
+mapa       mapa    # nom. sg.
+mapy       mapa    # nom. pl.
+mapę       mapa    # acc. sg.
+mapy       mapa    # acc. pl.
+mapy       mapa    # gen. sg.
+map        mapa    # gen. pl.
+mapie      mapa    # loc. sg.
+mapach     mapa    # loc. pl.
+mapie      mapa    # dat. sg.
+mapom      mapa    # dat. pl.
+mapą       mapa    # ins. sg.
+mapami     mapa    # ins. pl.
+mapo       mapa    # voc. sg.
+mapy       mapa    # voc. pl.
+
+# f. a-stem soft n.
+granica       granica          # nom. sg.
+granice       granica          # nom. pl.
+granicę       granica          # acc. sg.
+granice       granica          # acc. pl.
+granicy       granica          # gen. sg.
+granic        granica,granic   # gen. pl.
+granicy       granica          # loc. sg.
+granicach     granica          # loc. pl.
+granicy       granica          # dat. sg.
+granicom      granica          # dat. pl.
+granicą       granica,granicą  # ins. sg.
+granicami     granica          # ins. pl.
+granico       granica          # voc. sg.
+granice       granica          # voc. pl.
+
+# f. i-stem n.
+noc       noc    # nom. sg.
+noce      noc    # nom. pl.
+noc       noc    # acc. sg.
+noce      noc    # acc. pl.
+nocy      noc    # gen. sg.
+nocy      noc    # gen. pl.
+nocy      noc    # loc. sg.
+nocach    noc    # loc. pl.
+nocy      noc    # dat. sg.
+nocom     noc    # dat. pl.
+nocą      noc    # ins. sg.
+nocami    noc    # ins. pl.
+nocy      noc    # voc. sg.
+noce      noc    # voc. pl.
+
+# n. o-stem hard n.
+miasto    miasto           # nom. sg.
+miasta    miasto,miasta    # nom. pl.
+miasto    miasto           # acc. sg.
+miasta    miasto,miasta    # acc. pl.
+miasta    miasto,miasta    # gen. sg.
+miast     miasto,miast     # gen. pl.
+miaście   miaście          # loc. sg.
+miastach  miasto,miastach  # loc. pl.
+miastu    miasto,miastu    # dat. sg.
+miastom   miasto,miastom   # dat. pl.
+miastem   miasto,miastem   # ins. sg.
+miastami  miasto,miastami  # ins. pl.
+miasto    miasto           # voc. sg.
+miasta    miasto,miasta    # voc. pl.
+
+# n. o-stem soft n.
+pole      pole,poła    # nom. sg.
+pola      pole         # nom. pl.
+pole      pole,poła    # acc. sg.
+pola      pole         # acc. pl.
+pola      pole         # gen. sg.
+pól       pól          # gen. pl.
+polu      pole         # loc. sg.
+polach    pole         # loc. pl.
+polu      pole         # dat. sg.
+polom     pole         # dat. pl.
+polem     pole         # ins. sg.
+polami    pole         # ins. pl.
+pole      pole,poła    # voc. sg.
+pola      pole         # voc. pl.
+
+# n. n-stem n.
+imię      imię          # nom. sg.
+imiona    imię,imiona   # nom. pl.
+imię      imię          # acc. sg.
+imiona    imię,imiona   # acc. pl.
+imienia   imię          # gen. sg.
+imion     imię,imion    # gen. pl.
+imieniu   imię          # loc. sg.
+imionach  imię,imiona   # loc. pl.
+imieniu   imię          # dat. sg.
+imionom   imię,imiona   # dat. pl.
+imieniem  imię          # ins. sg.
+imionami  imię,imiona   # ins. pl.
+imię      imię          # voc. sg.
+imiona    imię,imiona   # voc. pl.
+
+# n. t-stem n.
+cielę      cielę,cielić  # nom. sg.
+cielęta    cielę         # nom. pl.
+cielę      cielę,cielić  # acc. sg.
+cielęta    cielę         # acc. pl.
+cielęcia   cielę         # gen. sg.
+cieląt     cielę         # gen. pl.
+cielęciu   cielę         # loc. sg.
+cielętach  cielę         # loc. pl.
+cielęciu   cielę         # dat. sg.
+cielętom   cielę         # dat. pl.
+cielęciem  cielę         # ins. sg.
+cielętami  cielę         # ins. pl.
+cielę      cielę,cielić  # voc. sg.
+cielęta    cielę         # voc. pl.
+
+# adj
+dumny      dumny   # m. nom. sg.
+dumnego    dumny   # m. gen. sg.
+dumnemu    dumny   # m. dat. sg.
+dumnego    dumny   # m. acc. anim. sg.
+dumny      dumny   # m. acc. inam. sg.
+dumnym     dumny   # m. ins. sg.
+dumnym     dumny   # m. loc. sg.
+dumny      dumny   # m. voc. sg.
+dumna      dumny   # f. nom. sg.
+dumnej     dumny   # f. gen. sg.
+dumnej     dumny   # f. dat. sg.
+dumną      dumny   # f. acc. sg.
+dumną      dumny   # f. ins. sg.
+dumnej     dumny   # f. loc. sg.
+dumna      dumny   # f. voc. sg.        
+dumne      dumny   # n. nom. sg.
+dumnego    dumny   # n. gen. sg.
+dumnemu    dumny   # n. dat. sg.
+dumne      dumny   # n. acc. sg.
+dumnym     dumny   # n. ins. sg.
+dumnym     dumny   # n. loc. sg.
+dumne      dumny   # n. voc. sg.
+dumne      dumny   # nom. pl.
+dumni      dumny   # nom. pl. (m. pers.)
+dumnych    dumny   # gen. pl.
+dumnym     dumny   # dat. pl.
+dumne      dumny   # acc. pl.
+dumnych    dumny   # acc. pl. (m. pers.)
+dumnymi    dumny   # ins. pl.
+dumnych    dumny   # loc. pl.
+dumne      dumny   # voc. pl.
+dumni      dumny   # voc. pl. (m. pers.)
+
+# High frequency terms from corpora
+w          w
+i          i
+nie        nie
+na         na
+się        się
+z          z
+to         to,ten
+do         do
+że         że 
+a          a
+jest       jest
+o          o
+jak        jak,jaka
+ale        ale
+co         co,ca
+po         po
+tak        tak,taka
+za         za
+d          d
+ja         ja
+od         od,oda
+już        już
+mi         mi
+bo         bo
+tym        tym,ty,ten
+mnie       mnie
+xd         xd
+ma         ma
+tylko      tylko
+czy        czy,cza
+dla        dla
+też        też
+mam        mam,mama,mamić
+no         no
+przez      przez
+ze         ze
+tego       tego,ten,ty
+są         są
+może       może,móc
+będzie     będzie
+jeszcze    jeszcze
+bardzo     bardzo
+p          p
+sobie      sobie
+było       było,być
+ten        ten
+być        być,być
+teraz      teraz
+jednak     jednak
+roku       roku,rok
+nawet      nawet
+jego       jego
+by         by
+ich        ich
+tam        tam,tama
+u          u
+które      który
+sie        sie
+go         go
+jestem     jestem
+który      który
+coś        coś
+wiem       wiedzieć
+chyba      chyba
+można      można,możny
+jej        jej
+był        być
+tej        tej,ten,ty
+więc       więc
+te         te,ten,ty
+przy       przy
+oraz       oraz
+pod        pod
+przed      przed
+wszystko   wszystko
+jeśli      jeśli
+lat        lat,lata,lato
+bez        bez,beza
+nic        nic,nica
+kiedy      kiedy
+ci         ci
+nas        nas
+tu         tu
+takie      taki
+gdy        gdy
+właśnie    właśnie
+lub        lub,lubić
+żeby       żeby
+dziś       dziś
+także      także
+trzeba     trzeba
+jako       jako,jaka
+dobrze     dobrze,dobro
+on         on
+czas       czas
+tych       tych,ty,ten
+gdzie      gdzie
+zawsze     zawsze
+ty         ty
+była       była,były,być
+ta         ta,ten,ty
+niż        niż,nizać
+chce       chcieć
+mówi       mówić
+dzisiaj    dzisiaj
+jutro      jutro
+która      który
+zł         zł
+albo       albo,alba
+więcej     więcej
+dzień      dzień
+mają       mają,maja,maić
+raz        raz
+będą       będą
+pracy      praca
+je         je,jeść
+również    również
+nad        nad
+bardziej   bardziej
+kilka      kilka
+domu       domu
+nich       nich
