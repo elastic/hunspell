@@ -1,0 +1,424 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for mozilla lt_LT dictionary
+
+dic=lt.dic
+aff=lt.aff
+
+# n. decl. I (-as)
+vaikas     vaikas        # nom. sg.
+vaikai     vaikas,vaiko  # nom. pl.
+vaiko      vaikas,vaiko  # gen. sg.
+vaikų      vaikas        # gen. pl.
+vaikui     vaikas        # dat. sg.
+vaikams    vaikas        # dat. pl.
+vaiką      vaikas,vaiko  # acc. sg.
+vaikus     vaikas        # acc. pl.
+vaiku      vaikas        # ins. sg.
+vaikais    vaikas        # ins. pl.
+vaike      vaikas        # loc. sg.
+vaikuose   vaikas        # loc. pl.
+vaike      vaikas        # voc. sg.
+vaikai     vaikas,vaiko  # voc. pl.
+
+# n. decl. I (-is)
+brolis     brolis        # nom. sg.
+broliai    brolis        # nom. pl.
+brolio     brolis        # gen. sg.
+brolių     brolis        # gen. pl.
+broliui    brolis        # dat. sg.
+broliams   brolis        # dat. pl.
+brolį      brolis        # acc. sg.
+brolius    brolis        # acc. pl.
+broliu     brolis        # ins. sg.
+broliais   brolis        # ins. pl.
+brolyje    brolis        # loc. sg.
+broliuose  brolis        # loc. pl.
+broli      brolis        # voc. sg.
+broliai    brolis        # voc. pl.
+
+# n. decl. I (-ys)
+arklys     arklys        # nom. sg.
+arkliai    arklys        # nom. pl.
+arklio     arklys        # gen. sg.
+arklių     arklys        # gen. pl.
+arkliui    arklys        # dat. sg.
+arkliams   arklys        # dat. pl.
+arklį      arklys        # acc. sg.
+arklius    arklys        # acc. pl.
+arkliu     arklys        # ins. sg.
+arkliais   arklys        # ins. pl.
+arklyje    arklys        # loc. sg.
+arkliuose  arklys        # loc. pl.
+arkly      arklys        # voc. sg.
+arkliai    arklys        # voc. pl.
+
+# n. decl II (-a)
+motina     motina,moti   # nom. sg.
+motinos    motina,moti   # nom. pl.
+motinos    motina,moti   # gen. sg.
+motinų     motina,moti   # gen. pl.
+motinai    motina,moti   # dat. sg.
+motinoms   motina,moti   # dat. pl.
+motiną     motina,moti   # acc. sg.
+motinas    motina,moti   # acc. pl.
+motina     motina,moti   # ins. sg.
+motinomis  motina,moti   # ins. pl.
+motinoje   motina,moti   # loc. sg.
+motinose   motina,moti   # loc. pl.
+motina     motina,moti   # voc. sg.
+motinos    motina,moti   # voc. pl.
+
+# n. decl II (-ė)
+katė       katė          # nom. sg.
+katės      katė,katėti   # nom. pl.
+katės      katė,katėti   # gen. sg.
+kačių      katė          # gen. pl.
+katei      katė          # dat. sg.
+katėms     katė          # dat. pl.
+katę       katė          # acc. sg.
+kates      katė          # acc. pl.
+kate       katė          # ins. sg.
+katėmis    katė          # ins. pl.
+katėje     katė          # loc. sg.
+katėse     katė          # loc. pl.
+kate       katė          # voc. sg.
+katės      katė,katėti   # voc. pl.
+
+# n. decl II (-ti)
+pati       pati          # nom. sg.
+pačios     pati          # nom. pl.
+pačios     pati          # gen. sg.
+pačių      pačių,pati    # gen. pl.
+pačiai     pati          # dat. sg.
+pačioms    pati          # dat. pl.
+pačią      pati          # acc. sg.
+pačias     pati          # acc. pl.
+pačia      pati          # ins. sg.
+pačiomis   pati          # ins. pl.
+pačioje    pati          # loc. sg.
+pačiose    pati          # loc. pl.
+pati       pati          # voc. sg.
+pačios     pati          # voc. pl.
+
+# n. decl III-m
+vagis      vagis         # nom. sg.
+vagys      vagis         # nom. pl.
+vagies     vagis         # gen. sg.
+vagių      vagis,vagis   # gen. pl.
+vagiui     vagis,vagis   # dat. sg.
+vagims     vagis         # dat. pl.
+vagį       vagis,vagis   # acc. sg.
+vagis      vagis         # acc. pl.
+vagimi     vagis         # ins. sg.
+vagimis    vagis         # ins. pl.
+vagyje     vagis,vagis   # loc. sg.
+vagyse     vagis         # loc. pl.
+vagie      vagis         # voc. sg.
+vagys      vagis         # voc. pl.
+
+# n. decl III-f
+akis       akis          # nom. sg.
+akys       akis,akyti    # nom. pl.
+akies      akis          # gen. sg.
+akių       akis          # gen. pl.
+akiai      akis          # dat. sg.
+akims      akis          # dat. pl.
+akį        akis          # acc. sg.
+akis       akis          # acc. pl.
+akimi      akis          # ins. sg.
+akimis     akis          # ins. pl.
+akyje      akis          # loc. sg.
+akyse      akis          # loc. pl.
+akie       akis          # voc. sg.
+akys       akis,akyti    # voc. pl.
+
+# n. decl IV (-us)
+sūnus      sūnus         # nom. sg.
+sūnūs      sūnus         # nom. pl.
+sūnaus     sūnus         # gen. sg.
+sūnų       sūnus         # gen. pl.
+sūnui      sūnus         # dat. sg.
+sūnums     sūnus         # dat. pl.
+sūnų       sūnus         # acc. sg.
+sūnus      sūnus         # acc. pl.
+sūnumi     sūnus         # ins. sg.
+sūnumis    sūnus         # ins. pl.
+sūnuje     sūnus         # loc. sg.
+sūnuose    sūnus         # loc. pl.
+sūnau      sūnus         # voc. sg.
+sūnūs      sūnus         # voc. pl.
+
+# n. decl IV (-ius)
+profesorius     profesorius                # nom. sg.
+profesoriai     profesorius                # nom. pl.
+profesoriaus    profesorius,profesoriauti  # gen. sg.
+profesorių      profesorius,profesorė      # gen. pl.
+profesoriui     profesorius                # dat. sg.
+profesoriams    profesorius                # dat. pl.
+profesorių      profesorius,profesorė      # acc. sg.
+profesorius     profesorius                # acc. pl.
+profesoriumi    profesorius                # ins. sg.
+profesoriais    profesorius                # ins. pl.
+profesoriuje    profesorius                # loc. sg.
+profesoriuose   profesorius                # loc. pl.
+profesoriau     profesorius                # voc. sg.
+profesoriai     profesorius                # voc. pl.
+
+# n. decl V
+vanduo        vanduo            # nom. sg.
+vandenys      vanduo,vandenyti  # nom. pl.
+vandens       vanduo            # gen. sg.
+vandenų       vanduo            # gen. pl.
+vandeniui     vanduo,vandenis   # dat. sg.
+vandenims     vanduo            # dat. pl.
+vandenį       vanduo,vandenis   # acc. sg.
+vandenis      vanduo,vandenis   # acc. pl.
+vandeniu      vanduo,vandenis   # ins. sg.
+vandenimis    vanduo            # ins. pl.
+vandenyje     vanduo,vandenis   # loc. sg.
+vandenyse     vanduo            # loc. pl.
+vandenie      vanduo            # voc. sg.
+vandenys      vanduo,vandenyti  # voc. pl.
+
+# adj. decl I
+# BUG! (extra tokens) geras       geras        # m. nom. sg.
+geri        geras,geria         # m. nom. pl.
+gero        geras,geras         # m. gen. sg.
+gerų        geras,geras         # m. gen. pl.
+geram       geras               # m. dat. sg.
+geriems     geras               # m. dat. pl.
+gerą        geras,geras         # m. acc. sg.
+gerus       geras,geras         # m. acc. pl.
+geru        geras,geras         # m. ins. sg.
+gerais      geras,geras         # m. ins. pl.
+gerame      geras               # m. loc. sg.
+geruose     geras,geras         # m. loc. pl.
+gera        geras,geras         # f. nom. sg.
+geros       geras               # f. nom. pl.
+geros       geras               # f. gen. sg.
+gerų        geras,geras         # f. gen. pl.
+gerai       geras,geras,geras   # f. dat. sg.
+geroms      geras               # f. dat. pl.
+gerą        geras,geras         # f. acc. sg.
+# BUG! (extra tokens) geras       geras   # f. acc. pl.
+gera        geras,geras         # f. ins. sg.
+geromis     geras               # f. ins. pl.
+geroje      geras               # f. loc. sg.
+gerose      geras               # f. loc. pl.
+
+# adj. decl II
+gražus      gražus         # m. nom. sg.
+gražūs      gražus         # m. nom. pl.
+gražaus     gražus         # m. gen. sg.
+gražių      gražus         # m. gen. pl.
+gražiam     gražus         # m. dat. sg.
+gražiems    gražus         # m. dat. pl.
+gražų       gražus         # m. acc. sg.
+gražius     gražus         # m. acc. pl.
+gražiu      gražus         # m. ins. sg.
+gražiais    gražus         # m. ins. pl.
+gražiame    gražus         # m. loc. sg.
+gražiuose   gražus         # m. loc. pl.
+graži       gražus         # f. nom. sg.
+gražios     gražus         # f. nom. pl.
+gražios     gražus         # f. gen. sg.
+gražių      gražus         # f. gen. pl.
+gražiai     gražus,gražus  # f. dat. sg.
+gražioms    gražus         # f. dat. pl.
+gražią      gražus         # f. acc. sg.
+gražias     gražus         # f. acc. pl.
+gražia      gražus         # f. ins. sg.
+gražiomis   gražus         # f. ins. pl.
+gražioje    gražus         # f. loc. sg.
+gražiose    gražus         # f. loc. pl.
+
+# adj. decl III
+vidutinis       vidutinis  # m. nom. sg.
+vidutiniai      vidutinis  # m. nom. pl.
+vidutinio       vidutinis  # m. gen. sg.
+vidutinių       vidutinis  # m. gen. pl.
+vidutiniam      vidutinis  # m. dat. sg.
+vidutiniams     vidutinis  # m. dat. pl.
+vidutinį        vidutinis  # m. acc. sg.
+vidutinius      vidutinis  # m. acc. pl.
+vidutiniu       vidutinis  # m. ins. sg.
+vidutiniais     vidutinis  # m. ins. pl.
+vidutiniame     vidutinis  # m. loc. sg.
+vidutiniuose    vidutinis  # m. loc. pl.
+vidutinė        vidutinis  # f. nom. sg.
+vidutinės       vidutinis  # f. nom. pl.
+vidutinės       vidutinis  # f. gen. sg.
+vidutinių       vidutinis  # f. gen. pl.
+vidutinei       vidutinis  # f. dat. sg.
+vidutinėms      vidutinis  # f. dat. pl.
+vidutinę        vidutinis  # f. acc. sg.
+vidutines       vidutinis  # f. acc. pl.
+vidutine        vidutinis  # f. ins. sg.
+vidutinėmis     vidutinis  # f. ins. pl.
+vidutinėje      vidutinis  # f. loc. sg.
+vidutinėse      vidutinis  # f. loc. pl.
+
+# High frequency terms from corpora
+ir            ir
+kad           kad
+į             į
+tai           tai,ta
+su            su
+o             o
+iš            iš,ižti
+kaip          kaip
+bet           bet
+# BUG! (extra tokens) yra yra
+# BUG! (extra tokens) buvo buvo
+tik           tik,tikti
+ne            ne
+taip          taip
+ar            ar
+dar           dar
+jau           jau
+savo          savo,savas,savas
+apie          apie
+kai           kai
+aš            aš
+per           per
+nuo           nuo
+po            po
+jis           jis
+kas           kas,kasti
+d             d
+labai         labai,labas,labas,labas
+man           man
+dėl           dėl
+tačiau        tačiau
+nes           nes
+už            už
+to            tas
+jo            jo
+iki           iki
+ką            ką,kas
+# BUG! (extra tokens) mano mano,manas
+metų          metas,metus
+nors          nors,norti
+jei           jei
+bus           busti,būti
+jų            jų
+čia           čia
+dabar         dabar
+Lietuvos      Lietuva
+net           net
+nei           nei
+gali          gali,galis
+daug          daug
+prie          prie
+ji            ji
+jos           jos,joti
+pat           pat
+jie           jie
+kur           kur
+gal           gal
+ant           ant
+tiek          tiek,tiekti
+be            be
+būti          būti
+bei           bei
+daugiau       daugiau,daugus
+turi          turi
+prieš         prieš
+vis           vis,visti
+būtų          būti
+jog           jog
+reikia        reikia
+mūsų          mūsų
+metu          metus,metas,meta
+galima        galimas,galimas,gali
+nėra          nėra
+arba          arba
+mes           mes,mesti
+kurie         kurie
+tikrai        tikras,tikras
+todėl         todėl
+ten           ten
+šiandien      šiandien
+vienas        vienas
+visi          visas,visti
+kuris         kuris
+tada          tada
+kiek          kiek
+tuo           tuo,tas
+gerai         geras,geras,geras
+nieko         nieko,niekas
+jį            jį
+kol           kol
+viskas        viskas
+mane          mane
+kartą         karta,kartas,karti
+m             m
+tas           tas,ta
+sakė          sakė
+žmonių        žmonės
+tu            tu
+dieną         diena
+žmonės        žmonės,žmonėti
+metais        metas
+vieną         vienas
+vėl           vėl
+na            na
+tą            ta,tas
+tiesiog       tiesiog
+toks          toks
+pats          pats
+ko            ko,kas
+Lietuvoje     Lietuva
+pagal         pagal
+jeigu         jeigu
+visai         visai,visas,visa,viso
+viena         vienas,vienas
+šį            šį
+metus         metus,metas,metė
+jam           jam
+kodėl         kodėl
+litų          litas
+ją            ją
+kuri          kuri,kuria
+darbo         darbas
+tarp          tarp
+juk           juk,jukti
+laiko         laiko,laikas
+juos          juos,juosti
+visą          visas,visa
+kurios        kurios
+tam           tam,tas
+pas           pas
+viską         viską,viska
+Europos       Europa
+atrodo        rodo
+tad           tad
+bent          bent
+kitų          kita,kitas,kitas,kita
+šis           šis
+Vilniaus      Vilnius
+beveik        beveik,veikti
+proc          proc
+tokia         tokia
+šiuo          šiuo
+du            du
+kartu         kartu,kartus,kartas,karti
+visada        visada
+kuo           kuo,kas
