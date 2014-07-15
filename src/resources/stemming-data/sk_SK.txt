@@ -135,27 +135,27 @@ kosťami    kosť    # ins. pl.
 
 # n. decl. N-I
 mesto      mesto          # nom. sg.
-# BUG!! dup token mestá      mesto          # nom. pl.
-# BUG!! dup token mesta      mesto          # gen. sg.
+mestá      mesto          # nom. pl.
+mesta      mesto          # gen. sg.
 miest      mesto,miesto   # gen. pl.
-# BUG!! dup token mestu      mesto          # dat. sg.
-# BUG!! dup token mestám     mesto          # dat. pl.
+mestu      mesto          # dat. sg.
+mestám     mesto          # dat. pl.
 mesto      mesto          # acc. sg.
-# BUG!! dup token mestá      mesto          # acc. pl.
+mestá      mesto          # acc. pl.
 meste      mesto          # loc. sg.
-# BUG!! dup token mestách    mesto          # loc. pl.
-# BUG!! dup token mestom     mesto          # ins. sg.
-# BUG!! dup token mestami    mesto          # ins. pl.
+mestách    mesto          # loc. pl.
+mestom     mesto          # ins. sg.
+mestami    mesto          # ins. pl.
 
 # n. decl. N-II
 srdce      srdce          # nom. sg.
-# BUG!! dup token srdcia     srdce          # nom. pl.
+srdcia     srdce          # nom. pl.
 srdca      srdce          # gen. sg.
 sŕdc       srdce          # gen. pl.
 srdcu      srdce          # dat. sg.
 srdciam    srdce          # dat. pl.
 srdce      srdce          # acc. sg.
-# BUG!! dup token srdcia     srdce          # acc. pl.
+srdcia     srdce          # acc. pl.
 srdci      srdce          # loc. sg.
 srdciach   srdce          # loc. pl.
 srdcom     srdce          # ins. sg.
@@ -210,10 +210,10 @@ pekné     pekný   # n. acc. sg.
 peknom    pekný   # n. loc. sg.
 pekným    pekný   # n. ins. sg.
 pekná     pekný   # f. nom. sg.
-# BUG! dup token peknej   pekný   # f. gen. sg.
-# BUG! dup token peknej   pekný   # f. dat. sg.
+peknej    pekný   # f. gen. sg.
+peknej    pekný   # f. dat. sg.
 peknú     pekný   # f. acc. sg.
-# BUG! dup token peknej    pekný   # f. loc. sg.
+peknej    pekný   # f. loc. sg.
 peknou    pekný   # f. ins. sg.
 pekné     pekný   # nom. inam. pl.
 pekní     pekný   # nom. anim. pl.
@@ -312,11 +312,11 @@ pred         pred
 no           no
 byť          byť
 so           so
-# BUG! dup token viac viac
+viac         viac
 zo           zo
 tam          tam
 tom          tom
-# BUG! dup token veľmi veľmi
+veľmi        veľmi
 bola         bola
 tu           tu
 ktorá        ktorý

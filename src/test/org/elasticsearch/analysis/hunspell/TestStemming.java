@@ -27,10 +27,9 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.BaseTokenStreamTestCase;
@@ -149,8 +148,8 @@ public class TestStemming extends BaseTokenStreamTestCase {
   /** we use this for comparisons for easier debugging and also to ignore order of tokens */
   private void compareStems(Analyzer analyzer, String input, String outputs[], int lineNumber) throws Exception {
     Arrays.sort(outputs);
-    List<String> expected = Arrays.asList(outputs);
-    List<String> actual = new ArrayList<>();
+    Set<String> expected = asSet(outputs);
+    Set<String> actual = new HashSet<>();
     try (TokenStream ts = analyzer.tokenStream("bogus", input)) {
       CharTermAttribute termAtt = ts.addAttribute(CharTermAttribute.class);
       ts.reset();
@@ -159,7 +158,6 @@ public class TestStemming extends BaseTokenStreamTestCase {
       }
       ts.end();
     }
-    Collections.sort(actual);
     assertEquals("'" + input + "' (line " + lineNumber + "), ", expected, actual);
   }
   

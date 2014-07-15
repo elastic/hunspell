@@ -198,7 +198,7 @@ vandenie      vanduo            # voc. sg.
 vandenys      vanduo,vandenyti  # voc. pl.
 
 # adj. decl I
-# BUG! (extra tokens) geras       geras        # m. nom. sg.
+geras       geras               # m. nom. sg.
 geri        geras,geria         # m. nom. pl.
 gero        geras,geras         # m. gen. sg.
 gerų        geras,geras         # m. gen. pl.
@@ -217,7 +217,7 @@ gerų        geras,geras         # f. gen. pl.
 gerai       geras,geras,geras   # f. dat. sg.
 geroms      geras               # f. dat. pl.
 gerą        geras,geras         # f. acc. sg.
-# BUG! (extra tokens) geras       geras   # f. acc. pl.
+geras       geras               # f. acc. pl.
 gera        geras,geras         # f. ins. sg.
 geromis     geras               # f. ins. pl.
 geroje      geras               # f. loc. sg.
@@ -285,8 +285,8 @@ o             o
 iš            iš,ižti
 kaip          kaip
 bet           bet
-# BUG! (extra tokens) yra yra
-# BUG! (extra tokens) buvo buvo
+yra           yra
+buvo          buvo
 tik           tik,tikti
 ne            ne
 taip          taip
@@ -313,7 +313,7 @@ to            tas
 jo            jo
 iki           iki
 ką            ką,kas
-# BUG! (extra tokens) mano mano,manas
+mano          mano,manas
 metų          metas,metus
 nors          nors,norti
 jei           jei

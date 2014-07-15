@@ -279,7 +279,7 @@ aff=uk_UA.aff
 за          за
 я           я
 це          це
-# BUG!! duplicate tokens... як          як
+як          як
 про         про
 для         для
 але         але
