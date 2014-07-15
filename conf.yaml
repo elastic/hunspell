@@ -658,7 +658,7 @@ langs:
     sk_SK:
         name:           Slovak (Slovakia)
         license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
-        source:         moz:4663
+        source:         http://www.sk-spell.sk.cx/files/hunspell-sk-20110228.zip
         skip:           ["**manifest", "**png"]
     sl_SI-ooe:
         name:           Slovenian (Slovenia)

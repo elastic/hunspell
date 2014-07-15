@@ -18,8 +18,8 @@
 
 # Stemmer test data for sk_SK dictionary
 
-dic=sk-SK.dic
-aff=sk-SK.aff
+dic=sk_SK.dic
+aff=sk_SK.aff
 
 # n. decl. M-I
 chlap       chlap,chlapiť  # nom. sg.
