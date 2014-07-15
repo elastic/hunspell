@@ -1,10 +1,3 @@
-This is Ukrainian spelling dictionary for Firefox >=3, Thunderbird >= 3 and Seamonkey 
-that use hunspell as spelling engine and it is based on 
-dictionary of spell-uk project http://ispell-uk.sourceforge.net/
-
-xpi package authors:
-  Yaroslav Krytsun <slavko7@gmail.com>, 2006
-  Andriy Rysin <arysin@yahoo.com>, 2007 — 2013
 This is Ukrainian spelling dictionary for myspell & hunspell version 1.7.0
 
 This dictionary based on spell-uk project http://ispell-uk.sourceforge.net/

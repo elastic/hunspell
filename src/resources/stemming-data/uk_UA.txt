@@ -18,8 +18,8 @@
 
 # Stemmer test data for Ukrainian uk_UA dictionary
 
-dic=uk-UA.dic
-aff=uk-UA.aff
+dic=uk_UA.dic
+aff=uk_UA.aff
 
 # n. decl. I hard
 актриса    актриса   # nom. sg.

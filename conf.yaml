@@ -723,7 +723,7 @@ langs:
     uk_UA:
         name:           Ukranian
         license:        LGPL 2.1
-        source:         moz:4782
+        source:         http://sourceforge.net/projects/ispell-uk/files/spell-uk/1.7.1/myspell-uk_UA-1.7.1.zip/download
         skip:           ["**png"]
     ur_IN:
         name:           Urdu (India)
