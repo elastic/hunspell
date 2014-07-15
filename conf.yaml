@@ -512,7 +512,9 @@ langs:
     lv_LV:
         name:           Latvian (Latvia)
         license:        GPL2.1
-        source:         oo:lv_LV
+        source:         http://dict.dv.lv/download/lv_LV-1.0.0.zip
+        custom:
+          - [rm, Changelog.txt, README_hyph_lv_LV.txt, hyph_lv_LV.dic, lin-lv_LV_add.sh, win-lv_LV_add.bat, version.txt]
     lv_LV-moz:
         name:           Latvian
         license:        None

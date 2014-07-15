@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use YAML qw(LoadFile Dump);
-use GetOpt::Long;
+use Getopt::Long;
 use Path::Class;
 use HTTP::Tiny;
 sub logmsg ($@);
