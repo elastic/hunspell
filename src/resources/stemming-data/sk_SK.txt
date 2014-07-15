@@ -1,0 +1,379 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for sk_SK dictionary
+
+dic=sk-SK.dic
+aff=sk-SK.aff
+
+# n. decl. M-I
+chlap       chlap,chlapiť  # nom. sg.
+chlapi      chlap          # nom. pl.
+chlapa      chlap          # gen. sg.
+chlapov     chlap          # gen. pl.
+chlapovi    chlap          # dat. sg.
+chlapom     chlap          # dat. pl.
+chlapa      chlap          # acc. sg.
+chlapov     chlap          # acc. pl.
+chlapovi    chlap          # loc. sg.
+chlapoch    chlap          # loc. pl.
+chlapom     chlap          # ins. sg.
+chlapmi     chlap          # ins. pl.
+
+# n. decl. M-II
+hrdina      hrdina         # nom. sg.
+hrdinovia   hrdina         # nom. pl.
+hrdinu      hrdina         # gen. sg.
+hrdinov     hrdina,hrdinov # gen. pl.
+hrdinovi    hrdina,hrdinov # dat. sg.
+hrdinom     hrdina         # dat. pl.
+hrdinu      hrdina         # acc. sg.
+hrdinov     hrdina,hrdinov # acc. pl.
+hrdinovi    hrdina,hrdinov # loc. sg.
+hrdinoch    hrdina         # loc. pl.
+hrdinom     hrdina         # ins. sg.
+hrdinami    hrdina         # ins. pl.
+
+# n. decl. M-III
+dub      dub    # nom. sg.
+duby     dub    # nom. pl.
+duba     duba   # gen. sg.
+dubov    dub    # gen. pl.
+dubu     dub    # dat. sg.
+dubom    dub    # dat. pl.
+dub      dub    # acc. sg.
+duby     dub    # acc. pl.
+dube     dub    # loc. sg.
+duboch   dub    # loc. pl.
+dubom    dub    # ins. sg.
+dubmi    dub    # ins. pl.
+
+# n. decl. M-IV
+stroj      stroj,strojiť  # nom. sg.
+stroje     stroj          # nom. pl.
+stroja     stroj,strojiť  # gen. sg.
+strojov    stroj          # gen. pl.
+stroju     stroj          # dat. sg.
+strojom    stroj          # dat. pl.
+stroj      stroj,strojiť  # acc. sg.
+stroje     stroj          # acc. pl.
+stroji     stroj          # loc. sg.
+strojoch   stroj          # loc. pl.
+strojom    stroj          # ins. sg.
+strojmi    stroj          # ins. pl.
+
+# n. decl. F-I
+žena       žena    # nom. sg.
+ženy       žena    # nom. pl.
+ženy       žena    # gen. sg.
+žien       žena    # gen. pl.
+žene       žena    # dat. sg.
+ženám      žena    # dat. pl.
+ženu       žena    # acc. sg.
+ženy       žena    # acc. pl.
+žene       žena    # loc. sg.
+ženách     žena    # loc. pl.
+ženou      žena    # ins. sg.
+ženami     žena    # ins. pl.
+
+# n. decl. F-II
+ulica      ulica   # nom. sg.
+ulice      ulica   # nom. pl.
+ulice      ulica   # gen. sg.
+ulíc       ulica   # gen. pl.
+ulici      ulica   # dat. sg.
+uliciam    ulica   # dat. pl.
+ulicu      ulica   # acc. sg.
+ulice      ulica   # acc. pl.
+ulici      ulica   # loc. sg.
+uliciach   ulica   # loc. pl.
+ulicou     ulica   # ins. sg.
+ulicami    ulica   # ins. pl.
+
+# n. decl. F-III
+dlaň       dlaň    # nom. sg.
+dlane      dlaň    # nom. pl.
+dlane      dlaň    # gen. sg.
+dlaní      dlaň    # gen. pl.
+dlani      dlaň    # dat. sg.
+dlaniam    dlaň    # dat. pl.
+dlaň       dlaň    # acc. sg.
+dlane      dlaň    # acc. pl.
+dlani      dlaň    # loc. sg.
+dlaniach   dlaň    # loc. pl.
+dlaňou     dlaň    # ins. sg.
+dlaňami    dlaň    # ins. pl.
+
+# n. decl. F-IV
+kosť       kosť    # nom. sg.
+kosti      kosť    # nom. pl.
+kosti      kosť    # gen. sg.
+kostí      kosť    # gen. pl.
+kosti      kosť    # dat. sg.
+kostiam    kosť    # dat. pl.
+kosť       kosť    # acc. sg.
+kosti      kosť    # acc. pl.
+kosti      kosť    # loc. sg.
+kostiach   kosť    # loc. pl.
+kosťou     kosť    # ins. sg.
+kosťami    kosť    # ins. pl.
+
+# n. decl. N-I
+mesto      mesto          # nom. sg.
+# BUG!! dup token mestá      mesto          # nom. pl.
+# BUG!! dup token mesta      mesto          # gen. sg.
+miest      mesto,miesto   # gen. pl.
+# BUG!! dup token mestu      mesto          # dat. sg.
+# BUG!! dup token mestám     mesto          # dat. pl.
+mesto      mesto          # acc. sg.
+# BUG!! dup token mestá      mesto          # acc. pl.
+meste      mesto          # loc. sg.
+# BUG!! dup token mestách    mesto          # loc. pl.
+# BUG!! dup token mestom     mesto          # ins. sg.
+# BUG!! dup token mestami    mesto          # ins. pl.
+
+# n. decl. N-II
+srdce      srdce          # nom. sg.
+# BUG!! dup token srdcia     srdce          # nom. pl.
+srdca      srdce          # gen. sg.
+sŕdc       srdce          # gen. pl.
+srdcu      srdce          # dat. sg.
+srdciam    srdce          # dat. pl.
+srdce      srdce          # acc. sg.
+# BUG!! dup token srdcia     srdce          # acc. pl.
+srdci      srdce          # loc. sg.
+srdciach   srdce          # loc. pl.
+srdcom     srdce          # ins. sg.
+srdcami    srdce          # ins. pl.
+
+# n. decl. N-III
+vysvedčenie     vysvedčenie   # nom. sg.
+vysvedčenia     vysvedčenie   # nom. pl.
+vysvedčenia     vysvedčenie   # gen. sg.
+vysvedčení      vysvedčenie   # gen. pl.
+vysvedčeniu     vysvedčenie   # dat. sg.
+vysvedčeniam    vysvedčenie   # dat. pl.
+vysvedčenie     vysvedčenie   # acc. sg.
+vysvedčenia     vysvedčenie   # acc. pl.
+vysvedčení      vysvedčenie   # loc. sg.
+vysvedčeniach   vysvedčenie   # loc. pl.
+vysvedčením     vysvedčenie   # ins. sg.
+vysvedčeniami   vysvedčenie   # ins. pl.
+
+# n. decl. N-IV
+dievča        dievča            # nom. sg.
+dievčatá      dievča            # nom. pl.
+dievčence     dievča,dievčence  # nom. pl.
+dievčaťa      dievča            # gen. sg.
+dievčiat      dievčiat          # gen. pl.
+dievčeniec    dievča            # gen. pl.
+dievčaťu      dievča            # dat. sg.
+dievčatám     dievča            # dat. pl.
+dievčencom    dievča            # dat. pl.
+dievča        dievča            # acc. sg.
+dievčatá      dievča            # acc. pl.
+dievčence     dievča,dievčence  # acc. pl.
+dievčati      dievča            # loc. sg.
+dievčatách    dievča            # loc. pl.
+dievčencoch   dievča            # loc. pl.
+dievčaťom     dievča            # ins. sg.
+dievčatami    dievča            # ins. pl.
+dievčencami   dievča,dievčence  # ins. pl.
+
+# adj. pekný
+pekný     pekný   # m. nom. sg.
+pekného   pekný   # m. gen. sg.
+peknému   pekný   # m. dat. sg.
+pekný     pekný   # m. acc. inam. sg.
+pekného   pekný   # m. acc. anim. sg.
+peknom    pekný   # m. loc. sg.
+pekným    pekný   # m. ins. sg.
+pekné     pekný   # n. nom. sg.
+pekného   pekný   # n. gen. sg.
+peknému   pekný   # n. dat. sg.
+pekné     pekný   # n. acc. sg.
+peknom    pekný   # n. loc. sg.
+pekným    pekný   # n. ins. sg.
+pekná     pekný   # f. nom. sg.
+# BUG! dup token peknej   pekný   # f. gen. sg.
+# BUG! dup token peknej   pekný   # f. dat. sg.
+peknú     pekný   # f. acc. sg.
+# BUG! dup token peknej    pekný   # f. loc. sg.
+peknou    pekný   # f. ins. sg.
+pekné     pekný   # nom. inam. pl.
+pekní     pekný   # nom. anim. pl.
+pekných   pekný   # gen. pl.
+pekným    pekný   # dat. pl.
+pekné     pekný   # acc. inam. pl.
+pekných   pekný   # acc. anim. pl.
+pekných   pekný   # loc. pl.
+peknými   pekný   # ins. pl.
+
+# adj. otcov
+otcov     otcov,otec  # m. nom. sg.
+otcovho   otcov       # m. gen. sg.
+otcovmu   otcov       # m. dat. sg.
+otcov     otcov,otec  # m. acc. inam. sg.
+otcovho   otcov       # m. acc. anim. sg.
+otcovom   otcov       # m. loc. sg.
+otcovým   otcov       # m. ins. sg.
+otcovo    otcov       # n. nom. sg.
+otcovho   otcov       # n. gen. sg.
+otcovmu   otcov       # n. dat. sg.
+otcovo    otcov       # n. acc. sg.
+otcovom   otcov       # n. loc. sg.
+otcovým   otcov       # n. ins. sg.
+otcova    otcov       # f. nom. sg.
+otcovej   otcov       # f. gen. sg.
+otcovej   otcov       # f. dat. sg.
+otcovu    otcov       # f. acc. sg.
+otcovej   otcov       # f. loc. sg.
+otcovou   otcov       # f. ins. sg.
+otcove    otcov       # nom. inam. pl.
+otcovi    otcov,otec  # nom. anim. pl.
+otcových  otcov       # gen. pl.
+otcovým   otcov       # dat. pl.
+otcove    otcov       # acc. inam. pl.
+otcových  otcov       # acc. anim. pl.
+otcových  otcov       # loc. pl.
+otcovými  otcov       # ins. pl.
+
+# High frequency terms from corpora
+a            a
+sa           sa
+v            v
+na           na
+je           jesť
+to           to
+že           že
+som          som
+aj           aj
+s            s
+si           si
+ako          ako
+z            z
+do           do
+o            o
+ale          ale
+by           by
+tak          tak
+za           za
+už           už
+čo           čí
+po           po
+pre          pre
+sme          sme
+keď          keď
+len          len
+nie          nie
+sú           sú
+k            k
+od           od
+ich          ich
+ktoré        ktorý
+pri          pri,prieť
+mi           mi
+alebo        alebo
+aby          aby,aba
+či           či
+však         však
+ak           ak
+ktorý        ktorý
+ešte         ešte
+vo           vo
+ani          ani
+jeho         jeho
+bude         bude
+má           má,mať
+bol          bol
+ho           ho
+ja           ja
+podľa        podľa
+až           až
+bolo         bolo
+jej          jej
+ma           ma
+pred         pred
+no           no
+byť          byť
+so           so
+# BUG! dup token viac viac
+zo           zo
+tam          tam
+tom          tom
+# BUG! dup token veľmi veľmi
+bola         bola
+tu           tu
+ktorá        ktorý
+kde          kde
+nás          nás
+i            i
+boli         bolieť
+potom        pot
+roku         rok
+toho         toho
+asi          asi
+dnes         dnes
+ten          ten
+tým          tým
+mu           mu
+bez          bez
+ju           ju
+môže         môcť
+ktorí        ktorý
+preto        preto
+ľudí         ľudia
+všetko       všetko
+niečo        niečí
+ste          ste
+iba          iba
+možno        možno
+nám          nám
+mal          mať
+d            d
+lebo         lebo
+teraz        teraz
+medzi        medzi,medza
+tento        tento
+nič          ničiť
+teda         teda
+majú         majú,mať
+mali         mať
+rokov        rok
+tomu         tomu
+mám          mám,mámiť,mať
+ľudia        ľudia
+pod          pod
+práve        práve,právo
+stále        stále,stály
+svoje        svoje
+u            u
+napríklad    napríklad
+nich         nich
+tiež         tiež
+im           im
+mňa          mňa
+budú         budú
+jeden        jeden
+mať          mať
+tie          tie
+vždy         vždy
+každý        každý
+pretože      pretože
+kto          kto
+prečo        prečo
