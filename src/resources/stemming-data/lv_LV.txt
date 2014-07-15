@@ -218,7 +218,7 @@ rīkšu       rīkste        # gen. pl.
 # some high frequency latvian tokens from corpora
 
 un             un
-# BUG!!! ir ir,būt
+ir             ir,būt
 no             no
 ar             ar,art
 gadā           gads
@@ -314,7 +314,7 @@ viņu           viņš
 šo             šis
 trīs           trīs,trīsēt,trīt
 vienu          viens,viena,viens
-# BUG!!!! pirmo viens
+pirmo 		   viens
 tomēr          tomēr
 nekā           kas
 vietā          vieta
