@@ -62,6 +62,10 @@ langs:
         name:           Belarusian (Belarus) - Classic
         license:        GPL
         source:         moz:4853
+    be_BY:
+        name:           Belarusian (Belarus)
+        license:        CC BY-SA 3.0
+        source:         http://downloads.sourceforge.net/project/spell-be/hunspell-be-0.56.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fspell-be%2Ffiles%2F&ts=1405414727&use_mirror=iweb
     bg_BG:
         name:           Bulgarian (Bulgaria)
         license:        GPL 2.0/LGPL 2.1/MPL1.1
