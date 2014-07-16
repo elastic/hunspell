@@ -332,47 +332,11 @@ langs:
         name:           Faroese (Faroe Islands)
         license:        GPL 2.0
         source:         moz:222500
-
-    fr-ooe:
-        name:           French dictionaries
+    fr:
+        name:           French
         license:        MPL 2.0
-        source:         ooe:french-dictionaries
-        skip:           ["**hyph**", "**thes**", "**png","**tex","**bmp","**idx","**py"]
-
-    fr_classic-moz:
-        name:           French Classic
-        license:        MPL 2.0
-        source:         moz:354872
-        skip:           ["**reform*", "**modern*"]
-    fr_classic-reform-moz:
-        name:           French Classic Reform
-        license:        MPL 2.0
-        source:         moz:354872
-        skip:           ["**classic.*", "**fr-reform.*", "**modern*"]
-    fr_reform-moz:
-        name:           French Reform
-        license:        MPL 2.0
-        source:         moz:354872
-        skip:           ["**classic*", "**modern*"]
-    fr_modern-moz:
-        name:           French Modern
-        license:        MPL 2.0
-        source:         moz:354872
-        skip:           ["**classic*", "**reform*"]
-
-    fr_classic:
-        name:           French Classic
-        license:        GPL 2.0/LGPL 2.1/MPL 1.1
-        source:         oo:fr_FR-classique_1-3-2
-    fr_classic-reform:
-        name:           French Classic Reform
-        license:        GPL 2.0/LGPL 2.1/MPL 1.1
-        source:         oo:fr_FR_1-3-2
-    fr_reform:
-        name:           French Reform
-        license:        GPL 2.0/LGPL 2.1/MPL 1.1
-        source:         oo:fr_FR-1990_1-3-2
-
+        source:         http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v5.1.zip
+        skip:           ["**reform*", "**modern*", "**toutesvariantes*"]
     fur_IT:
         name:           Friulian (Italy)
         license:        None
