@@ -109,8 +109,7 @@ sub write_settings {
     my $strict      = $conf->{strict}      || 'true';
     my $content     = <<END;
 ---
-ignore_case: $ignore_case
-strict_affix_parsing: $strict
+ignore_case: false
 
 END
 

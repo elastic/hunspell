@@ -2472,3 +2472,324 @@ V2.13 - 1-JUN-2014
 2338) bottom-dwelling
 2339) bottom-dweller (+plural)
 
+
+2.14 - 1-JUL-2014
+------------------
+2340) hard-code (+ed)
+2341) autocorrecting (merged into autocorrect)
+2342) autarchy (+ic +plural +al)
+2343) autarky (same as the previous word - +plural +ic)
+2344) marcasite
+2345) microcrystalline
+2346) microcredit
+2347) irredeemability
+2348) irrecusable
+2349) bullseyes (added plural)
+2350) bullshot
+2351) inter-agency
+2352) inter-allied
+2353) inter-class
+2354) interactant
+2355) interactionism
+2356) interactionist
+2357) interarticular
+2358) interatomic
+2359) interbed (+ed)
+2360) mudstones (added plural)
+2361) shakuhachi (+plural)
+2362) flat-top (+plural)
+2363) flatbed
+2364) formational (merged into formation)
+2365) endpaper (added singular)
+2366) electrotyper (added singular)
+2367) electrotherapeutic
+2368) electrotherapeutical
+2369) electrosurgery
+2370) electrosurgical
+2371) electrotechnology
+2372) electrotechnic (+s)
+2373) electrotechnical
+2374) electrothermal
+2375) toolkit
+2376) drop-dead
+2377) englacial
+2378) enginery
+2379) gearhead (+plural)
+2380) notchy (+ier +est)
+2381) telemark (+ing)
+2382) triclinic
+2383) tricot
+2384) catteries (added plural)
+2385) diphtherial (merged into diphtheria)
+2386) diphtheritic
+2387) porphyria
+2388) neuropathies (added plural)
+2389) neuropath (+plural) (+ merged ic into it)
+2390) acetylcholine
+2391) Alzheimer (+ 's)
+2392) alyssum (+plural)
+2393) Solaris (OS)
+2394) Arial (font)
+2395) Verisign (+'s - company name)
+2396) DNS
+2397) Symantec (+'s - company name)
+2398) courseware
+2399) coursebook (+plural)
+2400) blipvert (+plural)
+2401) offshores + offshored (merged into offshore)
+2402) eBay (+er)
+2403) shovelboard
+2404) shovelhead (shark)
+2405) bonnethead (shark)
+2406) blackfish (+plural)
+2407) blackfly (+plural)
+2408) astroturfing
+2409) astrophotography
+2410) astrophotographer (+plural)
+2411) astrophotographic
+2412) breakbeat (+plural)
+2413) breakdance (+ing +er +ed)
+2414) PCI
+2415) HDDs (added plural)
+2416) headquarter (added singular + ed)
+2417) OEMs (added plural)
+2418) Gb
+2419) NAS
+2420) drive's (added the 's)
+2421) MMX
+2422) cacheing (it can also be written caching)
+2423) cacheable (merged into cache)
+2424) cacheless (merged into cache)
+2425) uncached
+2426) rebrand (+ing)
+2427) webcast (+plural +ing +er)
+2428) videoconferences (added plural)
+2429) videogram (+plural)
+2430) headnotes (added plural)
+2431) accretive
+2432) amassment (+plural)
+2433) bodger (+plural - Oxford: British informal)
+2434) 'gainst (Oxford: short for against)
+2435) unsex (+ed +s)
+2436) epicene
+2437) stepdad (+plural - Oxford: informal)
+2438) stepfamily (+plural)
+2439) stepmum (+plural - Oxford: informal)
+2440) Stepford (name)
+2441) robotically
+2442) robotisation
+2443) sh*tless (merged into sh*t - Oxford: vulgar slang)
+2444) sh*thouse (Oxford: vulgar slang)
+2445) sh*thead (Oxford: vulgar slang)
+2446) sh*tface (Oxford: vulgar slang)
+2447) shi*hole (Oxford: vulgar slang)
+2448) trafficless (merged into traffic)
+2449) downslope (+plural)
+2450) eyeballed + eyeballing (merged into eyeball)
+2451) brachycephalic
+2452) brachycephaly
+2453) registrant (+plural)
+2454) registrarship
+2455) rheumatology (+ist)
+2456) rheumatological
+2457) francophones (added plural)
+2458) simple-mindedness (merged into simple-minded)
+2459) uncompounded
+2460) uncompanionable
+2461) uncommunicated
+2462) undeciphered
+2463) undecided (+s +ly - merged into a new word)
+2464) shilly-shally (+s +ing +ed +ier)
+2465) shilly-shallyer (previous word can also have this form)
+2466) precoital (+ally)
+2467) precolonial
+2468) preconcert (+ed)
+2469) preconsciousness (merged into preconscious)
+2470) precycling
+2471) showbizzy (merged into showbiz)
+2472) showband (+plural)
+2473) bandmate
+2474) bandleader (+plural)
+2475) banditti (another plural of bandit)
+2476) arse (+ed - Oxford: vulgar slang)
+2477) interceders (added plural)
+2478) interdental
+2479) intercut (+s +ing)
+2480) intercultural
+2481) interculturalism
+2482) intercross (+plural +ing)
+2483) intercostals (added plural)
+2484) intercool (+ed +er)
+2485) intercontinentally
+2486) intercommunity
+2487) intercommunion
+2488) anthropomorphize
+2489) anthropomorphise (another form of the previous word)
+2490) antinomians (added plural)
+2491) antinomianism
+2492) catechetics
+2493) catechesis
+2494) catchily + catchiness (merged into catchy)
+2495) Chiu's (name - added the 's)
+2496) examinee (added singular)
+2497) backflip (+plural)
+2498) backflow
+2499) ATX
+2500) reaccept (+ed)
+2501) reacceptance
+2502) reabsorption
+2503) re-sort (+ing)
+2504) compostable (merged into compost)
+2505) composter (merged into compost)
+2506) budstick (+plural)
+2507) budwood
+2508) budworm (+plural)
+2509) earworm (+plural)
+2510) silviculture (+al +ist)
+2511) agro-industry (+plural +al)
+2512) foodgrain (+plural)
+2513) agronomical
+2514) agronomically
+2515) agrobiology
+2516) agrobiological
+2517) agrobiologist
+2518) agroecosystem (+plural)
+2519) algicide (+plural)
+2520) aeroponic (+s)
+2521) aeroponically
+2522) aerophone (+plural)
+2523) gyroplane (+plural)
+2524) fixed-wing
+2525) crowdsource (+ed +ing)
+2526) crowdfunding
+2527) crowdfunded
+2528) creatives (added plural)
+2529) Johnson's (added the 's)
+2530) astrobiology
+2531) astrobiological
+2532) astrobiologist (+plural)
+2533) archipelagoes (Oxford: another way of archipelagos)
+2534) circumnavigator
+2535) subalpine
+2536) treeline
+2537) boreal + Boreal 
+2538) geotechnic (+s)
+2539) geotechnical
+2540) geothermally (merged into geothermal)
+2541) cataclysmically
+2542) Phoenician (+plural)
+2543) Phoenicia
+2544) bc ("Before Christ" in dates, can also be written in lower case)
+2545) cross-post (+ing)
+2546) cross-point
+2547) rebreathe (+ed)
+2548) rebreather (+plural)
+2549) rebuildable (merged into rebuild)
+2550) rebuilder (+plural)
+2551) pumpkinseed (+plural)
+2552) amberjack
+2553) boxfish (+plural)
+2554) trunkfish (+plural)
+2555) brickyards (added plural)
+2556) bricolage (+plural)
+2557) genomics (added plural, suggested by the IRC nick on Mozilla wsmwk)
+2558) proteomic (+plural)
+2559) biomarker (+plural)
+2560) microarray (+plural)
+2561) proteome (+plural)
+2562) bioinformatic (+plural)
+2563) biographee (+plural)
+2564) Lepidoptera + lepidoptera
+2565) lepidopteran (+plural)
+2566) lepidopterous
+2567) decor (+plural)
+2568) cliche (+plural)
+2569) texted +  texting + texter + textless (merged into text)
+2570) merged self-consciousness into self-conscious
+2571) check-ins (added plural)
+2572) pissy (Oxford: vulgar slang)
+2573) low-cut
+2574) firefighter (+plural)
+2575) firefight (+plural)
+2576) firefighting (merged into firefight)
+2577) firefish (+plural)
+2578) fireguard
+2579) firelit
+2580) firelock (+plural)
+2581) blowouts (added plural)
+2582) blowlamp
+2583) blown-up
+2584) blowing-up
+2585) blowhole (+plural)
+2586) blowfishes (added plural - Oxford: it can also be blowfish)
+2587) blowback
+2588) karateka (+plural)
+2589) judoka (+plural)
+2590) sensei (karate teacher)
+2591) break-fall
+2592) break-off
+2593) karate-chop
+2594) off-message
+2595) off-patent
+2596) off-pitch
+2597) off-plan
+2598) 4x4 (+plural - vehicles)
+2599) protestor (+plural - Oxford: another way for protester)
+2600) Proteus (a God + satellite)
+2601) penistone
+2602) telepaths (added plural)
+2603) teleost (+plural)
+2604) paddlefish (+plural)
+2605) garfish (+plural)
+2606) bowfin (+plural)
+2607) infraclass (+plural)
+2608) ruche (+plural +ed +ing)
+2609) dolman (+plural)
+2610) batwing
+2611) storylines (added plural)
+2612) hairband (+plural)
+2613) batwoman
+2614) batwomen
+2615) megalopolitan (+plural)
+2616) megalosaurus (+plural)
+2617) iguanodon (+plural)
+2618) carnosaur (+plural)
+2619) infraorder (+plural)
+2620) decapod (+plural)
+2621) allée (+plural)
+2622) averment (+plural)
+2623) gratifier (merged into gratify)
+2624) assuagement (merged into assuage)
+2625) sangfroid
+2626) unflashy (merged into flashy)
+2627) ugly-looking
+2628) ill-smelling
+2629) ill-shaped
+2630) ill-prepared
+2631) ill-proportioned
+2632) masturbator
+2633) mastoiditis
+2634) otitis
+2635) otoscope
+2636) otoscopic
+2637) otoscopically
+2638) uncultivable
+2639) uncured
+2640) uncurtained
+2641) uncustomary
+2642) undead
+2643) undebatable
+2644) undecidable
+2645) undecidability
+2646) facades (added plural)
+2647) wodge (+plural)
+2648) gloop (+y)
+2649) herby (+ier +iest)
+2650) bakeware
+2651) swigger (+plural)
+2652) citrusy
+2653) citrussy (another way of the previous word - merged into citrus)
+2654) swifty (+plural)
+2655) swiftie (another way of previous word)
+2656) enchantedly
+2657) enchainment (merged into enchain)
