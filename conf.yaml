@@ -562,12 +562,8 @@ langs:
         source:         moz:6868
     ne_NP:
         name:           Nepali (Nepal)
-        license:        LGPL
-        source:         oo:ne_NP
-    ne_NP-moz:
-        name:           Nepali
         license:        LGPL 2.1
-        source:         moz:9971
+        source:         http://nepalinux.org/downloads/ne_NP_dict.zip
     nl_NL:
         name:           Dutch (Netherlands)
         license:        BSD, CC Attr
