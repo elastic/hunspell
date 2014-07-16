@@ -90,13 +90,8 @@ langs:
         name:           Coptic (Egypt)
         license:        GPL
         source:         oo:cop_EG
-    cs-moz:
-        name:           Czech (Czech Republic)
-        license:        None
-        source:         moz:3394
-        skip:           ["*png"]
-    cs_CZ:
-        name:           Czech (Czech Republic)
+    cs:
+        name:           Czech
         license:        GPL 2
         source:         oo:cs_CZ
     csb_PL:
