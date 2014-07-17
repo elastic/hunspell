@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for mozilla ru_RU dictionary
-
-dic=ru_RU.dic
-aff=ru_RU.aff
+# Stemmer test data for Russian dictionary
 
 # n. decl. I (-а)
 работа    работа  # nom.  sg.

@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for mozilla lt_LT dictionary
-
-dic=lt.dic
-aff=lt.aff
+# Stemmer test data for Lithuanian dictionary
 
 # n. decl. I (-as)
 vaikas     vaikas        # nom. sg.

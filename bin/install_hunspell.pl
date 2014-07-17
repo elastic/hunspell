@@ -18,7 +18,8 @@ our %Handlers = (
     },
     tidy => {
         oo   => \&tidy_oo,
-        http => \&tidy_http
+        http => \&tidy_http,
+        moz => \&tidy_http
     }
 );
 
@@ -167,6 +168,7 @@ sub get_url {
 sub tidy_oo {
 #===================================
     my ( $lang, $dir, $conf ) = @_;
+    tidy_http( $lang, $dir, $conf );
     my $readme = $conf->{readme} or return;
     my $url = $Conf->{urls}{oo};
     $url =~ s/{id}/${readme}/;

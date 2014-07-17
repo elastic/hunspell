@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for pl_PL dictionary
-
-dic=pl_PL.dic
-aff=pl_PL.aff
+# Stemmer test data for Polish dictionary
 
 # m. o-stem hard n.
 nos       nos          # nom. sg.

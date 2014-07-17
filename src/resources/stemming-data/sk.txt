@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for sk_SK dictionary
-
-dic=sk_SK.dic
-aff=sk_SK.aff
+# Stemmer test data for Slovak dictionary
 
 # n. decl. M-I
 chlap       chlap,chlapiť  # nom. sg.

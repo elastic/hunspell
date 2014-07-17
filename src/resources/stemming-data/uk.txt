@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for Ukrainian uk_UA dictionary
-
-dic=uk_UA.dic
-aff=uk_UA.aff
+# Stemmer test data for Ukrainian dictionary
 
 # n. decl. I hard
 актриса    актриса   # nom. sg.

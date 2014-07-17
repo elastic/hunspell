@@ -84,9 +84,17 @@ public class TestStemming extends BaseTokenStreamTestCase {
                                     IOUtils.getDecodingReader(
                                         getClass().getResourceAsStream("/stemming-data/" + language + ".txt"), 
                                         StandardCharsets.UTF_8));
-    Analyzer analyzer = null;
-    String aff = null;
-    String dic = null;
+    dictionaryStream = getClass().getResourceAsStream("/" + language + "/" + language + ".dic");
+    affixStream = getClass().getResourceAsStream("/" + language + "/" + language + ".aff");
+    final Dictionary dictionary = new Dictionary(affixStream, dictionaryStream);
+    Analyzer analyzer = new Analyzer() {
+      @Override
+      protected TokenStreamComponents createComponents(String field, Reader reader) {
+        MockTokenizer tokenizer = new MockTokenizer(reader, MockTokenizer.KEYWORD, false);
+        HunspellStemFilter filter = new HunspellStemFilter(tokenizer, dictionary, false);
+        return new TokenStreamComponents(tokenizer, filter);
+      }
+    };
     String line = null;
     while ((line = reader.readLine()) != null) {
       int comment = line.indexOf('#');
@@ -98,48 +106,12 @@ public class TestStemming extends BaseTokenStreamTestCase {
         continue;
       }
       String elements[] = line.split("\\s+");
-      if (elements.length > 2) {
+      if (elements.length != 2) {
         throw new RuntimeException("Illegal number of elements in line: " + reader.getLineNumber());
       }
-      if (elements.length == 1) {
-        String kv[] = elements[0].split("=");
-        if (kv.length != 2) {
-          throw new RuntimeException("Malformed line: " + reader.getLineNumber());
-        }
-        switch(kv[0]) {
-          case "aff":
-            if (aff != null) {
-              throw new RuntimeException("Duplicate .aff declaration: " + reader.getLineNumber());
-            }
-            aff = kv[1];
-            break;
-          case "dic":
-            if (dic != null) {
-              throw new RuntimeException("Duplicate .dic declaration: " + reader.getLineNumber());
-            }
-            dic = kv[1];
-        }
-      } else {
-        if (aff == null || dic == null) {
-          throw new RuntimeException("Must specify .aff and .dic before any stem tests" + reader.getLineNumber());
-        }
-        if (analyzer == null) {
-          dictionaryStream = getClass().getResourceAsStream("/" + language + "/" + dic);
-          affixStream = getClass().getResourceAsStream("/" + language + "/" + aff);
-          final Dictionary dictionary = new Dictionary(affixStream, dictionaryStream);
-          analyzer = new Analyzer() {
-            @Override
-            protected TokenStreamComponents createComponents(String field, Reader reader) {
-              MockTokenizer tokenizer = new MockTokenizer(reader, MockTokenizer.KEYWORD, false);
-              HunspellStemFilter filter = new HunspellStemFilter(tokenizer, dictionary, false);
-              return new TokenStreamComponents(tokenizer, filter);
-            }
-          };
-        }
-        String input = elements[0];
-        String outputs[] = elements[1].split(",");
-        compareStems(analyzer, input, outputs, reader.getLineNumber());
-      }
+      String input = elements[0];
+      String outputs[] = elements[1].split(",");
+      compareStems(analyzer, input, outputs, reader.getLineNumber());
     }
     analyzer.close();
     reader.close();

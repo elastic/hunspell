@@ -16,16 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for Czech cs_CZ dictionary
-# 
-# data must be UTF-8
-# blank lines and lines starting with '#' are ignored.
-# lines of dic= and aff= must be first (these are sometimes oddly named!)
-# otherwise, word <TAB> stem1,stem2,...
-# any whitespace can be used instead of tab.
-
-dic=cs_CZ.dic
-aff=cs_CZ.aff
+# Stemmer test data for Czech dictionary
 
 # ported from lucene czech stemmer tests
 # we just test that its consistent with hunspell -m

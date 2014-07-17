@@ -16,10 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# Stemmer test data for mozilla lv_LV dictionary
-
-dic=lv_LV.dic
-aff=lv_LV.aff
+# Stemmer test data for Latvian dictionary
 
 # ported from lucene latvian stemmer tests
 # we just test that its consistent with hunspell -m

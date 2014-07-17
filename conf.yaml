@@ -94,6 +94,10 @@ langs:
         name:           Czech
         license:        GPL 2
         source:         oo:cs_CZ
+        custom:
+          - [ mv, cs_CZ.aff, cs.aff ]
+          - [ mv, cs_CZ.dic, cs.dic ]
+          - [ mv, README_cs_CZ.txt, README.txt ]
     csb_PL:
         name:           Kashubian (Poland)
         license:        GPL 2
@@ -468,20 +472,24 @@ langs:
         name:           Lao (Lao)
         license:        None
         source:         moz:476993
-    lt_LT:
-        name:           Lithuanian (Lithuania)
+    lt:
+        name:           Lithuanian
         license:        BSD
-        source:         oo:lt_LT
-    lt_LT-moz:
-        name:           Lithuanian (Lithuania)
-        license:        None
-        source:         moz:3716
-    lv_LV:
-        name:           Latvian (Latvia)
+        source:         http://launchpad.net/ispell-lt/main/1.3/+download/myspell-lt-1.3.zip
+        custom:
+          - [rm, ChangeLog, AUTHORS, dictionary.lst]
+          - [ mv, lt_LT.aff, lt.aff ]
+          - [ mv, lt_LT.dic, lt.dic ]
+          - [ mv, README, README.txt ]
+    lv:
+        name:           Latvian
         license:        GPL2.1
         source:         http://dict.dv.lv/download/lv_LV-1.0.0.zip
         custom:
           - [rm, Changelog.txt, README_hyph_lv_LV.txt, hyph_lv_LV.dic, lin-lv_LV_add.sh, win-lv_LV_add.bat, version.txt]
+          - [mv, lv_LV.aff, lv.aff]
+          - [mv, lv_LV.dic, lv.dic]
+          - [mv, README_lv_LV.txt, README.txt]
     mg_MG:
         name:           Malagasy
         license:        GPL2
@@ -559,13 +567,16 @@ langs:
         name:           Papiamento (Curaçao)
         license:        Creative Commons Attribution-NonCommercial-ShareAlike 3.0
         source:         moz:353517
-    pl_PL:
-        name:           Polish (Poland)
+    pl:
+        name:           Polish
         license:        GPL, LGPL, MPL, CC ShareAlike
         source:         http://sjp.pl/slownik/ort/sjp-myspell-pl.zip
         custom:
           - [unzip, pl_PL.zip]
           - [rm, pl_PL.zip, spell.txt]
+          - [mv, pl_PL.dic, pl.dic]
+          - [mv, pl_PL.aff, pl.aff]
+          - [mv, README_pl_PL.txt, README.txt]
     pt_BR:
         name:           Portuguese, Brazil
         license:        LGPL 3.0
@@ -585,40 +596,27 @@ langs:
         source:         ooe:classic-romanian-dictionary-pack-spell-checker-hyphenation-thesaurus
         license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
         skip:           ["**hyph**"]
-    ru-ooe:
-        name:           Russian (Russia)
-        license:        Custom
-        skip:           ["**hyph**"]
-        source:         ooe:russian-dictionary
-    ru_RU-moz:
-        name:           Russian (Russia)
+    ru:
+        name:           Russian
         license:        None
         source:         moz:347439
-    ru_RU:
-        name:           Russian (Russia)
-        license:        Custom
-        source:         oo:ru_RU
-    ru_RU_ye:
-        name:           Russian_ye (Russia)
-        license:        None
-        source:         oo:ru_RU_ye
-    ru_RU_yo:
-        name:           Russian_yo (Russia)
-        license:        Custom
-        source:         oo:ru_RU_yo
-    ru_RU_yo-ooe:
-        name:           Russian_yo (Russia)
-        license:        Custom
-        source:         ooe:russian-dictionary-yo
+        custom:
+          - [mv, ru_RU.dic, ru.dic]
+          - [mv, ru_RU.aff, ru.aff]
+          - [mv, readme.txt, README.txt]
     sa_IN:
         name:           Sanskrit (India)
         license:        LGPL 2.1
         source:         moz:337161
-    sk_SK:
+    sk:
         name:           Slovak (Slovakia)
         license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
         source:         http://www.sk-spell.sk.cx/files/hunspell-sk-20110228.zip
-        skip:           ["**manifest", "**png"]
+        skip:           ["**manifest", "**png", "**AUTHORS", "**TODO", "**Changelog", "**GPL", "**LGPL", "**MPL"]
+        custom:
+          - [mv, Flagy.README, README.txt]
+          - [mv, sk_SK.aff, sk.aff]
+          - [mv, sk_SK.dic, sk.dic]
     sl_SI-ooe:
         name:           Slovenian (Slovenia)
         license:        LGPL 2.1
@@ -679,11 +677,15 @@ langs:
         name:           Tsonga (South Africa)
         license:        LGPL
         source:         moz:46611
-    uk_UA:
-        name:           Ukranian
+    uk:
+        name:           Ukrainian
         license:        LGPL 2.1
         source:         http://sourceforge.net/projects/ispell-uk/files/spell-uk/1.7.1/myspell-uk_UA-1.7.1.zip/download
         skip:           ["**png"]
+        custom:
+          - [mv, README_uk_UA.txt, README.txt]
+          - [mv, uk_UA.aff, uk.aff]
+          - [mv, uk_UA.dic, uk.dic]
     ur_IN:
         name:           Urdu (India)
         license:        None
