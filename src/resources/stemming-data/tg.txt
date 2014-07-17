@@ -1,0 +1,113 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for Tajik dictionary
+
+# n.
+
+китоб            китоб          # sg.
+китобро          китоб          # sg. do
+китобам          китоб          # sg. 1sg. poss.
+китобат          китоб,китобат  # sg. 2sg. poss.
+китобаш          китоб          # sg. 3sg. poss.
+китобамро        китоб          # sg. 1sg. poss. do
+китобатро        китоб          # sg. 2sg. poss. do
+китобашро        китоб          # sg. 3sg. poss. do
+китобамон        китоб          # sg. 1pl. poss.
+китобатон        китоб          # sg. 2pl. poss.
+китобашон        китоб          # sg. 3pl. poss.
+китобамонро      китоб          # sg. 1pl. poss.
+китобатонро      китоб          # sg. 2pl. poss.
+китобашонро      китоб          # sg. 3pl. poss.
+китобҳо          китоб          # pl.
+китобҳоро        китоб          # pl. do.
+китобҳоям        китоб          # pl. 1sg. poss.
+китобҳоят        китоб          # pl. 2sg. poss.
+китобҳояш        китоб          # pl. 3sg. poss.
+китобҳоямро      китоб          # pl. 1sg. poss. do
+китобҳоятро      китоб          # pl. 2sg. poss. do
+китобҳояшро      китоб          # pl. 3sg. poss. do
+китобҳоямон      китоб          # pl. 1pl. poss.
+китобҳоятон      китоб          # pl. 2pl. poss.
+китобҳояшон      китоб          # pl. 3pl. poss.
+китобҳоямонро    китоб          # pl. 1pl. poss. do
+китобҳоятонро    китоб          # pl. 2pl. poss. do
+китобҳояшонро    китоб          # pl. 3pl. poss. do
+китоби           китоб          # ezafa
+
+# adj.
+баланд           баланд
+баландтар        баланд         # comparative
+баландтарин      баланд         # superlative
+
+# High frequency terms from corpora
+дар           дар
+ва            ва
+аст           аст
+аз            аз
+дорад         дор
+фурудгоҳи     фуруд
+ки            ки
+метр          метр
+ин            ин
+ба            ба
+он            он
+шудааст       шуд
+як            як
+соли          соли,сол
+бо            бо
+қарор         қарор
+кишвари       кишвар
+фурудгоҳ      фуруд
+сатҳи         сатҳ
+воқеъ         воқеъ
+баҳр          баҳр
+иртифоъ       иртифоъ
+фуруд         фуруд
+тули          тул
+коди          код
+асфалт        асфалт
+ноҳияи        ноҳия
+Тоҷикистон    тоҷик
+шаҳри         шаҳр
+деҳа          деҳа
+давлатӣ       давлат
+системаи      система
+амрико        амрико
+Иёлоти        иёлот
+Муттаҳидаи    муттаҳид
+вилояти       вилоят
+маҳаллӣ       маҳалл
+Русия         русия
+буд           буд
+барои         баро
+мебошад       мебош
+Вилояти       вилоят
+яке           як
+ҳавои         ҳаво
+номи          ном
+шаҳре         шаҳр
+Ҷумҳурии      ҷумҳур
+Пойгоҳи       пой
+мешавад       мешав
+ҳайати        ҳайат
+карда         кард
+деҳаест       деҳа
+медарояд      медаро
+шуд           шуд
+Канада        канада

@@ -670,6 +670,15 @@ langs:
         license:        GPL2
         source:         moz:269588
         skip:           ["**png"]
+    tg:
+        name:           Tajik
+        license:        Apache 2.0
+        source:         http://www.tajlingvo.tj/project/TajikHunSpellDictionary/tg_TG.oxt
+        skip:           ["**.dat", "**.idx", "**.xcu", "**.png", "**.xml", "**hyph*", "META-INF"]
+        custom:
+          - [mv, readme.txt, README.txt]
+          - [mv, tj_TJ.aff, tg.aff]
+          - [mv, tj_TJ.dic, tg.dic]
     tk_TM:
         name:           Turkmen
         license:        None

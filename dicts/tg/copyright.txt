@@ -1,0 +1,2 @@
+Tajik Hunspell Dictionary is organized on the basis of Apache License Version 2.0, January 2004 http://www.apache.org/licenses/
+Copyright (C) 2014 by Public organization The Center of development of information technologies Zafar Usmanov - www.tajlingvo.tj
