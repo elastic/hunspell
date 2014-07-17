@@ -447,10 +447,15 @@ langs:
         name:           Italian (Italy)
         license:        GPL3
         source:         moz:3053
-    kk_KZ:
+    kk:
         name:           Kazakh
         license:        MPL 1.1/GPL 2.0/LGPL 2.1
         source:         http://sourceforge.net/projects/aoo-extensions/files/1172/12/dict-kk.oxt/download
+        skip:           ["**.xml", "**.xcu"]
+        custom:     
+          - [ mv, kk_KZ.aff, kk.aff ]
+          - [ mv, kk_KZ.dic, kk.dic ]
+          - [ mv, README_kk_KZ.txt, README.txt ]
     kn_ID:
         name:           Kannada (India)
         license:        GPL2
