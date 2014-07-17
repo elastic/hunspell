@@ -336,6 +336,10 @@ langs:
         license:        MPL 2.0
         source:         http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v5.1.zip
         skip:           ["**reform*", "**modern*", "**toutesvariantes*"]
+        custom:
+          - [ mv, README_dict_fr.txt, README.txt ]
+          - [ mv, fr-classique.aff, fr.aff ]
+          - [ mv, fr-classique.dic, fr.dic ]
     fur_IT:
         name:           Friulian (Italy)
         license:        None
@@ -477,7 +481,7 @@ langs:
         license:        BSD
         source:         http://launchpad.net/ispell-lt/main/1.3/+download/myspell-lt-1.3.zip
         custom:
-          - [rm, ChangeLog, AUTHORS, dictionary.lst]
+          - [ rm, ChangeLog, AUTHORS, dictionary.lst ]
           - [ mv, lt_LT.aff, lt.aff ]
           - [ mv, lt_LT.dic, lt.dic ]
           - [ mv, README, README.txt ]
