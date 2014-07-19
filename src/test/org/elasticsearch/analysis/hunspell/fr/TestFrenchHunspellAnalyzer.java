@@ -1,4 +1,4 @@
-package org.elasticsearch.analysis.hunspell.cs;
+package org.elasticsearch.analysis.hunspell.fr;
 
 /*
  * Licensed to Elasticsearch under one or more contributor
@@ -26,26 +26,43 @@ import org.apache.lucene.analysis.util.CharArraySet;
 import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase;
 import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase.Lang;
 
-@Lang("cs")
-public class TestCzechHunspellAnalyzer extends HunspellAnalyzerTestCase {
+@Lang("fr")
+public class TestFrenchHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
-    assertAnalyzesTo(a, "Pokud mluvime o volnem", 
-        new String[] { "mluvime", "volno" });
+    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    assertAnalyzesTo(a, "votre",  new String[] { });
+  }
+  
+  /** Test that stopwords are not case sensitive */
+  public void testStopwordsCasing() throws IOException {
+    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    assertAnalyzesTo(a, "Votre", new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
     CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
-    set.add("hole");
-    Analyzer a = new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
-    assertAnalyzesTo(a, "hole desek", new String[] {"hole", "deska"});
+    set.add("ai");
+    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    assertAnalyzesTo(a, "J'ai soif", new String[] {"ai", "soif"});
+  }
+  
+  /** Test elision */
+  public void testElision() throws Exception {
+    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    assertAnalyzesTo(fa, "voir l'embrouille", new String[] { "voir", "embrouiller" });
+  }
+  
+  /** Test elision is not case sensitive */
+  public void testElisionCasing() throws Exception {
+    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    assertAnalyzesTo(fa, "L'embrouille", new String[] { "embrouiller" });
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }
