@@ -406,14 +406,14 @@ langs:
         name:           Haitian Creole (Haiti)
         license:        GPL3
         source:         moz:48577
-    hu_HU:
-        name:           Hungarian (Hungary)
-        license:        GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
-        source:         oo:hu_HU
-    hu_HU-comb:
-        name:           Hungarian (Hungary) collected compounds
-        license:        None
-        source:         oo:hu_HU_comb
+    hu:
+        name:           Hungarian
+        license:        GPL 2.0
+        source:         http://tkltrans.sourceforge.net/tklspell/hu_HU_comb.zip
+        custom:
+          - [ mv, readme, README.txt ]
+          - [ mv, hu_HU.aff, hu.aff ]
+          - [ mv, hu_HU.dic, hu.dic ]
     hy_AM:
         name:           Armenian (Armenia)
         license:        GPL 2.0
