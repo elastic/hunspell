@@ -28,6 +28,7 @@
 
   <path id="compile.path">
     <path refid="dependencies.path"/>
+    <pathelement location="src/java"/>
   </path>
 
   <path id="test.path">
@@ -48,7 +49,11 @@
     <delete dir="build"/>
   </target>
 
-  <target name="compile-test" depends="resolve">
+  <target name="compile" depends="resolve">
+    <compile src="src/java" dest="build/classes/java" classpathref="compile.path"/>
+  </target>
+
+  <target name="compile-test" depends="compile">
     <compile src="src/test" dest="build/classes/test" classpathref="test.path"/>
   </target>
 
@@ -66,7 +71,7 @@
              target="1.7"
 	     debug="on"
              encoding="UTF-8">
-        <compilerarg line="-Xlint -Xlint:-serial"/>
+        <compilerarg line="-Xlint -Xlint:-serial -Werror"/>
       </javac>
     </sequential>
   </macrodef>
