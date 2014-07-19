@@ -32,7 +32,7 @@
 
   <path id="test.path">
     <pathelement location="build/classes/java"/>
-    <pathelement location="src/resources"/>
+    <pathelement location="src/test-resources"/>
     <pathelement location="dicts"/>
     <path refid="compile.path"/>
   </path>
