@@ -586,15 +586,19 @@ langs:
           - [mv, pl_PL.dic, pl.dic]
           - [mv, pl_PL.aff, pl.aff]
           - [mv, README_pl_PL.txt, README.txt]
-    pt:
-        name:           Portuguese
+    pt_BR:
+        name:           Portuguese (Brazilian)
         license:        LGPL 3.0
-        source:         moz:6081
-        skip:           ["**hyph**", "**RescueLanguage*", "**README_pt_BR.TXT"]
+        source:         http://pt-br.libreoffice.org/assets/ptBR-2013-10-30AOC.zip
+        skip:           ["**README_pt_BR.TXT"]
         custom:
           - [mv, README_en.TXT, README.txt]
-          - [mv, pt-BR.aff, pt.aff]
-          - [mv, pt-BR.dic, pt.dic]
+    pt_PT:
+        name:           Portuguese (European)
+        license:        LGPL 3.0
+        source:         http://pt-br.libreoffice.org/assets/ptPT-2013-10-30AOC.zip
+        custom:
+          - [mv, README_pt_PT.TXT, README.txt]
     ro_RO:
         name:           Romanian (Romania)
         source:         ooe:romanian-dictionary-pack-spell-checker-hyphenation-thesaurus

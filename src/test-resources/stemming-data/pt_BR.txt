@@ -1,0 +1,171 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for Brazilian Portuguese dictionary
+
+# ported from lucene portuguese tests
+doutor   doutor
+doutores doutor,doutorar
+homem    homem
+homens   homem
+papel    papel
+papéis   papel
+normal   normal
+normais  normal
+barril   barril
+barris   barril
+botão    botão
+botões   botão
+
+# High frequency terms from corpora
+de           de
+a            a
+que          que
+o            o
+e            e
+do           do
+da           do
+não          não
+é            é
+para         parar,parir
+em           em
+um           um
+com          com
+no           no
+os           os
+uma          um
+na           no
+se           se
+as           as
+por          por
+mais         mai
+mas          ma
+dos          do
+eu           eu
+ao           ao
+como         comer
+à            à
+das          do
+já           já
+ser          ser
+dia          dia
+me           me
+foi          for
+tem          ter
+ou           ou
+muito        muito
+só           só
+vai          vá
+ainda        ainda
+pra          pro
+hoje         hoje
+nos          no
+meu          meu
+está         estar
+bem          bem
+são          ser
+pelo         pelar
+ter          ter
+mesmo        mesmo
+quando       quando
+também       também
+até          até
+agora        agora
+vou          vá
+isso         isso
+minha        minha
+bom          bom
+pela         pelar
+sem          sem
+fazer        fazer
+sua          suar
+esta         este
+há           haver
+todos        todo
+este         este
+quem         quem
+depois       depois
+tudo         tudo
+anos         ano
+tempo        tempo
+nas          no
+vida         vidar
+casa         casar
+era          era,erar
+Portugal     Portugal
+tenho        ter
+às           às
+nada         nadar
+onde         ondar
+pessoas      pessoa
+pode         poder,podar
+vez          vez
+melhor       melhor
+te           te
+boa          boar
+lá           lá
+d            d
+tu           tu
+estou        estar
+noite        noite
+grande       grande
+num          num
+essa         esse
+dias         dia
+esse         esse
+coisa        coisar
+governo      governo,governar
+trabalho     trabalhar
+será         ser
+dois         dol
+estão        estar
+tão          tão
+euros        euro
+ela          elar,ele
+mundo        mundo
+nunca        nunce
+numa         num
+tinha        ter
+menos        meno
+nao          nao
+sim          sim
+to           to
+disse        dizer
+ir           ir
+novo         novar
+sei          saber
+p            p
+semana       semana
+gente        gente
+cada         cado
+parte        partir
+pouco        pouco
+jogo         jogar
+faz          fazer
+apenas       apenar
+estar        estar
+dar          dar
+tá           tá
+mim          mim
+país         paí
+presidente   presidente
+final        final
+estado       estar
+outros       outro
+segundo      segundar
+acho         achar
