@@ -20,10 +20,6 @@ package org.elasticsearch.analysis.hunspell;
  */
 
 import java.io.InputStream;
-import java.lang.annotation.Documented;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 
 import org.apache.lucene.analysis.BaseTokenStreamTestCase;
 import org.apache.lucene.analysis.hunspell.Dictionary;
@@ -41,11 +37,8 @@ public abstract class HunspellAnalyzerTestCase extends BaseTokenStreamTestCase {
   @BeforeClass
   public static void beforeClass() throws Exception {
     Class<?> targetClass = RandomizedContext.current().getTargetClass();
-    Lang v = targetClass.getAnnotation(Lang.class);
-    if (v == null) {
-      throw new IllegalStateException(targetClass.getSimpleName() + " must be annotated with @Lang");
-    }
-    String language = v.value();
+    String parts[] = targetClass.getPackage().getName().split("\\.");
+    String language = parts[parts.length-1];
     InputStream affixStream = HunspellAnalyzerTestCase.class.getResourceAsStream("/" + language + "/" + language + ".aff");
     InputStream dictionaryStream = HunspellAnalyzerTestCase.class.getResourceAsStream("/" + language + "/" + language + ".dic");
     try (InputStream aff = affixStream; InputStream dic = dictionaryStream) {
@@ -60,13 +53,5 @@ public abstract class HunspellAnalyzerTestCase extends BaseTokenStreamTestCase {
   
   public Dictionary getDictionary() {
     return dictionary;
-  }
-  
-  @Documented
-  @Inherited
-  @Retention(RetentionPolicy.RUNTIME)
-  public @interface Lang {
-    /** Language value */
-    public String value();
   }
 }

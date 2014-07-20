@@ -24,9 +24,7 @@ import java.io.IOException;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.util.CharArraySet;
 import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase;
-import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase.Lang;
 
-@Lang("fr")
 public class TestFrenchHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
