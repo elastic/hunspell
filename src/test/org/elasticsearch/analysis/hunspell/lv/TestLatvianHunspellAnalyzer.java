@@ -1,4 +1,4 @@
-package org.elasticsearch.analysis.hunspell.lt;
+package org.elasticsearch.analysis.hunspell.lv;
 
 /*
  * Licensed to Elasticsearch under one or more contributor
@@ -25,6 +25,7 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.util.CharArraySet;
 import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase;
 import org.elasticsearch.analysis.hunspell.HunspellAnalyzerTestCase.Lang;
+import org.elasticsearch.analysis.hunspell.lv.LatvianHunspellAnalyzer;
 
 @Lang("lv")
 public class TestLatvianHunspellAnalyzer extends HunspellAnalyzerTestCase {

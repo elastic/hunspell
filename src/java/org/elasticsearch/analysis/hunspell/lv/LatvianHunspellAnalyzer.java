@@ -1,4 +1,4 @@
-package org.elasticsearch.analysis.hunspell.lt;
+package org.elasticsearch.analysis.hunspell.lv;
 
 /*
  * Licensed to Elasticsearch under one or more contributor

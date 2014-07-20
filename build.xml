@@ -29,6 +29,7 @@
   <path id="compile.path">
     <path refid="dependencies.path"/>
     <pathelement location="src/java"/>
+    <pathelement location="src/resources"/>
   </path>
 
   <path id="test.path">
