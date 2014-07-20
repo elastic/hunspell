@@ -104,7 +104,7 @@
            <exclude name="**/*$*" />
          </fileset>
          <listeners>
-           <junit4:report-text showThrowable="true" showStackTraces="true" showOutput="always" showStatusOk="true"/>
+           <junit4:report-text showThrowable="true" showStackTraces="true" showOutput="onerror" showStatusOk="false"/>
          </listeners>
       </junit4:junit4>
     </sequential>
