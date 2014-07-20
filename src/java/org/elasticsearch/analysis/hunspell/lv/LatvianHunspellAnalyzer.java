@@ -89,7 +89,7 @@ public final class LatvianHunspellAnalyzer extends StopwordAnalyzerBase {
   }
   
   /**
-   * Returns a set of default (case-insensitive) Czech stopwords
+   * Returns a set of default (case-insensitive) stopwords
    */
   public static final CharArraySet getDefaultStopSet() {
     return DefaultSetHolder.DEFAULT_SET;

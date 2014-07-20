@@ -1,4 +1,4 @@
-package org.elasticsearch.analysis.hunspell.fr;
+package org.elasticsearch.analysis.hunspell.lt;
 
 /*
  * Licensed to Elasticsearch under one or more contributor
@@ -27,23 +27,20 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.StopFilter;
-import org.apache.lucene.analysis.fr.FrenchAnalyzer;
 import org.apache.lucene.analysis.hunspell.Dictionary;
 import org.apache.lucene.analysis.hunspell.HunspellStemFilter;
 import org.apache.lucene.analysis.miscellaneous.SetKeywordMarkerFilter;
-import org.apache.lucene.analysis.snowball.SnowballFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.util.CharArraySet;
-import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.util.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
 import org.apache.lucene.util.Version;
 
 /** 
- * Hunspell-based analyzer for French
+ * Hunspell-based analyzer for Lithuanian
  */
-public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
+public final class LithuanianHunspellAnalyzer extends StopwordAnalyzerBase {
   private final Dictionary   dictionary;
   private final CharArraySet stemExclusionTable;
   
@@ -54,7 +51,7 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
    * @param matchVersion Lucene version to match
    * @param dictionary Hunspell dictionary for this language
    */
-  public FrenchHunspellAnalyzer(Version matchVersion, Dictionary dictionary) {
+  public LithuanianHunspellAnalyzer(Version matchVersion, Dictionary dictionary) {
     this(matchVersion, dictionary, getDefaultStopSet(), CharArraySet.EMPTY_SET);
   }
 
@@ -67,7 +64,7 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
    * @param stopwords a stopword set
    * @param stemExclusionTable a stemming exclusion set
    */
-  public FrenchHunspellAnalyzer(Version matchVersion, Dictionary dictionary, CharArraySet stopwords, CharArraySet stemExclusionTable) {
+  public LithuanianHunspellAnalyzer(Version matchVersion, Dictionary dictionary, CharArraySet stopwords, CharArraySet stemExclusionTable) {
     super(matchVersion, stopwords);
     this.dictionary = dictionary;
     this.stemExclusionTable = stemExclusionTable;
@@ -78,8 +75,9 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
   
     static {
       try {
-        DEFAULT_SET = WordlistLoader.getSnowballWordSet(
-                        IOUtils.getDecodingReader(SnowballFilter.class, FrenchAnalyzer.DEFAULT_STOPWORD_FILE, StandardCharsets.UTF_8), 
+        DEFAULT_SET = WordlistLoader.getWordSet(
+                        IOUtils.getDecodingReader(LithuanianHunspellAnalyzer.class, LithuanianHunspellAnalyzer.DEFAULT_STOPWORD_FILE, StandardCharsets.UTF_8), 
+                        "#", 
                         new CharArraySet(Version.LUCENE_4_10, 16, true));
       } catch (IOException ex) {
         // default set should always be present as it is part of the
@@ -88,6 +86,11 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
       }
     }
   }
+  
+  /**
+   * File containing default stopwords.
+   */
+  public final static String DEFAULT_STOPWORD_FILE = "stopwords.txt";
   
   /**
    * Returns a set of default (case-insensitive) stopwords
@@ -99,8 +102,7 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
   @Override
   protected TokenStreamComponents createComponents(String field, Reader reader) {
     final Tokenizer source = new StandardTokenizer(matchVersion, reader);
-    TokenStream result = new ElisionFilter(source, FrenchAnalyzer.DEFAULT_ARTICLES);
-    result = new StopFilter(matchVersion, result, stopwords);
+    TokenStream result = new StopFilter(matchVersion, source, stopwords);
     if (!this.stemExclusionTable.isEmpty()) {
       result = new SetKeywordMarkerFilter(result, stemExclusionTable);
     }

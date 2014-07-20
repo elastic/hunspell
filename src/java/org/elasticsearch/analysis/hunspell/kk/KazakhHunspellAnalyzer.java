@@ -88,12 +88,12 @@ public final class KazakhHunspellAnalyzer extends StopwordAnalyzerBase {
   }
   
   /**
-   * File containing default Kazakh stopwords.
+   * File containing default stopwords.
    */
   public final static String DEFAULT_STOPWORD_FILE = "stopwords.txt";
   
   /**
-   * Returns a set of default (case-insensitive) Czech stopwords
+   * Returns a set of default (case-insensitive)stopwords
    */
   public static final CharArraySet getDefaultStopSet() {
     return DefaultSetHolder.DEFAULT_SET;
