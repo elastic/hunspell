@@ -356,11 +356,15 @@ langs:
         name:           Scots Gaelic (Scotland)
         license:        GPL3
         source:         moz:260204
-    gl_ES:
-        name:           Galician (Spain)
-        license:        GPL2
-        readme:         README_gl_ES.txt
-        source:         oo:gl_ES
+    gl:
+        name:           Galician
+        license:        GPL3
+        source:         http://extensions.libreoffice.org/extension-center/corrector-ortografico-para-galego/releases/13.10/corrector-13-10-para-galego.oxt
+        skip:           ["**changelog*","**.xml","**.xcu","**hyph*","**license-gl.txt","**package-description.txt","**.png","**readme-gl.txt","**readme_th_gl.txt","**thesaurus*"]
+        custom:
+          - [ mv, readme.txt, README.txt ]
+          - [ mv, gl_ES.aff, gl.aff ]
+          - [ mv, gl_ES.dic, gl.dic ]
     gsc_FR:
         name:           Gascon (France)
         license:        CC BY-NC-ND 2.0
