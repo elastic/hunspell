@@ -323,8 +323,8 @@ langs:
         license:        LGPL
         source:         ooe:estonian-spellchecking-and-hyphenation
         skip:           ["**hyph**"]
-    eu_ES:
-        name:           Basque / Euskadi
+    eu:
+        name:           Basque
         license:        None
         source:         moz:4020
     fo_FO:

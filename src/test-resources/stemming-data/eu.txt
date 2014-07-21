@@ -1,0 +1,181 @@
+#
+# Licensed to Elasticsearch under one or more contributor
+# license agreements. See the NOTICE file distributed with
+# this work for additional information regarding copyright
+# ownership. Elasticsearch licenses this file to you under
+# the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Stemmer test data for Basque dictionary
+
+# n.
+
+# case
+mendi mendi
+mendik mendi
+mendiri mendi
+menditan mendi
+menditara mendi
+mendiak mendi
+mendiek mendi
+mendiei mendi
+mendietan mendi
+mendietara mendi
+mendia mendi
+mendiak mendi
+mendiari mendi
+mendian mendi
+mendira mendi,mendira
+
+# articles
+etxea  etxe
+etxeak etxe
+etxeok etxe
+etxerik etxe 
+
+# n. prop
+Tokio Tokio
+Tokiok Tokio,toki
+Tokiori Tokio
+Tokion Tokio,toki
+Tokiora Tokio
+Tokiotik Tokio
+Tokioko Tokio
+
+# High frequency terms from corpora
+eta                     eta
+ziren                   ziren,zira,zi
+zeuden                  zeuden
+zen                     zen
+da                      da
+bat                     bat
+zituzden                zituzden
+etxek                   etxe
+enpresak                enpresa
+zuen                    zuen,zu
+zuten                   zuten,zut
+izan                    izan
+pertsona                pertsona
+etxebizitza             etxebizitza
+udalerrian              udalerri
+seme                    seme
+doi                     doi
+zituen                  zituen
+enpresa                 enpresa
+artean                  artean,arte
+zegoen                  zegoen
+bere                    bere
+ere                     ere
+bizi                    bizi
+zerbitzu                zerbitzu
+dago                    dago
+dauden                  daude
+horien                  horiei,hori
+herriak                 herri
+bakarrik                bakarrik,bakar
+Ekonomia                ekonomia
+emakume                 emakume
+biztanleak              biztanle
+alabak                  alaba
+dira                    dira
+etxetan                 etxe
+gizon                   gizon
+dituzten                dituzte
+ditu                    ditu
+familiak                familia
+ez                      ez
+du                      du
+baino                   baino
+bestelako               bestelako
+bi                      bi
+beste                   beste
+edo                     edo
+biztanle                biztanle
+egin                    egin
+animalia                animalia
+urtean                  urte
+barruko                 barru
+lan                     lan
+generoko                genero
+familian                familia
+nekazaritza             nekazaritza
+de                      de
+ibilgailuen             ibilgailu
+nagusia                 nagusi
+honek                   honek
+eskualdean              eskualde
+gisa                    gisa
+gehiago                 gehiago,gehi
+hiru                    hiru
+Frantziako              Frantzia
+egiteko                 egiteko,egite,egin
+bigarren                bigarren,bi
+Etxebizitza             etxebizitza
+lau                     lau
+lehen                   lehen
+euren                   euren
+gabeko                  gabe
+bost                    bost
+lanean                  lan
+eraikuntza              eraikuntza
+erakusten               erakuts
+departamenduan          departamendu
+alabarik                alaba
+azpian                  azpi
+Demografia              demografia
+plaza                   plaza
+erabiltzen              erabil
+familiaren              familia
+pertsonak               pertsona
+aktiboak                aktibo
+gela                    gela,gel
+adina                   adina,adin
+emakumeak               emakume
+propioa                 propio
+ikasten                 ikas
+bizilekua               bizileku
+Biztanleria             biztanleria
+gertuen                 gertu
+Diagrama                diagrama
+erroldatutako           errolda
+Familiak                familia
+ibilgailu               ibilgailu
+bikoteak                bikote
+jarduerak               jarduera
+jabearen                jabe
+inaktiboak              inaktibo
+nagusietatik            nagusi
+inaktiboetatik          inaktibo
+bakarrekoak             bakar
+erretiraturik           erretira
+sailkaturik             sailka
+okupaturik              okupa
+alokairuan              alokairu
+urteko                  urte
+batzuk                  batzuk
+hutsik                  hutsik,huts
+langabezian             langabezia
+aktiboetatik            aktibo
+erresidentzia           erresidentzia
+dagoena                 dago
+doan                    doan,doa
+gizonak                 gizon
+udalerria               udalerri
+komertzioetatik         komertzio
+ustiategi               ustiategi
+diru                    diru
+lagata                  laga
+sarrera                 sarrera
+baina                   baina
+eskola                  eskola
+unitate                 unitate

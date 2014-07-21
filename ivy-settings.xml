@@ -29,7 +29,7 @@
   <!--<caches lockStrategy="artifact-lock"/>-->
 
   <resolvers>
-    <ibiblio name="current-snapshot" root="http://people.apache.org/~rmuir/fake_staging_area/lucene-solr-4.10.0-r1611231/maven/" m2compatible="true" />
+    <ibiblio name="current-snapshot" root="http://people.apache.org/~rmuir/fake_staging_area/lucene-solr-4.10.0-r1611971-LUCENE-5838/maven/" m2compatible="true" />
 
     <chain name="default" returnFirst="true" checkmodified="true" changingPattern=".*SNAPSHOT">
       <resolver ref="local"/>
