@@ -58,7 +58,7 @@ do do
 en en
 da da
 un un
-# TODO BUG! é  ser
+é  ser
 no no
 na na,no
 unha unha

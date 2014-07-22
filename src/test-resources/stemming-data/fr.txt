@@ -65,7 +65,7 @@ un            un,une
 des           des
 que           que
 pour          pour
-a             a
+a             a,avoir
 une           une
 pas           pas
 je            je
@@ -104,7 +104,7 @@ ont           avoir
 même          même
 faire         faire
 aux           aux
-été           être
+été           être,été
 ils           ils
 suis          suivre,être
 était         être

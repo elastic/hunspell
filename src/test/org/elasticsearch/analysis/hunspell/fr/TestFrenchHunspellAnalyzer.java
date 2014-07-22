@@ -50,13 +50,13 @@ public class TestFrenchHunspellAnalyzer extends HunspellAnalyzerTestCase {
   /** Test elision */
   public void testElision() throws Exception {
     FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
-    assertAnalyzesTo(fa, "voir l'embrouille", new String[] { "voir", "embrouiller" });
+    assertAnalyzesTo(fa, "voir l'embrouille", new String[] { "voir", "embrouille", "embrouiller" });
   }
   
   /** Test elision is not case sensitive */
   public void testElisionCasing() throws Exception {
     FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
-    assertAnalyzesTo(fa, "L'embrouille", new String[] { "embrouiller" });
+    assertAnalyzesTo(fa, "L'embrouille", new String[] { "embrouille", "embrouiller" });
   }
   
   /** blast some random strings through the analyzer */
