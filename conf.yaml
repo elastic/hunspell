@@ -712,30 +712,40 @@ langs:
           - [mv, README_uk_UA.txt, README.txt]
           - [mv, uk_UA.aff, uk.aff]
           - [mv, uk_UA.dic, uk.dic]
-    ur_IN:
-        name:           Urdu (India)
-        license:        None
-        source:         moz:7981
-    uz:
-        name:           Uzbek
-        license:        None
-        source:         moz:306383
-    ve_ZA:
-        name:           Venda (South Africa)
-        license:        LGPL
-        source:         moz:46601
-    vi_VN:
-        name:           Vietnamese (Viet-Nam)
-        license:        GPL3
-        source:         moz:7479
-    xh_ZA:
-        name:           Xhosa (South Africa)
-        license:        LGPL
-        source:         moz:46599
-    yi:
-        name:           Yiddish
-        license:        LGPLv2+ or MPLv1.1 or GPLv2+
-        source:         ooe:yiddish-spell-checker
+    # just a list of words...
+    # ur_IN:
+    #    name:           Urdu (India)
+    #    license:        None
+    #    source:         moz:7981
+    #
+    # just a list of words...
+    # uz:
+    #    name:           Uzbek
+    #    license:        None
+    #    source:         moz:306383
+    # just a list of words...
+    # ve_ZA:
+    #    name:           Venda (South Africa)
+    #    license:        LGPL
+    #    source:         moz:46601
+    #
+    # just a list of words...
+    # vi_VN:
+    #    name:           Vietnamese (Viet-Nam)
+    #    license:        GPL3
+    #    source:         moz:7479
+    #
+    # just a list of words...
+    # xh_ZA:
+    #    name:           Xhosa (South Africa)
+    #    license:        LGPL
+    #    source:         moz:46599
+    #
+    # just a list of words...
+    # yi:
+    #    name:           Yiddish
+    #    license:        LGPLv2+ or MPLv1.1 or GPLv2+
+    #    source:         ooe:yiddish-spell-checker
     zu_ZA:
         name:           Zulu (South Africa)
         license:        LGPL
