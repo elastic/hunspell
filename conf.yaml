@@ -639,27 +639,31 @@ langs:
         license:        LGPL 2.1
         source:         ooe:slovenian-dictionary-package-slovenski-paket-slovarjev
         skip:           ["**hyph**","**th_**"]
-    son_ML:
-        name:           Songhai
-        license:        GPL 3.0
-        source:         moz:11940
+   # Just a list of words...
+   # son_ML:
+   #     name:           Songhai
+   #     license:        GPL 3.0
+   #     source:         moz:11940
     sq_AL:
         name:           Albanian (Albania)
         license:        GPL
         source:         http://www.shkenca.org/shkarkime/myspell-sq_AL-1.6.4.zip
         # see http://www.shkenca.org/k6i/albanian_dictionary_for_myspell_en.html
-    sr_RS:
-        name:           Serbian (Serbia) Cyrillic & Latin
-        license:        GPL2
-        source:         moz:10894
-    ss_ZA:
-        name:           Swati (South Africa)
-        license:        LGPL
-        source:         moz:46614
-    st_ZA:
-        name:           Southern Sotho
-        license:        LGPL
-        source:         moz:46610
+   # Just a list of words...
+   # sr_RS:
+   #     name:           Serbian (Serbia) Cyrillic & Latin
+   #     license:        GPL2
+   #     source:         moz:10894
+   # Just a list of words...
+   # ss_ZA:
+   #     name:           Swati (South Africa)
+   #     license:        LGPL
+   #     source:         moz:46614
+   # Just a list of words...
+   # st_ZA:
+   #     name:           Southern Sotho
+   #     license:        LGPL
+   #     source:         moz:46610
     sv_SE:
         name:           Swedish (Sweden)
         license:        LGPL 3.0
