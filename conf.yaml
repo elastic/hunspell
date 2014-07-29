@@ -464,10 +464,10 @@ langs:
         name:           Kannada (India)
         license:        GPL2
         source:         moz:402994
-    ko_KR:
+    ko:
         name:           Korean
         license:        MPL 1.1/GPL 2.0/LGPL 2.1
-        source:         moz:11487
+        source:         http://github.com/changwoo/hunspell-dict-ko/releases/download/0.5.6/ko-aff-dic-0.5.6.zip
     ku_TR:
         name:           Kurdish (Turkey)
         license:        GPL2
