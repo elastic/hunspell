@@ -389,10 +389,11 @@ langs:
         name:           Hebrew (Israel)
         license:        GPL2
         source:         ooe:hebrew-he-spell-check-dictionary
-    hil_PH:
-        name:           Hiligaynon (Philippines)
-        license:        GPL2
-        source:         oo:hil_PH
+    # Just a list of words...
+    # hil_PH:
+    #    name:           Hiligaynon (Philippines)
+    #    license:        GPL2
+    #    source:         oo:hil_PH
     hi_IN:
         name:           Hindi
         license:        GPL2
@@ -406,10 +407,11 @@ langs:
         license:        GPL2
         source:         moz:3956
         skip:           ["**png", "**manifest"]
-    ht_HT:
-        name:           Haitian Creole (Haiti)
-        license:        GPL3
-        source:         moz:48577
+    # Just a list of words...
+    # ht_HT:
+    #    name:           Haitian Creole (Haiti)
+    #    license:        GPL3
+    #    source:         moz:48577
     hu:
         name:           Hungarian
         license:        GPL 2.0
@@ -481,10 +483,11 @@ langs:
         name:           Lingala (Chad)
         license:        GPL2
         source:         moz:204312
-    lo_LA:
-        name:           Lao (Lao)
-        license:        None
-        source:         moz:476993
+    # Just a list of words...
+    # lo_LA:
+    #     name:           Lao (Lao)
+    #    license:        None
+    #    source:         moz:476993
     lt:
         name:           Lithuanian
         license:        BSD
@@ -512,14 +515,16 @@ langs:
         license:        GPL3
         source:         moz:7130
         skip:           ["**manifest", "**png"]
-    mk_MK:
-        name:           Macedonian (Macedonia)
-        license:        GPL
-        source:         oo:mk_MK
-    mk_MK-moz:
-        name:           Macedonian (Cyrillic and Latin)
-        license:        GPL3
-        source:         moz:283744
+    # Just a list of words...
+    # mk_MK:
+    #    name:           Macedonian (Macedonia)
+    #    license:        GPL
+    #    source:         oo:mk_MK
+    # Just a list of words...
+    # mk_MK-moz:
+    #    name:           Macedonian (Cyrillic and Latin)
+    #    license:        GPL3
+    #    source:         moz:283744
     mr_IN:
         name:           Marathi (India)
         license:        GPL 2.1
@@ -552,14 +557,16 @@ langs:
         name:           Norwegian (Nynorsk)
         license:        GPL
         source:         moz:6869
-    nr_ZA:
-        name:           Ndebele, South Africa
-        license:        LGPL
-        source:         moz:46609
-    ns_ZA:
-        name:           Northern Sotho (South Africa)
-        license:        LGPL
-        source:         moz:46519
+   # Just a list of words...
+   # nr_ZA:
+   #     name:           Ndebele, South Africa
+   #     license:        LGPL
+   #     source:         moz:46609
+   # Just a list of words...
+   # ns_ZA:
+   #     name:           Northern Sotho (South Africa)
+   #     license:        LGPL
+   #     source:         moz:46519
     oc_FR:
         name:           Occitan (Languedoc)
         license:        GPL2
