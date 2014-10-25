@@ -29,21 +29,21 @@ public class TestPortugueseHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new PortugueseHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new PortugueseHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "não", 
         new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("quilométricas");
-    Analyzer a = new PortugueseHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new PortugueseHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "quilométricas", new String[] {"quilométricas"});
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new PortugueseHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new PortugueseHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

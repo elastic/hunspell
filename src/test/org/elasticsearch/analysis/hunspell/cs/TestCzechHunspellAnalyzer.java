@@ -29,21 +29,21 @@ public class TestCzechHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new CzechHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "Pokud mluvime o volnem", 
         new String[] { "mluvime", "volno" });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("hole");
-    Analyzer a = new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new CzechHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "hole desek", new String[] {"hole", "deska"});
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new CzechHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new CzechHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

@@ -29,21 +29,21 @@ public class TestBazqueHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new BasqueHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new BasqueHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "izan", 
         new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("mendiak");
-    Analyzer a = new BasqueHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new BasqueHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "mendiak", new String[] {"mendiak"});
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new BasqueHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new BasqueHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

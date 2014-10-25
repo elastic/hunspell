@@ -29,21 +29,21 @@ public class TestLithuanianHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new LithuanianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new LithuanianHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "man", 
         new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("vaikų");
-    Analyzer a = new LithuanianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new LithuanianHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "vaikų", new String[] {"vaikų"});
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new LithuanianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new LithuanianHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

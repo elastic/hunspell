@@ -29,21 +29,21 @@ public class TestGalicianHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new GalicianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new GalicianHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "de", 
         new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("primeira");
-    Analyzer a = new GalicianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new GalicianHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "primeira", new String[] {"primeira"});
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new GalicianHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new GalicianHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

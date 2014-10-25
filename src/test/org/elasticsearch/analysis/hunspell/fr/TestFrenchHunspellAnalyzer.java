@@ -29,38 +29,38 @@ public class TestFrenchHunspellAnalyzer extends HunspellAnalyzerTestCase {
   
   /** Test stopword removal */
   public void testStopWord() throws Exception {
-    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new FrenchHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "votre",  new String[] { });
   }
   
   /** Test that stopwords are not case sensitive */
   public void testStopwordsCasing() throws IOException {
-    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    Analyzer a = new FrenchHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(a, "Votre", new String[] { });
   }
   
   /** Test stemmer exceptions */
   public void testStemExclusion() throws IOException{
-    CharArraySet set = new CharArraySet(TEST_VERSION_CURRENT, 1, true);
+    CharArraySet set = new CharArraySet(1, true);
     set.add("ai");
-    Analyzer a = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary(), CharArraySet.EMPTY_SET, set);
+    Analyzer a = new FrenchHunspellAnalyzer(getDictionary(), CharArraySet.EMPTY_SET, set);
     assertAnalyzesTo(a, "J'ai soif", new String[] {"ai", "soif"});
   }
   
   /** Test elision */
   public void testElision() throws Exception {
-    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(fa, "voir l'embrouille", new String[] { "voir", "embrouille", "embrouiller" });
   }
   
   /** Test elision is not case sensitive */
   public void testElisionCasing() throws Exception {
-    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary());
+    FrenchHunspellAnalyzer fa = new FrenchHunspellAnalyzer(getDictionary());
     assertAnalyzesTo(fa, "L'embrouille", new String[] { "embrouille", "embrouiller" });
   }
   
   /** blast some random strings through the analyzer */
   public void testRandomStrings() throws Exception {
-    checkRandomData(random(), new FrenchHunspellAnalyzer(TEST_VERSION_CURRENT, getDictionary()), 1000*RANDOM_MULTIPLIER);
+    checkRandomData(random(), new FrenchHunspellAnalyzer(getDictionary()), 1000*RANDOM_MULTIPLIER);
   }
 }

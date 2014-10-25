@@ -22,7 +22,6 @@ package org.elasticsearch.analysis.hunspell;
 import java.io.File;
 import java.io.InputStream;
 import java.io.LineNumberReader;
-import java.io.Reader;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -89,8 +88,8 @@ public class TestStemming extends BaseTokenStreamTestCase {
     final Dictionary dictionary = new Dictionary(affixStream, dictionaryStream);
     Analyzer analyzer = new Analyzer() {
       @Override
-      protected TokenStreamComponents createComponents(String field, Reader reader) {
-        MockTokenizer tokenizer = new MockTokenizer(reader, MockTokenizer.KEYWORD, false);
+      protected TokenStreamComponents createComponents(String field) {
+        MockTokenizer tokenizer = new MockTokenizer(MockTokenizer.KEYWORD, false);
         HunspellStemFilter filter = new HunspellStemFilter(tokenizer, dictionary, false);
         return new TokenStreamComponents(tokenizer, filter);
       }

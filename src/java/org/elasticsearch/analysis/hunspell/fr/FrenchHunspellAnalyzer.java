@@ -20,7 +20,6 @@ package org.elasticsearch.analysis.hunspell.fr;
  */
 
 import java.io.IOException;
-import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.lucene.analysis.TokenStream;
@@ -38,7 +37,6 @@ import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.util.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
-import org.apache.lucene.util.Version;
 
 /** 
  * Hunspell-based analyzer for French
@@ -48,27 +46,25 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
   private final CharArraySet stemExclusionTable;
   
   /** 
-   * Creates a new analyzer with the specified matchVersion and hunspell dictionary,
+   * Creates a new analyzer with the specified hunspell dictionary,
    * but with default stopwords and no stem exclusions.
    * 
-   * @param matchVersion Lucene version to match
    * @param dictionary Hunspell dictionary for this language
    */
-  public FrenchHunspellAnalyzer(Version matchVersion, Dictionary dictionary) {
-    this(matchVersion, dictionary, getDefaultStopSet(), CharArraySet.EMPTY_SET);
+  public FrenchHunspellAnalyzer(Dictionary dictionary) {
+    this(dictionary, getDefaultStopSet(), CharArraySet.EMPTY_SET);
   }
 
   /** 
-   * Creates a new analyzer with the specified matchVersion and hunspell dictionary,
+   * Creates a new analyzer with the specified hunspell dictionary,
    * specified stopwords and stem exclusions.
    * 
-   * @param matchVersion Lucene version to match
    * @param dictionary Hunspell dictionary for this language
    * @param stopwords a stopword set
    * @param stemExclusionTable a stemming exclusion set
    */
-  public FrenchHunspellAnalyzer(Version matchVersion, Dictionary dictionary, CharArraySet stopwords, CharArraySet stemExclusionTable) {
-    super(matchVersion, stopwords);
+  public FrenchHunspellAnalyzer(Dictionary dictionary, CharArraySet stopwords, CharArraySet stemExclusionTable) {
+    super(stopwords);
     this.dictionary = dictionary;
     this.stemExclusionTable = stemExclusionTable;
   }
@@ -80,7 +76,7 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
       try {
         DEFAULT_SET = WordlistLoader.getSnowballWordSet(
                         IOUtils.getDecodingReader(SnowballFilter.class, FrenchAnalyzer.DEFAULT_STOPWORD_FILE, StandardCharsets.UTF_8), 
-                        new CharArraySet(Version.LUCENE_4_10, 16, true));
+                        new CharArraySet(16, true));
       } catch (IOException ex) {
         // default set should always be present as it is part of the
         // distribution (JAR)
@@ -97,15 +93,15 @@ public final class FrenchHunspellAnalyzer extends StopwordAnalyzerBase {
   }
 
   @Override
-  protected TokenStreamComponents createComponents(String field, Reader reader) {
-    final Tokenizer source = new StandardTokenizer(matchVersion, reader);
+  protected TokenStreamComponents createComponents(String field) {
+    final Tokenizer source = new StandardTokenizer();
     TokenStream result = new ElisionFilter(source, FrenchAnalyzer.DEFAULT_ARTICLES);
-    result = new StopFilter(matchVersion, result, stopwords);
+    result = new StopFilter(result, stopwords);
     if (!this.stemExclusionTable.isEmpty()) {
       result = new SetKeywordMarkerFilter(result, stemExclusionTable);
     }
     result = new HunspellStemFilter(result, dictionary);
-    result = new LowerCaseFilter(matchVersion, result);
+    result = new LowerCaseFilter(result);
     return new TokenStreamComponents(source, result);
   }
 }
